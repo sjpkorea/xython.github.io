@@ -1,0 +1,107 @@
+xython package
+==============
+
+
+xython.anydb module
+-------------------
+
+.. automodule:: xython.anydb
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.basic\_data module
+-------------------------
+
+.. automodule:: xython.basic_data
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.ganada module
+--------------------
+
+.. automodule:: xython.ganada
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.jfinder module
+---------------------
+
+.. automodule:: xython.jfinder
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.mailmail module
+----------------------
+
+.. automodule:: xython.mailmail
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.pcell module
+-------------------
+
+.. automodule:: xython.pcell
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.pcell\_event module
+--------------------------
+
+.. automodule:: xython.pcell_event
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.pyclick module
+---------------------
+
+.. automodule:: xython.pyclick
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.pynal module
+-------------------
+
+.. automodule:: xython.pynal
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.rgraph module
+--------------------
+
+.. automodule:: xython.rgraph
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.scolor module
+--------------------
+
+.. automodule:: xython.scolor
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.youtil module
+--------------------
+
+.. automodule:: xython.youtil
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+Module contents
+---------------
+
+.. automodule:: xython
+   :members:
+   :undoc-members:
+   :show-inheritance:
