@@ -1,7 +1,0 @@
-
-
-xython을 통한 업무 효율화
-==============
-Functional Programming for Excel. Word, Mail by Python
-------------------------------------------------------------
-
