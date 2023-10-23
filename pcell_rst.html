@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>xython.pcell module &mdash; xython 1.16 문서</title>
+  <title>pcell - 함수들의 문서화 &mdash; xython 1.16 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,9 @@
         <script src="_static/translations.js?v=b5f768d8"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
-    <link rel="search" title="검색" href="search.html" /> 
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="pyclick - 함수들의 문서화" href="pyclick_rst.html" />
+    <link rel="prev" title="mailmail - 함수들의 문서화" href="mailmail_rst.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,20 +44,522 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#id5">xython패키지의 각 모듈의 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython.html">xython package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_rst.html">ganada - 함수들 설명문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_rst.html">jfinder - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_rst.html">mailmail - 함수들의 문서화</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">pcell - 함수들의 문서화</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#xython.pcell.pcell"><code class="docutils literal notranslate"><span class="pre">pcell</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.activate_cell"><code class="docutils literal notranslate"><span class="pre">pcell.activate_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_button_with_macro"><code class="docutils literal notranslate"><span class="pre">pcell.add_button_with_macro()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_picture_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.add_picture_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_picture_in_sheet_by_pixel"><code class="docutils literal notranslate"><span class="pre">pcell.add_picture_in_sheet_by_pixel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_shape_by_xywh"><code class="docutils literal notranslate"><span class="pre">pcell.add_shape_by_xywh()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_sheet_new"><code class="docutils literal notranslate"><span class="pre">pcell.add_sheet_new()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_sheet_new_with_name"><code class="docutils literal notranslate"><span class="pre">pcell.add_sheet_new_with_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_text_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.add_text_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_text_in_range_at_left"><code class="docutils literal notranslate"><span class="pre">pcell.add_text_in_range_at_left()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_text_in_range_at_right"><code class="docutils literal notranslate"><span class="pre">pcell.add_text_in_range_at_right()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_text_in_range_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.add_text_in_range_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.add_text_in_range_by_xystep"><code class="docutils literal notranslate"><span class="pre">pcell.add_text_in_range_by_xystep()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_active_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.change_active_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_char_to_num"><code class="docutils literal notranslate"><span class="pre">pcell.change_char_to_num()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_data_position_for_list2d_by_2_index"><code class="docutils literal notranslate"><span class="pre">pcell.change_data_position_for_list2d_by_2_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_first_char_only_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_first_char_only_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_input_color_to_rgb"><code class="docutils literal notranslate"><span class="pre">pcell.change_input_color_to_rgb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_input_data_to_list2d"><code class="docutils literal notranslate"><span class="pre">pcell.change_input_data_to_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_input_data_to_yline_style"><code class="docutils literal notranslate"><span class="pre">pcell.change_input_data_to_yline_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_last_char_only_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_last_char_only_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_list1d_to_list2d"><code class="docutils literal notranslate"><span class="pre">pcell.change_list1d_to_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_list1d_to_list2d_with_yline_style"><code class="docutils literal notranslate"><span class="pre">pcell.change_list1d_to_list2d_with_yline_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_list2d_as_samelen"><code class="docutils literal notranslate"><span class="pre">pcell.change_list2d_as_samelen()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_list_size"><code class="docutils literal notranslate"><span class="pre">pcell.change_list_size()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_named_range_address"><code class="docutils literal notranslate"><span class="pre">pcell.change_named_range_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_num_to_char"><code class="docutils literal notranslate"><span class="pre">pcell.change_num_to_char()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_position_for_list2d_by_2_index"><code class="docutils literal notranslate"><span class="pre">pcell.change_position_for_list2d_by_2_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_rgb_to_rgbint"><code class="docutils literal notranslate"><span class="pre">pcell.change_rgb_to_rgbint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_rgbint_to_colorname"><code class="docutils literal notranslate"><span class="pre">pcell.change_rgbint_to_colorname()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_rgbint_to_rgb"><code class="docutils literal notranslate"><span class="pre">pcell.change_rgbint_to_rgb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_shape_degree"><code class="docutils literal notranslate"><span class="pre">pcell.change_shape_degree()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_sheet_name"><code class="docutils literal notranslate"><span class="pre">pcell.change_sheet_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_string_address"><code class="docutils literal notranslate"><span class="pre">pcell.change_string_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_string_address_to_xyxy"><code class="docutils literal notranslate"><span class="pre">pcell.change_string_address_to_xyxy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_string_to_address"><code class="docutils literal notranslate"><span class="pre">pcell.change_string_to_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_as_dic_with_xy_position"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_as_dic_with_xy_position()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_as_swapcase"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_as_swapcase()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_capital_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_capital_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_lower_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_lower_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_ltrim_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_ltrim_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_rtrim_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_rtrim_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_strikethrough_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_strikethrough_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_swapcase_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_swapcase_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_trim_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_trim_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_underline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_underline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_value_to_upper_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.change_value_to_upper_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_xy_to_a1"><code class="docutils literal notranslate"><span class="pre">pcell.change_xy_to_a1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_xylist_to_addresschar"><code class="docutils literal notranslate"><span class="pre">pcell.change_xylist_to_addresschar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_xyxy_to_pxyxy"><code class="docutils literal notranslate"><span class="pre">pcell.change_xyxy_to_pxyxy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_xyxy_to_r1c1"><code class="docutils literal notranslate"><span class="pre">pcell.change_xyxy_to_r1c1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.change_xyxy_to_r1r1"><code class="docutils literal notranslate"><span class="pre">pcell.change_xyxy_to_r1r1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_address_value"><code class="docutils literal notranslate"><span class="pre">pcell.check_address_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_address_with_datas"><code class="docutils literal notranslate"><span class="pre">pcell.check_address_with_datas()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_cell_type"><code class="docutils literal notranslate"><span class="pre">pcell.check_cell_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_colorname_by_rgbint"><code class="docutils literal notranslate"><span class="pre">pcell.check_colorname_by_rgbint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_data_type"><code class="docutils literal notranslate"><span class="pre">pcell.check_data_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_datatype_for_input_data"><code class="docutils literal notranslate"><span class="pre">pcell.check_datatype_for_input_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_differ_at_2_area"><code class="docutils literal notranslate"><span class="pre">pcell.check_differ_at_2_area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_differ_at_same_area"><code class="docutils literal notranslate"><span class="pre">pcell.check_differ_at_same_area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_file_in_folder"><code class="docutils literal notranslate"><span class="pre">pcell.check_file_in_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_filepath"><code class="docutils literal notranslate"><span class="pre">pcell.check_filepath()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_input_color_rgb"><code class="docutils literal notranslate"><span class="pre">pcell.check_input_color_rgb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_input_data"><code class="docutils literal notranslate"><span class="pre">pcell.check_input_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_intersect_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_intersect_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_list_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_list_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_merge_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.check_merge_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_numberformat"><code class="docutils literal notranslate"><span class="pre">pcell.check_numberformat()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_one_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_one_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_same_data"><code class="docutils literal notranslate"><span class="pre">pcell.check_same_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_sheet_name"><code class="docutils literal notranslate"><span class="pre">pcell.check_sheet_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_sheet_password"><code class="docutils literal notranslate"><span class="pre">pcell.check_sheet_password()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_string_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_string_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_x_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_x_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_xx_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_xx_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_xy_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_xy_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_y_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_y_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.check_yy_address"><code class="docutils literal notranslate"><span class="pre">pcell.check_yy_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.close"><code class="docutils literal notranslate"><span class="pre">pcell.close()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.close_activeworkbook"><code class="docutils literal notranslate"><span class="pre">pcell.close_activeworkbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.close_excel"><code class="docutils literal notranslate"><span class="pre">pcell.close_excel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.copy_range"><code class="docutils literal notranslate"><span class="pre">pcell.copy_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.copy_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.copy_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.copy_sheet_at_new_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.copy_sheet_at_new_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.copy_sheet_at_same_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.copy_sheet_at_same_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.copy_value_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.copy_value_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.copy_xxline"><code class="docutils literal notranslate"><span class="pre">pcell.copy_xxline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.copy_yyline"><code class="docutils literal notranslate"><span class="pre">pcell.copy_yyline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.count_range_samevalue"><code class="docutils literal notranslate"><span class="pre">pcell.count_range_samevalue()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.count_samevalue_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.count_samevalue_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.count_shape_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.count_shape_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.count_sheet_nos"><code class="docutils literal notranslate"><span class="pre">pcell.count_sheet_nos()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.count_worksheet_all"><code class="docutils literal notranslate"><span class="pre">pcell.count_worksheet_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_all"><code class="docutils literal notranslate"><span class="pre">pcell.data_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_dic_colorindex_to_colorname"><code class="docutils literal notranslate"><span class="pre">pcell.data_dic_colorindex_to_colorname()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_dic_colorindex_to_rgbint"><code class="docutils literal notranslate"><span class="pre">pcell.data_dic_colorindex_to_rgbint()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_dic_colorindex_to_rgblist"><code class="docutils literal notranslate"><span class="pre">pcell.data_dic_colorindex_to_rgblist()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_dic_colorname_to_colorindex"><code class="docutils literal notranslate"><span class="pre">pcell.data_dic_colorname_to_colorindex()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_dic_line_position"><code class="docutils literal notranslate"><span class="pre">pcell.data_dic_line_position()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_dic_line_style"><code class="docutils literal notranslate"><span class="pre">pcell.data_dic_line_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_dic_line_thickness"><code class="docutils literal notranslate"><span class="pre">pcell.data_dic_line_thickness()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_dic_rgblist_to_colorindex"><code class="docutils literal notranslate"><span class="pre">pcell.data_dic_rgblist_to_colorindex()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_shift_xline_to_2d"><code class="docutils literal notranslate"><span class="pre">pcell.data_shift_xline_to_2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.data_shift_yline_to_2d"><code class="docutils literal notranslate"><span class="pre">pcell.data_shift_yline_to_2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_all_draw_line_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_all_draw_line_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_all_drawing_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.delete_all_drawing_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_all_line_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_all_line_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_all_rangename"><code class="docutils literal notranslate"><span class="pre">pcell.delete_all_rangename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_all_samevalue_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_all_samevalue_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_all_shape_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.delete_all_shape_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_all_value_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.delete_all_value_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_color"><code class="docutils literal notranslate"><span class="pre">pcell.delete_color()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_color_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_color_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_continious_samevalue_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_continious_samevalue_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_empty_xline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_empty_xline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_empty_yline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_empty_yline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_line_in_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">pcell.delete_line_in_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_linecolor"><code class="docutils literal notranslate"><span class="pre">pcell.delete_linecolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_linecolor_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_linecolor_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_link"><code class="docutils literal notranslate"><span class="pre">pcell.delete_link()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_link_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_link_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_memo"><code class="docutils literal notranslate"><span class="pre">pcell.delete_memo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_memo_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_memo_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_panthom_rangname"><code class="docutils literal notranslate"><span class="pre">pcell.delete_panthom_rangname()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_patial_value_in_range_as_0toN"><code class="docutils literal notranslate"><span class="pre">pcell.delete_patial_value_in_range_as_0toN()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_rangename"><code class="docutils literal notranslate"><span class="pre">pcell.delete_rangename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_rangename_all"><code class="docutils literal notranslate"><span class="pre">pcell.delete_rangename_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_rangename_by_name"><code class="docutils literal notranslate"><span class="pre">pcell.delete_rangename_by_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_rangname_for_panthom"><code class="docutils literal notranslate"><span class="pre">pcell.delete_rangname_for_panthom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_rangname_panthom"><code class="docutils literal notranslate"><span class="pre">pcell.delete_rangname_panthom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_samevalue_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_samevalue_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_samevalue_in_range_by_many_column_are_same"><code class="docutils literal notranslate"><span class="pre">pcell.delete_samevalue_in_range_by_many_column_are_same()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_shape_all_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.delete_shape_all_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_shape_by_name"><code class="docutils literal notranslate"><span class="pre">pcell.delete_shape_by_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_shape_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.delete_shape_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.delete_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_sheet_by_name"><code class="docutils literal notranslate"><span class="pre">pcell.delete_sheet_by_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_sheet_name"><code class="docutils literal notranslate"><span class="pre">pcell.delete_sheet_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_value_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.delete_value_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_value_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_value_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_value_in_range_between_a_and_b"><code class="docutils literal notranslate"><span class="pre">pcell.delete_value_in_range_between_a_and_b()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_value_in_range_between_specific_letter"><code class="docutils literal notranslate"><span class="pre">pcell.delete_value_in_range_between_specific_letter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_value_in_range_by_continious_samevalue"><code class="docutils literal notranslate"><span class="pre">pcell.delete_value_in_range_by_continious_samevalue()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_value_in_range_by_no"><code class="docutils literal notranslate"><span class="pre">pcell.delete_value_in_range_by_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_value_in_range_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.delete_value_in_range_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_value_in_usedrange"><code class="docutils literal notranslate"><span class="pre">pcell.delete_value_in_usedrange()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_vba_module"><code class="docutils literal notranslate"><span class="pre">pcell.delete_vba_module()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_xline"><code class="docutils literal notranslate"><span class="pre">pcell.delete_xline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_xline_in_range_as_empty"><code class="docutils literal notranslate"><span class="pre">pcell.delete_xline_in_range_as_empty()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_xline_in_range_by_samevalue"><code class="docutils literal notranslate"><span class="pre">pcell.delete_xline_in_range_by_samevalue()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_xline_in_range_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.delete_xline_in_range_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_xline_value_in_range_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.delete_xline_value_in_range_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_xxline_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.delete_xxline_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_xxline_value_in_range_by_same_line"><code class="docutils literal notranslate"><span class="pre">pcell.delete_xxline_value_in_range_by_same_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_yline"><code class="docutils literal notranslate"><span class="pre">pcell.delete_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_yline_in_range_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.delete_yline_in_range_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_yline_value_in_range_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.delete_yline_value_in_range_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_yyline"><code class="docutils literal notranslate"><span class="pre">pcell.delete_yyline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_yyline_as_empty"><code class="docutils literal notranslate"><span class="pre">pcell.delete_yyline_as_empty()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_yyline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.delete_yyline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.delete_yyline_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.delete_yyline_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_bottomline"><code class="docutils literal notranslate"><span class="pre">pcell.draw_bottomline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_bottomline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.draw_bottomline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_detail_line_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.draw_detail_line_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_inner_xline"><code class="docutils literal notranslate"><span class="pre">pcell.draw_inner_xline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_inner_yline"><code class="docutils literal notranslate"><span class="pre">pcell.draw_inner_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_innerx_line_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.draw_innerx_line_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_inneryline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.draw_inneryline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_left_line"><code class="docutils literal notranslate"><span class="pre">pcell.draw_left_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_left_line_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.draw_left_line_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_line"><code class="docutils literal notranslate"><span class="pre">pcell.draw_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_line_in_pxyxy_range"><code class="docutils literal notranslate"><span class="pre">pcell.draw_line_in_pxyxy_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_line_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.draw_line_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_line_in_range_as_basic"><code class="docutils literal notranslate"><span class="pre">pcell.draw_line_in_range_as_basic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_line_one_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.draw_line_one_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_right_line"><code class="docutils literal notranslate"><span class="pre">pcell.draw_right_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_top_line"><code class="docutils literal notranslate"><span class="pre">pcell.draw_top_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_triangle"><code class="docutils literal notranslate"><span class="pre">pcell.draw_triangle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.draw_user_style_02"><code class="docutils literal notranslate"><span class="pre">pcell.draw_user_style_02()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.excel_fun_ltrim"><code class="docutils literal notranslate"><span class="pre">pcell.excel_fun_ltrim()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.excel_fun_rtrim"><code class="docutils literal notranslate"><span class="pre">pcell.excel_fun_rtrim()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.excel_fun_trim"><code class="docutils literal notranslate"><span class="pre">pcell.excel_fun_trim()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.file_dialog"><code class="docutils literal notranslate"><span class="pre">pcell.file_dialog()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.find_word_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.find_word_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_4_edge_xy_for_xyxy"><code class="docutils literal notranslate"><span class="pre">pcell.get_4_edge_xy_for_xyxy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_activesheet_object"><code class="docutils literal notranslate"><span class="pre">pcell.get_activesheet_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_address_for_merge_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.get_address_for_merge_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_cell_object"><code class="docutils literal notranslate"><span class="pre">pcell.get_cell_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_diagonal_xy"><code class="docutils literal notranslate"><span class="pre">pcell.get_diagonal_xy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_intersect_address_with_range1_and_range2"><code class="docutils literal notranslate"><span class="pre">pcell.get_intersect_address_with_range1_and_range2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_intersect_address_with_range_and_input_address"><code class="docutils literal notranslate"><span class="pre">pcell.get_intersect_address_with_range_and_input_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_nos_in_input_list2d_by_same_xline"><code class="docutils literal notranslate"><span class="pre">pcell.get_nos_in_input_list2d_by_same_xline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_random_data_set_on_base_letter"><code class="docutils literal notranslate"><span class="pre">pcell.get_random_data_set_on_base_letter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_random_number"><code class="docutils literal notranslate"><span class="pre">pcell.get_random_number()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_same_value_value_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.get_same_value_value_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_sheet_object"><code class="docutils literal notranslate"><span class="pre">pcell.get_sheet_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_unique_value_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.get_unique_value_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_vba_module_name_all"><code class="docutils literal notranslate"><span class="pre">pcell.get_vba_module_name_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_xlines_when_same_yline_with_input_data_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.get_xlines_when_same_yline_with_input_data_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_xxline_object"><code class="docutils literal notranslate"><span class="pre">pcell.get_xxline_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_xy_list_for_circle"><code class="docutils literal notranslate"><span class="pre">pcell.get_xy_list_for_circle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.get_yyline_object"><code class="docutils literal notranslate"><span class="pre">pcell.get_yyline_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.history"><code class="docutils literal notranslate"><span class="pre">pcell.history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_all_picture_of_folder_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.insert_all_picture_of_folder_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_excel_function_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.insert_excel_function_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_image_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.insert_image_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_image_in_xyxy"><code class="docutils literal notranslate"><span class="pre">pcell.insert_image_in_xyxy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_line_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.insert_line_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_list2d_blank_by_index"><code class="docutils literal notranslate"><span class="pre">pcell.insert_list2d_blank_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_picture_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.insert_picture_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_picture_with_same_size_of_input_range"><code class="docutils literal notranslate"><span class="pre">pcell.insert_picture_with_same_size_of_input_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.insert_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_sheet_new"><code class="docutils literal notranslate"><span class="pre">pcell.insert_sheet_new()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_sheet_with_name"><code class="docutils literal notranslate"><span class="pre">pcell.insert_sheet_with_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_xline"><code class="docutils literal notranslate"><span class="pre">pcell.insert_xline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_xline_in_range_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.insert_xline_in_range_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_xline_with_sum_value_for_each_yline"><code class="docutils literal notranslate"><span class="pre">pcell.insert_xline_with_sum_value_for_each_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_xxline"><code class="docutils literal notranslate"><span class="pre">pcell.insert_xxline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_xxline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.insert_xxline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_yline"><code class="docutils literal notranslate"><span class="pre">pcell.insert_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_yline_in_range_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.insert_yline_in_range_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_yyline"><code class="docutils literal notranslate"><span class="pre">pcell.insert_yyline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.insert_yyline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.insert_yyline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.is_empty_xline"><code class="docutils literal notranslate"><span class="pre">pcell.is_empty_xline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.is_empty_yline"><code class="docutils literal notranslate"><span class="pre">pcell.is_empty_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.make_dic_with_count"><code class="docutils literal notranslate"><span class="pre">pcell.make_dic_with_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.make_password"><code class="docutils literal notranslate"><span class="pre">pcell.make_password()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.make_ppt_table_from_xl_data"><code class="docutils literal notranslate"><span class="pre">pcell.make_ppt_table_from_xl_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.make_serial_no"><code class="docutils literal notranslate"><span class="pre">pcell.make_serial_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.make_vba_module"><code class="docutils literal notranslate"><span class="pre">pcell.make_vba_module()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.make_xy_list_for_box_style"><code class="docutils literal notranslate"><span class="pre">pcell.make_xy_list_for_box_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.make_y_value"><code class="docutils literal notranslate"><span class="pre">pcell.make_y_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.manual"><code class="docutils literal notranslate"><span class="pre">pcell.manual()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.merge_left_2_ylines_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.merge_left_2_ylines_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.merge_top_2_xlines_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.merge_top_2_xlines_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.merge_top_2_ylines_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.merge_top_2_ylines_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_activecell_by_xy_offset"><code class="docutils literal notranslate"><span class="pre">pcell.move_activecell_by_xy_offset()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_activecell_in_range_to_bottom"><code class="docutils literal notranslate"><span class="pre">pcell.move_activecell_in_range_to_bottom()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_activecell_in_range_to_leftend"><code class="docutils literal notranslate"><span class="pre">pcell.move_activecell_in_range_to_leftend()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_activecell_in_range_to_rightend"><code class="docutils literal notranslate"><span class="pre">pcell.move_activecell_in_range_to_rightend()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_activecell_in_range_to_top"><code class="docutils literal notranslate"><span class="pre">pcell.move_activecell_in_range_to_top()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_arrange_two_sheet_y_02"><code class="docutils literal notranslate"><span class="pre">pcell.move_arrange_two_sheet_y_02()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_bottom_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.move_bottom_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_cell"><code class="docutils literal notranslate"><span class="pre">pcell.move_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_cell_to_another_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.move_cell_to_another_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_data_by_step_for_selection"><code class="docutils literal notranslate"><span class="pre">pcell.move_data_by_step_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_degree_distance"><code class="docutils literal notranslate"><span class="pre">pcell.move_degree_distance()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">pcell.move_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_list2d_by_index_old"><code class="docutils literal notranslate"><span class="pre">pcell.move_list2d_by_index_old()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_range"><code class="docutils literal notranslate"><span class="pre">pcell.move_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_shape"><code class="docutils literal notranslate"><span class="pre">pcell.move_shape()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_to_bottom_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.move_to_bottom_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_to_leftend_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.move_to_leftend_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_to_rightend_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.move_to_rightend_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_to_top_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.move_to_top_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_value_in_range_to_left_except_emptycell"><code class="docutils literal notranslate"><span class="pre">pcell.move_value_in_range_to_left_except_emptycell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_values_between_specific_words_01"><code class="docutils literal notranslate"><span class="pre">pcell.move_values_between_specific_words_01()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_without_emptyline_01"><code class="docutils literal notranslate"><span class="pre">pcell.move_without_emptyline_01()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_xline_value_to_multi_lines"><code class="docutils literal notranslate"><span class="pre">pcell.move_xline_value_to_multi_lines()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_xxline_to_another_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.move_xxline_to_another_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_xy_to_top_end_of_selection"><code class="docutils literal notranslate"><span class="pre">pcell.move_xy_to_top_end_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_yline_value_to_multi_lines"><code class="docutils literal notranslate"><span class="pre">pcell.move_yline_value_to_multi_lines()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_yyline"><code class="docutils literal notranslate"><span class="pre">pcell.move_yyline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_yyline_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.move_yyline_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.move_yyline_to_another_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.move_yyline_to_another_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.multi_vlookup"><code class="docutils literal notranslate"><span class="pre">pcell.multi_vlookup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.new_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.new_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.new_sheet_name_with_checking"><code class="docutils literal notranslate"><span class="pre">pcell.new_sheet_name_with_checking()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.new_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.new_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.open_file"><code class="docutils literal notranslate"><span class="pre">pcell.open_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.open_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.open_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_cell_by_excel_colorno"><code class="docutils literal notranslate"><span class="pre">pcell.paint_cell_by_excel_colorno()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_cell_by_rgb"><code class="docutils literal notranslate"><span class="pre">pcell.paint_cell_by_rgb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_cell_by_scolor"><code class="docutils literal notranslate"><span class="pre">pcell.paint_cell_by_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_cell_in_range_by_specific_text"><code class="docutils literal notranslate"><span class="pre">pcell.paint_cell_in_range_by_specific_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_color_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.paint_color_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_color_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.paint_color_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_color_in_range_bywords"><code class="docutils literal notranslate"><span class="pre">pcell.paint_color_in_range_bywords()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_font_color"><code class="docutils literal notranslate"><span class="pre">pcell.paint_font_color()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_font_color_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.paint_font_color_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_font_color_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.paint_font_color_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_font_in_cell_by_rgb"><code class="docutils literal notranslate"><span class="pre">pcell.paint_font_in_cell_by_rgb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_font_in_range_by_scolor"><code class="docutils literal notranslate"><span class="pre">pcell.paint_font_in_range_by_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_maxvalue_in_range_in_each_xline"><code class="docutils literal notranslate"><span class="pre">pcell.paint_maxvalue_in_range_in_each_xline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_minvalue_in_range_in_each_xline"><code class="docutils literal notranslate"><span class="pre">pcell.paint_minvalue_in_range_in_each_xline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_range_by_rgb"><code class="docutils literal notranslate"><span class="pre">pcell.paint_range_by_rgb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_range_by_scolor"><code class="docutils literal notranslate"><span class="pre">pcell.paint_range_by_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_range_for_empty_cell"><code class="docutils literal notranslate"><span class="pre">pcell.paint_range_for_empty_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_range_for_samevalue_by_excel_colorno"><code class="docutils literal notranslate"><span class="pre">pcell.paint_range_for_samevalue_by_excel_colorno()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_rgb_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.paint_rgb_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_samevalue_in_range_by_scolor"><code class="docutils literal notranslate"><span class="pre">pcell.paint_samevalue_in_range_by_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_scolor_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.paint_scolor_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_sheet_tab_by_scolor"><code class="docutils literal notranslate"><span class="pre">pcell.paint_sheet_tab_by_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_spacecell"><code class="docutils literal notranslate"><span class="pre">pcell.paint_spacecell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_spacecell_in_range_by_scolor"><code class="docutils literal notranslate"><span class="pre">pcell.paint_spacecell_in_range_by_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_text_in_range_by_scolor"><code class="docutils literal notranslate"><span class="pre">pcell.paint_text_in_range_by_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paint_textcolor"><code class="docutils literal notranslate"><span class="pre">pcell.paint_textcolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.paste_range"><code class="docutils literal notranslate"><span class="pre">pcell.paste_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.pick_ylines_at_list2d"><code class="docutils literal notranslate"><span class="pre">pcell.pick_ylines_at_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.print_as_pdf"><code class="docutils literal notranslate"><span class="pre">pcell.print_as_pdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.print_page"><code class="docutils literal notranslate"><span class="pre">pcell.print_page()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.print_preview"><code class="docutils literal notranslate"><span class="pre">pcell.print_preview()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.quit_excel"><code class="docutils literal notranslate"><span class="pre">pcell.quit_excel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_activesheet_name"><code class="docutils literal notranslate"><span class="pre">pcell.read_activesheet_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_activeworkbook_filename"><code class="docutils literal notranslate"><span class="pre">pcell.read_activeworkbook_filename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_at_xy_for_multi_merged_area"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_at_xy_for_multi_merged_area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_for_rangename"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_for_rangename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_for_selection"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_for_usedrange"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_for_usedrange()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_in_activecell"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_in_activecell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_in_currentregion"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_in_currentregion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_in_selection"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_rangename"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_rangename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_address_usedrange"><code class="docutils literal notranslate"><span class="pre">pcell.read_address_usedrange()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_all_name_for_selected_shape"><code class="docutils literal notranslate"><span class="pre">pcell.read_all_name_for_selected_shape()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_all_name_for_shape_in_excel_file"><code class="docutils literal notranslate"><span class="pre">pcell.read_all_name_for_shape_in_excel_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_all_name_for_shape_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.read_all_name_for_shape_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_all_property_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_all_property_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_all_property_in_cell_except_none"><code class="docutils literal notranslate"><span class="pre">pcell.read_all_property_in_cell_except_none()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_all_shape_names"><code class="docutils literal notranslate"><span class="pre">pcell.read_all_shape_names()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_cell_value"><code class="docutils literal notranslate"><span class="pre">pcell.read_cell_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_color_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_color_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_color_in_cell_by_excel_56_color_no"><code class="docutils literal notranslate"><span class="pre">pcell.read_color_in_cell_by_excel_56_color_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_coord_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_coord_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_excel_color_no_as_rgb"><code class="docutils literal notranslate"><span class="pre">pcell.read_excel_color_no_as_rgb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_filename_for_activeworkbook"><code class="docutils literal notranslate"><span class="pre">pcell.read_filename_for_activeworkbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_filenames_in_folder_by_extension_name"><code class="docutils literal notranslate"><span class="pre">pcell.read_filenames_in_folder_by_extension_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_folder_filename_all"><code class="docutils literal notranslate"><span class="pre">pcell.read_folder_filename_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_font_color_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_font_color_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_fullname_for_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.read_fullname_for_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_general_inform_for_excel"><code class="docutils literal notranslate"><span class="pre">pcell.read_general_inform_for_excel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_general_value"><code class="docutils literal notranslate"><span class="pre">pcell.read_general_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_inputbox_value"><code class="docutils literal notranslate"><span class="pre">pcell.read_inputbox_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_memo_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_memo_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_messagebox_for_input"><code class="docutils literal notranslate"><span class="pre">pcell.read_messagebox_for_input()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_name_for_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.read_name_for_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_opened_workbook_filename_all"><code class="docutils literal notranslate"><span class="pre">pcell.read_opened_workbook_filename_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_path_for_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.read_path_for_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_pixel_size_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_pixel_size_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_range"><code class="docutils literal notranslate"><span class="pre">pcell.read_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_range_select"><code class="docutils literal notranslate"><span class="pre">pcell.read_range_select()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_range_value"><code class="docutils literal notranslate"><span class="pre">pcell.read_range_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_rangename_all"><code class="docutils literal notranslate"><span class="pre">pcell.read_rangename_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_selection_address"><code class="docutils literal notranslate"><span class="pre">pcell.read_selection_address()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_shape_name_by_shape_no"><code class="docutils literal notranslate"><span class="pre">pcell.read_shape_name_by_shape_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_shape_name_in_sheet_by_no"><code class="docutils literal notranslate"><span class="pre">pcell.read_shape_name_in_sheet_by_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_sheet_name_all"><code class="docutils literal notranslate"><span class="pre">pcell.read_sheet_name_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_username"><code class="docutils literal notranslate"><span class="pre">pcell.read_username()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value2_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_value2_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value2_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.read_value2_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_activecell"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_activecell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_cell_as_text"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_cell_as_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_cell_as_value2"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_cell_as_value2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_continuous_range"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_continuous_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_currentregion"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_currentregion()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_range_as_value2"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_range_as_value2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_range_speed_up"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_range_speed_up()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_range_with_numberformat"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_range_with_numberformat()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_range_with_xy_headers"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_range_with_xy_headers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_selection"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_usedrange"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_usedrange()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_xline"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_xline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_xxline"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_xxline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_yline"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_value_in_yyline"><code class="docutils literal notranslate"><span class="pre">pcell.read_value_in_yyline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_workbook_fullname"><code class="docutils literal notranslate"><span class="pre">pcell.read_workbook_fullname()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_workbook_path"><code class="docutils literal notranslate"><span class="pre">pcell.read_workbook_path()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_workbook_username"><code class="docutils literal notranslate"><span class="pre">pcell.read_workbook_username()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_worksheet_count"><code class="docutils literal notranslate"><span class="pre">pcell.read_worksheet_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.read_worksheet_numbers"><code class="docutils literal notranslate"><span class="pre">pcell.read_worksheet_numbers()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.replace_word_in_range_by_list2d_style"><code class="docutils literal notranslate"><span class="pre">pcell.replace_word_in_range_by_list2d_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.replace_word_many_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.replace_word_many_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.return_sheet_object"><code class="docutils literal notranslate"><span class="pre">pcell.return_sheet_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.run_vba_module"><code class="docutils literal notranslate"><span class="pre">pcell.run_vba_module()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.save"><code class="docutils literal notranslate"><span class="pre">pcell.save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.select_cell"><code class="docutils literal notranslate"><span class="pre">pcell.select_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.select_named_range"><code class="docutils literal notranslate"><span class="pre">pcell.select_named_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.select_range"><code class="docutils literal notranslate"><span class="pre">pcell.select_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.select_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.select_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.select_top_line_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.select_top_line_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.select_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.select_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_autofilter"><code class="docutils literal notranslate"><span class="pre">pcell.set_autofilter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_autofit_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_autofit_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_bold_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_bold_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_color_bar_by_no"><code class="docutils literal notranslate"><span class="pre">pcell.set_color_bar_by_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_conditional_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_conditional_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_font_color_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.set_font_color_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_font_color_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_font_color_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_font_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_font_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_font_size_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_font_size_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_formula_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_formula_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_fullscreen"><code class="docutils literal notranslate"><span class="pre">pcell.set_fullscreen()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_fullscreen_for_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.set_fullscreen_for_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_gridline_off"><code class="docutils literal notranslate"><span class="pre">pcell.set_gridline_off()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_gridline_on"><code class="docutils literal notranslate"><span class="pre">pcell.set_gridline_on()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_gridline_onoff"><code class="docutils literal notranslate"><span class="pre">pcell.set_gridline_onoff()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_height_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_height_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_height_in_xxline"><code class="docutils literal notranslate"><span class="pre">pcell.set_height_in_xxline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_interactive_flase"><code class="docutils literal notranslate"><span class="pre">pcell.set_interactive_flase()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_interactive_true"><code class="docutils literal notranslate"><span class="pre">pcell.set_interactive_true()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_lower_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_lower_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_ltrim_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_ltrim_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_merge_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_merge_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_name_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_name_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_numberformat"><code class="docutils literal notranslate"><span class="pre">pcell.set_numberformat()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_numberformat_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.set_numberformat_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_numberformat_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_numberformat_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_numberproperty_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_numberproperty_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_picture_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.set_picture_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_print_area"><code class="docutils literal notranslate"><span class="pre">pcell.set_print_area()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_print_page"><code class="docutils literal notranslate"><span class="pre">pcell.set_print_page()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_range_nocolor"><code class="docutils literal notranslate"><span class="pre">pcell.set_range_nocolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_rangename"><code class="docutils literal notranslate"><span class="pre">pcell.set_rangename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_ratio_for_shape"><code class="docutils literal notranslate"><span class="pre">pcell.set_ratio_for_shape()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_rtrim_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_rtrim_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_screen_update_off"><code class="docutils literal notranslate"><span class="pre">pcell.set_screen_update_off()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_screen_update_on"><code class="docutils literal notranslate"><span class="pre">pcell.set_screen_update_on()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.set_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_sheet_as_hide"><code class="docutils literal notranslate"><span class="pre">pcell.set_sheet_as_hide()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_sheet_lock_off"><code class="docutils literal notranslate"><span class="pre">pcell.set_sheet_lock_off()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_sheet_lock_on"><code class="docutils literal notranslate"><span class="pre">pcell.set_sheet_lock_on()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_strikethrough_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_strikethrough_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_swapcase_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_swapcase_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_trim_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_trim_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_underline_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_underline_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_unmerge_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_unmerge_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_unmerge_in_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.set_unmerge_in_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_upper_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_upper_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_use_same_sheet_obj_off"><code class="docutils literal notranslate"><span class="pre">pcell.set_use_same_sheet_obj_off()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_use_same_sheet_obj_on"><code class="docutils literal notranslate"><span class="pre">pcell.set_use_same_sheet_obj_on()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_visible_for_sheet"><code class="docutils literal notranslate"><span class="pre">pcell.set_visible_for_sheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_visible_for_workbook"><code class="docutils literal notranslate"><span class="pre">pcell.set_visible_for_workbook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_width_in_yyline"><code class="docutils literal notranslate"><span class="pre">pcell.set_width_in_yyline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_workbook_as_hide"><code class="docutils literal notranslate"><span class="pre">pcell.set_workbook_as_hide()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.set_wrap_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.set_wrap_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.sort_2_excel_files_001"><code class="docutils literal notranslate"><span class="pre">pcell.sort_2_excel_files_001()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.sort_with_two_range"><code class="docutils literal notranslate"><span class="pre">pcell.sort_with_two_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.sound_beep"><code class="docutils literal notranslate"><span class="pre">pcell.sound_beep()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.split_partial_value_in_range_by_step_from_start"><code class="docutils literal notranslate"><span class="pre">pcell.split_partial_value_in_range_by_step_from_start()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.split_path_n_file_name"><code class="docutils literal notranslate"><span class="pre">pcell.split_path_n_file_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.split_value_as_engnum"><code class="docutils literal notranslate"><span class="pre">pcell.split_value_as_engnum()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.split_value_by_special_string"><code class="docutils literal notranslate"><span class="pre">pcell.split_value_by_special_string()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.split_value_to_str_num"><code class="docutils literal notranslate"><span class="pre">pcell.split_value_to_str_num()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.split_xline_as_per_input_word_in_yline"><code class="docutils literal notranslate"><span class="pre">pcell.split_xline_as_per_input_word_in_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.terms"><code class="docutils literal notranslate"><span class="pre">pcell.terms()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.test_1"><code class="docutils literal notranslate"><span class="pre">pcell.test_1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.test_2"><code class="docutils literal notranslate"><span class="pre">pcell.test_2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.type_name"><code class="docutils literal notranslate"><span class="pre">pcell.type_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.vlookup_with_multi_line"><code class="docutils literal notranslate"><span class="pre">pcell.vlookup_with_multi_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.vlookup_xyxy"><code class="docutils literal notranslate"><span class="pre">pcell.vlookup_xyxy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_cell"><code class="docutils literal notranslate"><span class="pre">pcell.write_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_cell_value"><code class="docutils literal notranslate"><span class="pre">pcell.write_cell_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_df_to_excel"><code class="docutils literal notranslate"><span class="pre">pcell.write_df_to_excel()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_dic_key_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.write_dic_key_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_emptycell_as_uppercell_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.write_emptycell_as_uppercell_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_emptycell_in_range_as_uppercell"><code class="docutils literal notranslate"><span class="pre">pcell.write_emptycell_in_range_as_uppercell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_formula_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.write_formula_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list1d_at_cell_as_down"><code class="docutils literal notranslate"><span class="pre">pcell.write_list1d_at_cell_as_down()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list1d_at_cell_as_group"><code class="docutils literal notranslate"><span class="pre">pcell.write_list1d_at_cell_as_group()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list1d_from_cell_as_yline"><code class="docutils literal notranslate"><span class="pre">pcell.write_list1d_from_cell_as_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list1d_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.write_list1d_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list1d_in_yline"><code class="docutils literal notranslate"><span class="pre">pcell.write_list1d_in_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list1d_in_yline_speed_up"><code class="docutils literal notranslate"><span class="pre">pcell.write_list1d_in_yline_speed_up()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list2d_from_cell"><code class="docutils literal notranslate"><span class="pre">pcell.write_list2d_from_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list2d_from_start_cell_by_mixed_types"><code class="docutils literal notranslate"><span class="pre">pcell.write_list2d_from_start_cell_by_mixed_types()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list2d_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.write_list2d_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_list_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.write_list_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_memo_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.write_memo_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_message_in_statusbar"><code class="docutils literal notranslate"><span class="pre">pcell.write_message_in_statusbar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_messagebox_value"><code class="docutils literal notranslate"><span class="pre">pcell.write_messagebox_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_nansu_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.write_nansu_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_range"><code class="docutils literal notranslate"><span class="pre">pcell.write_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_serial_no"><code class="docutils literal notranslate"><span class="pre">pcell.write_serial_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_serial_no_by_step"><code class="docutils literal notranslate"><span class="pre">pcell.write_serial_no_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_serial_no_by_step_to_yline"><code class="docutils literal notranslate"><span class="pre">pcell.write_serial_no_by_step_to_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_at_end_of_column"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_at_end_of_column()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_activecell"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_activecell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_cell"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_cell()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_cell_speed"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_cell_speed()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_range"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_range_as_speedy"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_range_as_speedy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_range_at_newsheet"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_range_at_newsheet()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_range_by_range_priority"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_range_by_range_priority()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_range_by_trans"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_range_by_trans()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_value_in_range_xystep"><code class="docutils literal notranslate"><span class="pre">pcell.write_value_in_range_xystep()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.write_vba_module"><code class="docutils literal notranslate"><span class="pre">pcell.write_vba_module()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.z_sample_print_letter_cover_01"><code class="docutils literal notranslate"><span class="pre">pcell.z_sample_print_letter_cover_01()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pcell.pcell.z_sample_switch_datas_01"><code class="docutils literal notranslate"><span class="pre">pcell.z_sample_switch_datas_01()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_rst.html">pyclick - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_rst.html">pynal - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_rst.html">scolor - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_rst.html">youtil - 함수들의 문서화</a></li>
 </ul>
 
         </div>
@@ -72,7 +576,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">xython.pcell module</li>
+      <li class="breadcrumb-item active">pcell - 함수들의 문서화</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/pcell_rst.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -82,9 +586,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-xython.pcell">
-<span id="xython-pcell-module"></span><h1>xython.pcell module<a class="headerlink" href="#module-xython.pcell" title="Link to this heading"></a></h1>
-<dl class="py class">
+  <section id="pcell">
+<h1>pcell - 함수들의 문서화<a class="headerlink" href="#pcell" title="Link to this heading"></a></h1>
+<dl class="py class" id="module-xython.pcell">
 <dt class="sig sig-object py" id="xython.pcell.pcell">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.pcell.</span></span><span class="sig-name descname"><span class="pre">pcell</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pcell.pcell" title="Link to this definition"></a></dt>
 <dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -8411,7 +8915,10 @@ input_datal = [자료의영역, 같은것이있는위치, 결과값의위치]
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="mailmail_rst.html" class="btn btn-neutral float-left" title="mailmail - 함수들의 문서화" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pyclick_rst.html" class="btn btn-neutral float-right" title="pyclick - 함수들의 문서화" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

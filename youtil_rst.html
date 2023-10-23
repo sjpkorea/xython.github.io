@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>xython.youtil module &mdash; xython 1.16 문서</title>
+  <title>youtil - 함수들의 문서화 &mdash; xython 1.16 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,8 @@
         <script src="_static/translations.js?v=b5f768d8"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
-    <link rel="search" title="검색" href="search.html" /> 
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="prev" title="scolor - 함수들의 문서화" href="scolor_rst.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,20 +43,222 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#id5">xython패키지의 각 모듈의 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython.html">xython package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_rst.html">ganada - 함수들 설명문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_rst.html">jfinder - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_rst.html">mailmail - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_rst.html">pcell - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_rst.html">pyclick - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_rst.html">pynal - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_rst.html">scolor - 함수들의 문서화</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">youtil - 함수들의 문서화</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#xython.youtil.youtil"><code class="docutils literal notranslate"><span class="pre">youtil</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.add_serial_value"><code class="docutils literal notranslate"><span class="pre">youtil.add_serial_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.append_input_value_at_each_list1d_in_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.append_input_value_at_each_list1d_in_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.append_input_value_in_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.append_input_value_in_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_10jinsu_to_base_letter_jinsu"><code class="docutils literal notranslate"><span class="pre">youtil.change_10jinsu_to_base_letter_jinsu()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_10jinsu_to_njinsu"><code class="docutils literal notranslate"><span class="pre">youtil.change_10jinsu_to_njinsu()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_2_data_position_for_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.change_2_data_position_for_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_alpha_to_jamo"><code class="docutils literal notranslate"><span class="pre">youtil.change_alpha_to_jamo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_alpha_to_jamo_old"><code class="docutils literal notranslate"><span class="pre">youtil.change_alpha_to_jamo_old()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_alpha_to_korean"><code class="docutils literal notranslate"><span class="pre">youtil.change_alpha_to_korean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_base_letter_jinsu_to_10jinsu"><code class="docutils literal notranslate"><span class="pre">youtil.change_base_letter_jinsu_to_10jinsu()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_binary_to_int"><code class="docutils literal notranslate"><span class="pre">youtil.change_binary_to_int()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_binary_to_string"><code class="docutils literal notranslate"><span class="pre">youtil.change_binary_to_string()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_file_to_list_by_def"><code class="docutils literal notranslate"><span class="pre">youtil.change_file_to_list_by_def()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_filename"><code class="docutils literal notranslate"><span class="pre">youtil.change_filename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_folder_name"><code class="docutils literal notranslate"><span class="pre">youtil.change_folder_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_group_as_new_step"><code class="docutils literal notranslate"><span class="pre">youtil.change_group_as_new_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_jamo_to_alpha"><code class="docutils literal notranslate"><span class="pre">youtil.change_jamo_to_alpha()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_jamo_to_korea"><code class="docutils literal notranslate"><span class="pre">youtil.change_jamo_to_korea()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_jamo_to_korean"><code class="docutils literal notranslate"><span class="pre">youtil.change_jamo_to_korean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_jamo_to_korean_1"><code class="docutils literal notranslate"><span class="pre">youtil.change_jamo_to_korean_1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_korean_to_alpha"><code class="docutils literal notranslate"><span class="pre">youtil.change_korean_to_alpha()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list1d_to_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.change_list1d_to_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list1d_to_list2d_by_no"><code class="docutils literal notranslate"><span class="pre">youtil.change_list1d_to_list2d_by_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list1d_to_list2d_by_step"><code class="docutils literal notranslate"><span class="pre">youtil.change_list1d_to_list2d_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list1d_to_lower"><code class="docutils literal notranslate"><span class="pre">youtil.change_list1d_to_lower()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list1d_to_space_by_step"><code class="docutils literal notranslate"><span class="pre">youtil.change_list1d_to_space_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list1d_to_text_with_chainword"><code class="docutils literal notranslate"><span class="pre">youtil.change_list1d_to_text_with_chainword()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list1d_to_upper"><code class="docutils literal notranslate"><span class="pre">youtil.change_list1d_to_upper()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.change_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list2d_to_dic"><code class="docutils literal notranslate"><span class="pre">youtil.change_list2d_to_dic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list2d_to_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.change_list2d_to_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list2d_to_list1d_by_grouping_count"><code class="docutils literal notranslate"><span class="pre">youtil.change_list2d_to_list1d_by_grouping_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list2d_to_samelen_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.change_list2d_to_samelen_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list2d_to_set_item"><code class="docutils literal notranslate"><span class="pre">youtil.change_list2d_to_set_item()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list32d_to_list1d_by_grouping_count"><code class="docutils literal notranslate"><span class="pre">youtil.change_list32d_to_list1d_by_grouping_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_list_1d_to_list_2d_with_step"><code class="docutils literal notranslate"><span class="pre">youtil.change_list_1d_to_list_2d_with_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_multi_empty_lines_to_one_line_in_file"><code class="docutils literal notranslate"><span class="pre">youtil.change_multi_empty_lines_to_one_line_in_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_njinsu_to_10jinsu"><code class="docutils literal notranslate"><span class="pre">youtil.change_njinsu_to_10jinsu()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_num_to_1000comma_num"><code class="docutils literal notranslate"><span class="pre">youtil.change_num_to_1000comma_num()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_number_to_tel_style"><code class="docutils literal notranslate"><span class="pre">youtil.change_number_to_tel_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_python_file_to_list_data"><code class="docutils literal notranslate"><span class="pre">youtil.change_python_file_to_list_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_python_file_to_sorted_by_def"><code class="docutils literal notranslate"><span class="pre">youtil.change_python_file_to_sorted_by_def()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_set_item_by_list"><code class="docutils literal notranslate"><span class="pre">youtil.change_set_item_by_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_string_to_binary"><code class="docutils literal notranslate"><span class="pre">youtil.change_string_to_binary()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_string_to_binary_list"><code class="docutils literal notranslate"><span class="pre">youtil.change_string_to_binary_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_two_list2d_to_one_list2d_with_samelen"><code class="docutils literal notranslate"><span class="pre">youtil.change_two_list2d_to_one_list2d_with_samelen()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.change_xylist_to_yxlist"><code class="docutils literal notranslate"><span class="pre">youtil.change_xylist_to_yxlist()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.checek_list"><code class="docutils literal notranslate"><span class="pre">youtil.checek_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_col_name"><code class="docutils literal notranslate"><span class="pre">youtil.check_col_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_filename"><code class="docutils literal notranslate"><span class="pre">youtil.check_filename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_filepath"><code class="docutils literal notranslate"><span class="pre">youtil.check_filepath()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_list_maxsize"><code class="docutils literal notranslate"><span class="pre">youtil.check_list_maxsize()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_min_result"><code class="docutils literal notranslate"><span class="pre">youtil.check_min_result()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_price"><code class="docutils literal notranslate"><span class="pre">youtil.check_price()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_similar_word"><code class="docutils literal notranslate"><span class="pre">youtil.check_similar_word()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_text_encoding_data"><code class="docutils literal notranslate"><span class="pre">youtil.check_text_encoding_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.check_value_nos_in_dic"><code class="docutils literal notranslate"><span class="pre">youtil.check_value_nos_in_dic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.copy_file"><code class="docutils literal notranslate"><span class="pre">youtil.copy_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.copy_folder"><code class="docutils literal notranslate"><span class="pre">youtil.copy_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.count_function_num_in_python_file"><code class="docutils literal notranslate"><span class="pre">youtil.count_function_num_in_python_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.count_same_value_for_ordered_list"><code class="docutils literal notranslate"><span class="pre">youtil.count_same_value_for_ordered_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.data_make_name_list"><code class="docutils literal notranslate"><span class="pre">youtil.data_make_name_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_all_char_except_num_eng_in_input_value"><code class="docutils literal notranslate"><span class="pre">youtil.delete_all_char_except_num_eng_in_input_value()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_all_explanation_in_input_text"><code class="docutils literal notranslate"><span class="pre">youtil.delete_all_explanation_in_input_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_contineous_same_data_in_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.delete_contineous_same_data_in_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_continious_same_data"><code class="docutils literal notranslate"><span class="pre">youtil.delete_continious_same_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_empty_line"><code class="docutils literal notranslate"><span class="pre">youtil.delete_empty_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_empty_value_in_list"><code class="docutils literal notranslate"><span class="pre">youtil.delete_empty_value_in_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_empty_yline"><code class="docutils literal notranslate"><span class="pre">youtil.delete_empty_yline()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_file"><code class="docutils literal notranslate"><span class="pre">youtil.delete_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_folder"><code class="docutils literal notranslate"><span class="pre">youtil.delete_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_line_in_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.delete_line_in_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_list1d_by_even_no"><code class="docutils literal notranslate"><span class="pre">youtil.delete_list1d_by_even_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_list1d_by_odd_no"><code class="docutils literal notranslate"><span class="pre">youtil.delete_list1d_by_odd_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.delete_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_over2_emptyline_in_file"><code class="docutils literal notranslate"><span class="pre">youtil.delete_over2_emptyline_in_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_same_value_in_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.delete_same_value_in_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_same_value_in_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.delete_same_value_in_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_set_item_as_same_list_data"><code class="docutils literal notranslate"><span class="pre">youtil.delete_set_item_as_same_list_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_set_item_by_list"><code class="docutils literal notranslate"><span class="pre">youtil.delete_set_item_by_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delete_set_item_same_with_input_list"><code class="docutils literal notranslate"><span class="pre">youtil.delete_set_item_same_with_input_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.delta_two_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.delta_two_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.draw_as_triangle"><code class="docutils literal notranslate"><span class="pre">youtil.draw_as_triangle()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_all_doc_of_method_name_for_input_object"><code class="docutils literal notranslate"><span class="pre">youtil.get_all_doc_of_method_name_for_input_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_all_help_of_method_name_for_input_object"><code class="docutils literal notranslate"><span class="pre">youtil.get_all_help_of_method_name_for_input_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_all_method_name_for_input_object"><code class="docutils literal notranslate"><span class="pre">youtil.get_all_method_name_for_input_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_all_method_name_for_input_object_except_dunder_methods"><code class="docutils literal notranslate"><span class="pre">youtil.get_all_method_name_for_input_object_except_dunder_methods()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_all_method_name_with_argument_for_input_object"><code class="docutils literal notranslate"><span class="pre">youtil.get_all_method_name_with_argument_for_input_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_all_properties_for_input_object"><code class="docutils literal notranslate"><span class="pre">youtil.get_all_properties_for_input_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_all_source_code_of_methods_for_input_object"><code class="docutils literal notranslate"><span class="pre">youtil.get_all_source_code_of_methods_for_input_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_cho_sung_for_korean"><code class="docutils literal notranslate"><span class="pre">youtil.get_cho_sung_for_korean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_file_list_from_directory"><code class="docutils literal notranslate"><span class="pre">youtil.get_file_list_from_directory()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_jaum_xy_list"><code class="docutils literal notranslate"><span class="pre">youtil.get_jaum_xy_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_list_1d_with_float_range"><code class="docutils literal notranslate"><span class="pre">youtil.get_list_1d_with_float_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_max_length_for_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.get_max_length_for_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_method_text_name_for_input_object"><code class="docutils literal notranslate"><span class="pre">youtil.get_method_text_name_for_input_object()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_moum_xy_list"><code class="docutils literal notranslate"><span class="pre">youtil.get_moum_xy_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_not_empty_value_in_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.get_not_empty_value_in_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_one_line_as_searched_word_in_file"><code class="docutils literal notranslate"><span class="pre">youtil.get_one_line_as_searched_word_in_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_partial_list_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.get_partial_list_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_random_data_set_on_base_letter"><code class="docutils literal notranslate"><span class="pre">youtil.get_random_data_set_on_base_letter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_random_number"><code class="docutils literal notranslate"><span class="pre">youtil.get_random_number()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_same_value_for_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.get_same_value_for_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_same_value_in_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.get_same_value_in_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_same_value_list"><code class="docutils literal notranslate"><span class="pre">youtil.get_same_value_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_unique_col_name_compare_table_col_name"><code class="docutils literal notranslate"><span class="pre">youtil.get_unique_col_name_compare_table_col_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_unique_data"><code class="docutils literal notranslate"><span class="pre">youtil.get_unique_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_unique_data_in_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.get_unique_data_in_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_unique_function_between_two_python_file"><code class="docutils literal notranslate"><span class="pre">youtil.get_unique_function_between_two_python_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.get_unique_random_data_set_on_base_letter"><code class="docutils literal notranslate"><span class="pre">youtil.get_unique_random_data_set_on_base_letter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.group_input_List3d_by_index_no"><code class="docutils literal notranslate"><span class="pre">youtil.group_input_List3d_by_index_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.group_input_list2d_by_index_no"><code class="docutils literal notranslate"><span class="pre">youtil.group_input_list2d_by_index_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.history"><code class="docutils literal notranslate"><span class="pre">youtil.history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.insert_input_data_in_list1d_by_step"><code class="docutils literal notranslate"><span class="pre">youtil.insert_input_data_in_list1d_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.insert_line_in_list"><code class="docutils literal notranslate"><span class="pre">youtil.insert_line_in_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.insert_list2d_blank_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.insert_list2d_blank_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.is_number"><code class="docutils literal notranslate"><span class="pre">youtil.is_number()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.is_number_only"><code class="docutils literal notranslate"><span class="pre">youtil.is_number_only()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_dic_for_2list"><code class="docutils literal notranslate"><span class="pre">youtil.make_dic_for_2list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_dic_with_count"><code class="docutils literal notranslate"><span class="pre">youtil.make_dic_with_count()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_folder"><code class="docutils literal notranslate"><span class="pre">youtil.make_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_html_table"><code class="docutils literal notranslate"><span class="pre">youtil.make_html_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_random_list"><code class="docutils literal notranslate"><span class="pre">youtil.make_random_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_serial_no"><code class="docutils literal notranslate"><span class="pre">youtil.make_serial_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_team_with_condition"><code class="docutils literal notranslate"><span class="pre">youtil.make_team_with_condition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_text_basic"><code class="docutils literal notranslate"><span class="pre">youtil.make_text_basic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_text_file_for_input_text"><code class="docutils literal notranslate"><span class="pre">youtil.make_text_file_for_input_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_text_for_float"><code class="docutils literal notranslate"><span class="pre">youtil.make_text_for_float()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_text_for_integer"><code class="docutils literal notranslate"><span class="pre">youtil.make_text_for_integer()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_text_for_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.make_text_for_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.make_text_for_string"><code class="docutils literal notranslate"><span class="pre">youtil.make_text_for_string()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.manual"><code class="docutils literal notranslate"><span class="pre">youtil.manual()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.move_data_to_right_by_step"><code class="docutils literal notranslate"><span class="pre">youtil.move_data_to_right_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.move_file"><code class="docutils literal notranslate"><span class="pre">youtil.move_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.move_folder"><code class="docutils literal notranslate"><span class="pre">youtil.move_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.move_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.move_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.move_list2d_by_index_old"><code class="docutils literal notranslate"><span class="pre">youtil.move_list2d_by_index_old()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.pcell_util_change_encodeing_type_001_success"><code class="docutils literal notranslate"><span class="pre">youtil.pcell_util_change_encodeing_type_001_success()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.print_one_by_one"><code class="docutils literal notranslate"><span class="pre">youtil.print_one_by_one()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_all_filename_in_folder"><code class="docutils literal notranslate"><span class="pre">youtil.read_all_filename_in_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_code"><code class="docutils literal notranslate"><span class="pre">youtil.read_code()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_current_path"><code class="docutils literal notranslate"><span class="pre">youtil.read_current_path()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_file"><code class="docutils literal notranslate"><span class="pre">youtil.read_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_file_as_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.read_file_as_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_file_by_filename"><code class="docutils literal notranslate"><span class="pre">youtil.read_file_by_filename()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_filenames_in_folder_by_extension_name"><code class="docutils literal notranslate"><span class="pre">youtil.read_filenames_in_folder_by_extension_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_filenames_in_folder_with_all_properties"><code class="docutils literal notranslate"><span class="pre">youtil.read_filenames_in_folder_with_all_properties()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_filenames_in_folder_with_all_properties_except_sub_folder"><code class="docutils literal notranslate"><span class="pre">youtil.read_filenames_in_folder_with_all_properties_except_sub_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_folder_filename_all"><code class="docutils literal notranslate"><span class="pre">youtil.read_folder_filename_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_method_code_by_method_name"><code class="docutils literal notranslate"><span class="pre">youtil.read_method_code_by_method_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_pickle_file"><code class="docutils literal notranslate"><span class="pre">youtil.read_pickle_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_size_for_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.read_size_for_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.read_text_file"><code class="docutils literal notranslate"><span class="pre">youtil.read_text_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.replace_text_between_a_and_b"><code class="docutils literal notranslate"><span class="pre">youtil.replace_text_between_a_and_b()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.save_input_data_to_pickle_file"><code class="docutils literal notranslate"><span class="pre">youtil.save_input_data_to_pickle_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.similar"><code class="docutils literal notranslate"><span class="pre">youtil.similar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_by_index_list"><code class="docutils literal notranslate"><span class="pre">youtil.sort_by_index_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.sort_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_list1d_by_str_len"><code class="docutils literal notranslate"><span class="pre">youtil.sort_list1d_by_str_len()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_list2d"><code class="docutils literal notranslate"><span class="pre">youtil.sort_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_list2d_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.sort_list2d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_list2d_by_index_1"><code class="docutils literal notranslate"><span class="pre">youtil.sort_list2d_by_index_1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_list2d_by_yy_list"><code class="docutils literal notranslate"><span class="pre">youtil.sort_list2d_by_yy_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_list3d_by_index"><code class="docutils literal notranslate"><span class="pre">youtil.sort_list3d_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.sort_mixed_list1d"><code class="docutils literal notranslate"><span class="pre">youtil.sort_mixed_list1d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_all_list1d_to_list2d_by_input_text"><code class="docutils literal notranslate"><span class="pre">youtil.split_all_list1d_to_list2d_by_input_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_as_num_list"><code class="docutils literal notranslate"><span class="pre">youtil.split_as_num_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_double_moum"><code class="docutils literal notranslate"><span class="pre">youtil.split_double_moum()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_double_moum_to_two_simple_moum"><code class="docutils literal notranslate"><span class="pre">youtil.split_double_moum_to_two_simple_moum()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_file_by_def"><code class="docutils literal notranslate"><span class="pre">youtil.split_file_by_def()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_file_path_by_path_and_name"><code class="docutils literal notranslate"><span class="pre">youtil.split_file_path_by_path_and_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_hangul_to_jamo"><code class="docutils literal notranslate"><span class="pre">youtil.split_hangul_to_jamo()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_input_file_by_method_name_with_delete_empty_line"><code class="docutils literal notranslate"><span class="pre">youtil.split_input_file_by_method_name_with_delete_empty_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_input_text_as_eng_vs_num"><code class="docutils literal notranslate"><span class="pre">youtil.split_input_text_as_eng_vs_num()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_input_text_by_newline_tab"><code class="docutils literal notranslate"><span class="pre">youtil.split_input_text_by_newline_tab()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_input_text_by_step"><code class="docutils literal notranslate"><span class="pre">youtil.split_input_text_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_inputdata_as_num_vs_char"><code class="docutils literal notranslate"><span class="pre">youtil.split_inputdata_as_num_vs_char()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_jamo_in_korean"><code class="docutils literal notranslate"><span class="pre">youtil.split_jamo_in_korean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_list1d_by_group_no"><code class="docutils literal notranslate"><span class="pre">youtil.split_list1d_by_group_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_list1d_by_step"><code class="docutils literal notranslate"><span class="pre">youtil.split_list1d_by_step()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_name_and_title"><code class="docutils literal notranslate"><span class="pre">youtil.split_name_and_title()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_sentence"><code class="docutils literal notranslate"><span class="pre">youtil.split_sentence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_text_as_serial_no"><code class="docutils literal notranslate"><span class="pre">youtil.split_text_as_serial_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_text_line"><code class="docutils literal notranslate"><span class="pre">youtil.split_text_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_value_as_engnum"><code class="docutils literal notranslate"><span class="pre">youtil.split_value_as_engnum()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.split_value_to_str_num"><code class="docutils literal notranslate"><span class="pre">youtil.split_value_to_str_num()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.swap"><code class="docutils literal notranslate"><span class="pre">youtil.swap()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.terms"><code class="docutils literal notranslate"><span class="pre">youtil.terms()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.write_hangul_cjj"><code class="docutils literal notranslate"><span class="pre">youtil.write_hangul_cjj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.youtil.youtil.zzz_sample_1"><code class="docutils literal notranslate"><span class="pre">youtil.zzz_sample_1()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 
         </div>
@@ -72,7 +275,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">xython.youtil module</li>
+      <li class="breadcrumb-item active">youtil - 함수들의 문서화</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/youtil_rst.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -82,9 +285,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-xython.youtil">
-<span id="xython-youtil-module"></span><h1>xython.youtil module<a class="headerlink" href="#module-xython.youtil" title="Link to this heading"></a></h1>
-<dl class="py class">
+  <section id="youtil">
+<h1>youtil - 함수들의 문서화<a class="headerlink" href="#youtil" title="Link to this heading"></a></h1>
+<dl class="py class" id="module-xython.youtil">
 <dt class="sig sig-object py" id="xython.youtil.youtil">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.youtil.</span></span><span class="sig-name descname"><span class="pre">youtil</span></span><a class="headerlink" href="#xython.youtil.youtil" title="Link to this definition"></a></dt>
 <dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -3160,7 +3363,9 @@ value=sort_list(리스트자료, 정렬기준번호)</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="scolor_rst.html" class="btn btn-neutral float-left" title="scolor - 함수들의 문서화" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+    </div>
 
   <hr/>
 

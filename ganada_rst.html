@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>xython.ganada module &mdash; xython 1.16 문서</title>
+  <title>ganada - 함수들 설명문서화 &mdash; xython 1.16 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,9 @@
         <script src="_static/translations.js?v=b5f768d8"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
-    <link rel="search" title="검색" href="search.html" /> 
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="jfinder - 함수들의 문서화" href="jfinder_rst.html" />
+    <link rel="prev" title="anydb - 함수들의 문서화" href="anydb_rst.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,20 +44,249 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#id5">xython패키지의 각 모듈의 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython.html">xython package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ganada - 함수들 설명문서화</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#xython.ganada.ganada"><code class="docutils literal notranslate"><span class="pre">ganada</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.change_selection_to_input_text"><code class="docutils literal notranslate"><span class="pre">ganada.change_selection_to_input_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.check_content_name"><code class="docutils literal notranslate"><span class="pre">ganada.check_content_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.check_file"><code class="docutils literal notranslate"><span class="pre">ganada.check_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.check_selection"><code class="docutils literal notranslate"><span class="pre">ganada.check_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.close"><code class="docutils literal notranslate"><span class="pre">ganada.close()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.close_all_without_saving"><code class="docutils literal notranslate"><span class="pre">ganada.close_all_without_saving()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.count_character_nos_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.count_character_nos_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.count_file_nos_in_document"><code class="docutils literal notranslate"><span class="pre">ganada.count_file_nos_in_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.count_paragraph_nos_in_document"><code class="docutils literal notranslate"><span class="pre">ganada.count_paragraph_nos_in_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.count_paragraph_nos_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.count_paragraph_nos_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.count_table_nos_in_document"><code class="docutils literal notranslate"><span class="pre">ganada.count_table_nos_in_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.count_word_nos_in_document"><code class="docutils literal notranslate"><span class="pre">ganada.count_word_nos_in_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.cut_selection"><code class="docutils literal notranslate"><span class="pre">ganada.cut_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.data_enum_word"><code class="docutils literal notranslate"><span class="pre">ganada.data_enum_word()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.data_for_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.data_for_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.data_for_file"><code class="docutils literal notranslate"><span class="pre">ganada.data_for_file()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.data_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.data_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.data_for_table"><code class="docutils literal notranslate"><span class="pre">ganada.data_for_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.data_var_word"><code class="docutils literal notranslate"><span class="pre">ganada.data_var_word()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.delete_line_by_no"><code class="docutils literal notranslate"><span class="pre">ganada.delete_line_by_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.delete_paragraph_by_no"><code class="docutils literal notranslate"><span class="pre">ganada.delete_paragraph_by_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.delete_selection"><code class="docutils literal notranslate"><span class="pre">ganada.delete_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.delete_xline_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.delete_xline_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.delete_yline_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.delete_yline_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.draw_borderline_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.draw_borderline_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.draw_line_color_for_table"><code class="docutils literal notranslate"><span class="pre">ganada.draw_line_color_for_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.draw_line_style_for_table"><code class="docutils literal notranslate"><span class="pre">ganada.draw_line_style_for_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.draw_outline_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.draw_outline_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.draw_outside_border_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.draw_outside_border_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.draw_strikethrough_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.draw_strikethrough_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.draw_underline_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.draw_underline_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_all_chacters_no_for_document"><code class="docutils literal notranslate"><span class="pre">ganada.get_all_chacters_no_for_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_file_name"><code class="docutils literal notranslate"><span class="pre">ganada.get_file_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_file_name_all"><code class="docutils literal notranslate"><span class="pre">ganada.get_file_name_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_line_no_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.get_line_no_at_start_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_list1d_by_style_for_document"><code class="docutils literal notranslate"><span class="pre">ganada.get_list1d_by_style_for_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_paragraph_index_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.get_paragraph_index_at_start_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_paragraph_object_all"><code class="docutils literal notranslate"><span class="pre">ganada.get_paragraph_object_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_paragraph_object_by_index"><code class="docutils literal notranslate"><span class="pre">ganada.get_paragraph_object_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_strat_chacacter_no_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.get_strat_chacacter_no_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_style_name_all"><code class="docutils literal notranslate"><span class="pre">ganada.get_style_name_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_table_obj_all"><code class="docutils literal notranslate"><span class="pre">ganada.get_table_obj_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_table_obj_by_index"><code class="docutils literal notranslate"><span class="pre">ganada.get_table_obj_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_table_obj_by_table_no"><code class="docutils literal notranslate"><span class="pre">ganada.get_table_obj_by_table_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_text_for_current_paragraph"><code class="docutils literal notranslate"><span class="pre">ganada.get_text_for_current_paragraph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.get_xy_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.get_xy_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.history"><code class="docutils literal notranslate"><span class="pre">ganada.history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_header"><code class="docutils literal notranslate"><span class="pre">ganada.insert_header()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_header_new"><code class="docutils literal notranslate"><span class="pre">ganada.insert_header_new()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_many_xline_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.insert_many_xline_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_many_yline_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.insert_many_yline_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_new_line_at_end_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.insert_new_line_at_end_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_new_para_with_properties"><code class="docutils literal notranslate"><span class="pre">ganada.insert_new_para_with_properties()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_no_colored_table_at_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.insert_no_colored_table_at_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_one_xline_at_end_of_table"><code class="docutils literal notranslate"><span class="pre">ganada.insert_one_xline_at_end_of_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_picture_at_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.insert_picture_at_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_table_at_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.insert_table_at_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_table_at_end_of_paragraph"><code class="docutils literal notranslate"><span class="pre">ganada.insert_table_at_end_of_paragraph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_text_at_end_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.insert_text_at_end_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_text_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.insert_text_at_start_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.make_table_obj"><code class="docutils literal notranslate"><span class="pre">ganada.make_table_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.merge_entire_xline_at_table"><code class="docutils literal notranslate"><span class="pre">ganada.merge_entire_xline_at_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.merge_entire_yline_at_table"><code class="docutils literal notranslate"><span class="pre">ganada.merge_entire_yline_at_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.merge_selection_area_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.merge_selection_area_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.merge_xyxy_at_table"><code class="docutils literal notranslate"><span class="pre">ganada.merge_xyxy_at_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_by_index"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_from_end_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_from_end_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_end_of_document"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_end_of_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_end_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_end_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_n_line_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_n_line_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_next_nth_character"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_next_nth_character()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_next_nth_line"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_next_nth_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_next_nth_paragraph"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_next_nth_paragraph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_next_nth_word"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_next_nth_word()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_previous_nth_character"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_previous_nth_character()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_previous_nth_line"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_previous_nth_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_previous_nth_paragraph"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_previous_nth_paragraph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_previous_nth_word"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_previous_nth_word()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_start_of_document"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_start_of_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_start_of_line_no"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_start_of_line_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_start_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.new_document"><code class="docutils literal notranslate"><span class="pre">ganada.new_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_border_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_border_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_color_for_cell_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.paint_color_for_cell_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_highlight_from_char_no1_to_char_no2"><code class="docutils literal notranslate"><span class="pre">ganada.paint_highlight_from_char_no1_to_char_no2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_highlight_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_highlight_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_shading_background_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_shading_background_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_shading_foreground_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_shading_foreground_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paste_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paste_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.quit"><code class="docutils literal notranslate"><span class="pre">ganada.quit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_all_text_in_document"><code class="docutils literal notranslate"><span class="pre">ganada.read_all_text_in_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_bookmark_list"><code class="docutils literal notranslate"><span class="pre">ganada.read_bookmark_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_cursor_position"><code class="docutils literal notranslate"><span class="pre">ganada.read_cursor_position()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_font_size_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_font_size_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_line_no_at_end_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_line_no_at_end_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_line_no_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_line_no_at_start_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_paragraph_no_at_end_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_paragraph_no_at_end_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_paragraph_no_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_paragraph_no_at_start_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_between_para_1_to_para_2"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_between_para_1_to_para_2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_for_current_paragraph"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_for_current_paragraph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_for_paragraph_index"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_for_paragraph_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_for_range"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_for_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_from_begin_of_paragraph_by_len"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_from_begin_of_paragraph_by_len()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_from_index1_to_index2"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_from_index1_to_index2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_from_x_to_y"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_from_x_to_y()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_text_in_table_by_xy"><code class="docutils literal notranslate"><span class="pre">ganada.read_text_in_table_by_xy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_word_no_at_end_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_word_no_at_end_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_word_no_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.read_word_no_at_start_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.release_selection"><code class="docutils literal notranslate"><span class="pre">ganada.release_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_all"><code class="docutils literal notranslate"><span class="pre">ganada.replace_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_all_1"><code class="docutils literal notranslate"><span class="pre">ganada.replace_all_1()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_all_with_color"><code class="docutils literal notranslate"><span class="pre">ganada.replace_all_with_color()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_all_with_color_from_selection_to_end"><code class="docutils literal notranslate"><span class="pre">ganada.replace_all_with_color_from_selection_to_end()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_one_time_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.replace_one_time_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_text_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.replace_text_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.save"><code class="docutils literal notranslate"><span class="pre">ganada.save()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.save_as"><code class="docutils literal notranslate"><span class="pre">ganada.save_as()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.save_as_pdf"><code class="docutils literal notranslate"><span class="pre">ganada.save_as_pdf()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.search_all_with_color_and_return_position"><code class="docutils literal notranslate"><span class="pre">ganada.search_all_with_color_and_return_position()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.search_first_text_from_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.search_first_text_from_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_all_chacters"><code class="docutils literal notranslate"><span class="pre">ganada.select_all_chacters()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_all_text"><code class="docutils literal notranslate"><span class="pre">ganada.select_all_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_bookmark"><code class="docutils literal notranslate"><span class="pre">ganada.select_bookmark()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_by_range"><code class="docutils literal notranslate"><span class="pre">ganada.select_by_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_chacters_from_no_to_length"><code class="docutils literal notranslate"><span class="pre">ganada.select_chacters_from_no_to_length()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_char_nos_from_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.select_char_nos_from_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_current_line"><code class="docutils literal notranslate"><span class="pre">ganada.select_current_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_current_paragraph"><code class="docutils literal notranslate"><span class="pre">ganada.select_current_paragraph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_current_sentence"><code class="docutils literal notranslate"><span class="pre">ganada.select_current_sentence()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_file_by_name"><code class="docutils literal notranslate"><span class="pre">ganada.select_file_by_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_from_index1_to_index2_by_character_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_from_index1_to_index2_by_character_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_line_by_line_no_from_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.select_line_by_line_no_from_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_multi_line_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_multi_line_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_multi_paragraph_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_multi_paragraph_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_multi_selection_basic"><code class="docutils literal notranslate"><span class="pre">ganada.select_multi_selection_basic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_multi_sentence_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_multi_sentence_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_multi_word_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_multi_word_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_n_more_word_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_n_more_word_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_basic"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_basic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_line_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_line_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_n_chacter_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_n_chacter_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_n_line_from_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_n_line_from_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_n_line_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_n_line_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_n_paragraphs_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_n_paragraphs_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_n_sentence_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_n_sentence_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_n_words_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_n_words_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_one_word_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_one_word_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_paragraph_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_paragraph_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_sentence_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_sentence_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_next_word_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_next_word_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_nth_line_from_begin"><code class="docutils literal notranslate"><span class="pre">ganada.select_nth_line_from_begin()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_nth_line_from_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.select_nth_line_from_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_nth_paragraph_from_begin"><code class="docutils literal notranslate"><span class="pre">ganada.select_nth_paragraph_from_begin()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_nth_paragraph_from_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.select_nth_paragraph_from_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_one_word_by_no"><code class="docutils literal notranslate"><span class="pre">ganada.select_one_word_by_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_basic"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_basic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_line_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_line_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_n_line_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_n_line_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_n_paragraph_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_n_paragraph_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_n_sentence_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_n_sentence_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_n_word_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_n_word_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_paragraph_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_paragraph_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_sentence_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_sentence_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_previous_word_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.select_previous_word_from_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_some_char_in_paragraphs"><code class="docutils literal notranslate"><span class="pre">ganada.select_some_char_in_paragraphs()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_some_character_in_line"><code class="docutils literal notranslate"><span class="pre">ganada.select_some_character_in_line()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_table_by_index"><code class="docutils literal notranslate"><span class="pre">ganada.select_table_by_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_xy_cell_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.select_xy_cell_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_active_document"><code class="docutils literal notranslate"><span class="pre">ganada.set_active_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_backgroundcolor_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_backgroundcolor_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_bookmark_at_range"><code class="docutils literal notranslate"><span class="pre">ganada.set_bookmark_at_range()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_bookmark_by_xy"><code class="docutils literal notranslate"><span class="pre">ganada.set_bookmark_by_xy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_bottom_margin"><code class="docutils literal notranslate"><span class="pre">ganada.set_bottom_margin()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_bottom_margin_for_page"><code class="docutils literal notranslate"><span class="pre">ganada.set_bottom_margin_for_page()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_bold_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_bold_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_color_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_color_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_color_in_selection_by_scolor"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_color_in_selection_by_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_name_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_name_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_name_for_table"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_name_for_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_name_for_xy_cell_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_name_for_xy_cell_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_size_down_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_size_down_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_size_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_size_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_size_for_table"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_size_for_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_font_size_up_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_font_size_up_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_left_margin"><code class="docutils literal notranslate"><span class="pre">ganada.set_left_margin()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_left_margin_for_page"><code class="docutils literal notranslate"><span class="pre">ganada.set_left_margin_for_page()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_line_width_for_table"><code class="docutils literal notranslate"><span class="pre">ganada.set_line_width_for_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_orientation_for_page"><code class="docutils literal notranslate"><span class="pre">ganada.set_orientation_for_page()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_orientation_for_page_setup"><code class="docutils literal notranslate"><span class="pre">ganada.set_orientation_for_page_setup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_range_obj_by_xy"><code class="docutils literal notranslate"><span class="pre">ganada.set_range_obj_by_xy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_range_obj_from_letter_no1_to_letter_no2"><code class="docutils literal notranslate"><span class="pre">ganada.set_range_obj_from_letter_no1_to_letter_no2()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_right_margin_for_page"><code class="docutils literal notranslate"><span class="pre">ganada.set_right_margin_for_page()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_style_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_style_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_top_margin_for_page"><code class="docutils literal notranslate"><span class="pre">ganada.set_top_margin_for_page()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.split_all_file_by_style_name_as_list2d"><code class="docutils literal notranslate"><span class="pre">ganada.split_all_file_by_style_name_as_list2d()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.terms"><code class="docutils literal notranslate"><span class="pre">ganada.terms()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.unmerge_for_table"><code class="docutils literal notranslate"><span class="pre">ganada.unmerge_for_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_end_doc"><code class="docutils literal notranslate"><span class="pre">ganada.write_end_doc()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_list2d_with_style"><code class="docutils literal notranslate"><span class="pre">ganada.write_list2d_with_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_styled_text_at_end_of_document"><code class="docutils literal notranslate"><span class="pre">ganada.write_styled_text_at_end_of_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_as_list1d_for_each_paragraph"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_as_list1d_for_each_paragraph()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_cursor_to_right_with_space"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_cursor_to_right_with_space()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_end_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_end_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_end_of_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_end_of_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_end_of_word_document"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_end_of_word_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_left_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_left_for_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_line_no"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_line_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_nth_cell_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_nth_cell_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_start_of_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_start_of_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_start_of_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_xy_cell_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_xy_cell_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_in_table_by_xy"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_in_table_by_xy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_with_new_line_at_end_of_document"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_with_new_line_at_end_of_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_value_at_end_of_para_no"><code class="docutils literal notranslate"><span class="pre">ganada.write_value_at_end_of_para_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.zzz_fstring"><code class="docutils literal notranslate"><span class="pre">ganada.zzz_fstring()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_rst.html">jfinder - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_rst.html">mailmail - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_rst.html">pcell - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_rst.html">pyclick - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_rst.html">pynal - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_rst.html">scolor - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_rst.html">youtil - 함수들의 문서화</a></li>
 </ul>
 
         </div>
@@ -72,7 +303,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">xython.ganada module</li>
+      <li class="breadcrumb-item active">ganada - 함수들 설명문서화</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/ganada_rst.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -82,9 +313,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-xython.ganada">
-<span id="xython-ganada-module"></span><h1>xython.ganada module<a class="headerlink" href="#module-xython.ganada" title="Link to this heading"></a></h1>
-<dl class="py class">
+  <section id="ganada">
+<h1>ganada - 함수들 설명문서화<a class="headerlink" href="#ganada" title="Link to this heading"></a></h1>
+<dl class="py class" id="module-xython.ganada">
 <dt class="sig sig-object py" id="xython.ganada.ganada">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.ganada.</span></span><span class="sig-name descname"><span class="pre">ganada</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada" title="Link to this definition"></a></dt>
 <dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -3180,7 +3411,10 @@ paragraph 를 선택한다, 없으면 맨처음부터</p>
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="anydb_rst.html" class="btn btn-neutral float-left" title="anydb - 함수들의 문서화" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="jfinder_rst.html" class="btn btn-neutral float-right" title="jfinder - 함수들의 문서화" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 

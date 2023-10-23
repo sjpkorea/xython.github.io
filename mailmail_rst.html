@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>xython.mailmail module &mdash; xython 1.16 문서</title>
+  <title>mailmail - 함수들의 문서화 &mdash; xython 1.16 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -19,7 +19,9 @@
         <script src="_static/translations.js?v=b5f768d8"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
-    <link rel="search" title="검색" href="search.html" /> 
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="pcell - 함수들의 문서화" href="pcell_rst.html" />
+    <link rel="prev" title="jfinder - 함수들의 문서화" href="jfinder_rst.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -42,20 +44,92 @@
 </div>
         </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
-<ul>
+<ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#id5">xython패키지의 각 모듈의 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
-<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython.html">xython package</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_rst.html">ganada - 함수들 설명문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_rst.html">jfinder - 함수들의 문서화</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">mailmail - 함수들의 문서화</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#xython.mailmail.mailmail"><code class="docutils literal notranslate"><span class="pre">mailmail</span></code></a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.check_outlook_email_test"><code class="docutils literal notranslate"><span class="pre">mailmail.check_outlook_email_test()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.data_all_properties_names_for_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.data_all_properties_names_for_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_10_latest_mail_data_in_default_input_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_10_latest_mail_data_in_default_input_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_10_latest_mails"><code class="docutils literal notranslate"><span class="pre">mailmail.get_10_latest_mails()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_all_default_folder_information"><code class="docutils literal notranslate"><span class="pre">mailmail.get_all_default_folder_information()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_all_information_for_one_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.get_all_information_for_one_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_all_mail_information_for_mail_folder_obj_by_limit"><code class="docutils literal notranslate"><span class="pre">mailmail.get_all_mail_information_for_mail_folder_obj_by_limit()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_all_mails_in_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.get_all_mails_in_mail_folder_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_attached_filename_all_for_one_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.get_attached_filename_all_for_one_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_basic_draft_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_basic_draft_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_basic_input_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_basic_input_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_basic_promise_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_basic_promise_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_each_mail_in_mail_folder_obj_by_limit_no"><code class="docutils literal notranslate"><span class="pre">mailmail.get_each_mail_in_mail_folder_obj_by_limit_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_each_mail_information_for_mails"><code class="docutils literal notranslate"><span class="pre">mailmail.get_each_mail_information_for_mails()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_latest_mail_data_in_default_input_folder_by_limit_no"><code class="docutils literal notranslate"><span class="pre">mailmail.get_latest_mail_data_in_default_input_folder_by_limit_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_latest_mail_items_at_input_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.get_latest_mail_items_at_input_mail_folder_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_datas_for_one_mail_item"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_datas_for_one_mail_item()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_default_index_no"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_by_default_index_no()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_folder_index"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_by_folder_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_sub_folder_name"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_by_sub_folder_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_sub_folder_name_only"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_by_sub_folder_name_only()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_top_n_sub_folder_index"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_by_top_n_sub_folder_index()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_top_n_sub_folder_name"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_by_top_n_sub_folder_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_for_default_input_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_for_default_input_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_of_default_draft_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_of_default_draft_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_folder_obj_of_default_promise_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_folder_obj_of_default_promise_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_items_in_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_items_in_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_obj_in_mail_folder_obj_between_date"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_obj_in_mail_folder_obj_between_date()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mail_obj_in_mail_folder_obj_from_index_day"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mail_obj_in_mail_folder_obj_from_index_day()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_mails_in_mail_folder_obj_by_from_to"><code class="docutils literal notranslate"><span class="pre">mailmail.get_mails_in_mail_folder_obj_by_from_to()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_new_mails_on_today_in_default_input_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_new_mails_on_today_in_default_input_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_nos_of_mails_in_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.get_nos_of_mails_in_mail_folder_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_nos_of_unread_mails_in_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.get_nos_of_unread_mails_in_mail_folder_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_one_mail_information"><code class="docutils literal notranslate"><span class="pre">mailmail.get_one_mail_information()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_selected_mails"><code class="docutils literal notranslate"><span class="pre">mailmail.get_selected_mails()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_sub_folder_index_by_folder_name"><code class="docutils literal notranslate"><span class="pre">mailmail.get_sub_folder_index_by_folder_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_sub_folders_names"><code class="docutils literal notranslate"><span class="pre">mailmail.get_sub_folders_names()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_top_folder_index_by_folder_name"><code class="docutils literal notranslate"><span class="pre">mailmail.get_top_folder_index_by_folder_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_top_folder_name_all"><code class="docutils literal notranslate"><span class="pre">mailmail.get_top_folder_name_all()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_total_mail_no_at_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_total_mail_no_at_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_unread_mails_in_default_input_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_unread_mails_in_default_input_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_unread_mails_in_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.get_unread_mails_in_mail_folder_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_unread_mails_in_mails"><code class="docutils literal notranslate"><span class="pre">mailmail.get_unread_mails_in_mails()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_unread_mails_information_in_default_input_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_unread_mails_information_in_default_input_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.make_draft_new_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.make_draft_new_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.make_new_empty_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.make_new_empty_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.make_new_mail_in_draft_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.make_new_mail_in_draft_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.manual"><code class="docutils literal notranslate"><span class="pre">mailmail.manual()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.manual_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.manual_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.move_mails_to_target_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.move_mails_to_target_mail_folder_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.read_basic_input_mails_data_with_outlook"><code class="docutils literal notranslate"><span class="pre">mailmail.read_basic_input_mails_data_with_outlook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.read_sub_folder_name_all_in_folder_name"><code class="docutils literal notranslate"><span class="pre">mailmail.read_sub_folder_name_all_in_folder_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.read_total_unread_mail_no_with_outlook"><code class="docutils literal notranslate"><span class="pre">mailmail.read_total_unread_mail_no_with_outlook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.read_unread_mail_from_basic_input_folder_with_outlook"><code class="docutils literal notranslate"><span class="pre">mailmail.read_unread_mail_from_basic_input_folder_with_outlook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.save_attached_file_for_one_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.save_attached_file_for_one_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.send_mail_by_input_dic"><code class="docutils literal notranslate"><span class="pre">mailmail.send_mail_by_input_dic()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.send_mail_by_outlook"><code class="docutils literal notranslate"><span class="pre">mailmail.send_mail_by_outlook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.send_new_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.send_new_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.send_new_mail_by_dic_type"><code class="docutils literal notranslate"><span class="pre">mailmail.send_new_mail_by_dic_type()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.version"><code class="docutils literal notranslate"><span class="pre">mailmail.version()</span></code></a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_rst.html">pcell - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_rst.html">pyclick - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_rst.html">pynal - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_rst.html">scolor - 함수들의 문서화</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_rst.html">youtil - 함수들의 문서화</a></li>
 </ul>
 
         </div>
@@ -72,7 +146,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">xython.mailmail module</li>
+      <li class="breadcrumb-item active">mailmail - 함수들의 문서화</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/mailmail_rst.rst.txt" rel="nofollow"> View page source</a>
       </li>
@@ -82,9 +156,9 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="module-xython.mailmail">
-<span id="xython-mailmail-module"></span><h1>xython.mailmail module<a class="headerlink" href="#module-xython.mailmail" title="Link to this heading"></a></h1>
-<dl class="py class">
+  <section id="mailmail">
+<h1>mailmail - 함수들의 문서화<a class="headerlink" href="#mailmail" title="Link to this heading"></a></h1>
+<dl class="py class" id="module-xython.mailmail">
 <dt class="sig sig-object py" id="xython.mailmail.mailmail">
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.mailmail.</span></span><span class="sig-name descname"><span class="pre">mailmail</span></span><a class="headerlink" href="#xython.mailmail.mailmail" title="Link to this definition"></a></dt>
 <dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
@@ -911,7 +985,10 @@
 
            </div>
           </div>
-          <footer>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="jfinder_rst.html" class="btn btn-neutral float-left" title="jfinder - 함수들의 문서화" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="pcell_rst.html" class="btn btn-neutral float-right" title="pcell - 함수들의 문서화" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
 
   <hr/>
 
