@@ -1,0 +1,3208 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xython.ganada module &mdash; xython 1.16 문서</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=06785e48"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=b5f768d8"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            xython
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#id5">xython패키지의 각 모듈의 설명</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython.html">xython package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">xython</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">xython.ganada module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/ganada_rst.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-xython.ganada">
+<span id="xython-ganada-module"></span><h1>xython.ganada module<a class="headerlink" href="#module-xython.ganada" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="xython.ganada.ganada">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.ganada.</span></span><span class="sig-name descname"><span class="pre">ganada</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada" title="Link to this definition"></a></dt>
+<dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.change_selection_to_input_text">
+<span class="sig-name descname"><span class="pre">change_selection_to_input_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">after_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.change_selection_to_input_text" title="Link to this definition"></a></dt>
+<dd><p>selection한 영역을 바꾸는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>after_text</strong> – 바꿀 문자</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.check_content_name">
+<span class="sig-name descname"><span class="pre">check_content_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.check_content_name" title="Link to this definition"></a></dt>
+<dd><p>어떤 기준으로 할것인지를 확인하는 것
+content로 사용되는 단어들을 이것저것 사용하여도 적용이 가능하도록 만든것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.check_file">
+<span class="sig-name descname"><span class="pre">check_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.check_file" title="Link to this definition"></a></dt>
+<dd><p>만약 오픈된 워드가 하나도 없으면,새로운 빈 워드를 만든다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_name</strong> – 입력한 화일 이름</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.check_selection">
+<span class="sig-name descname"><span class="pre">check_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.check_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역을 객체로 만들어서 돌려준다
+영역이 선택된 영역이 없다면, selection은 현재 cursor가 가르키고있는 위치를 가르킨다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.close">
+<span class="sig-name descname"><span class="pre">close</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.close" title="Link to this definition"></a></dt>
+<dd><p>현재 활성화된 문서를 닫는다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.close_all_without_saving">
+<span class="sig-name descname"><span class="pre">close_all_without_saving</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.close_all_without_saving" title="Link to this definition"></a></dt>
+<dd><p>현재 활성화된 문서를 저장하지 않고 그냥 닫는다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.count_character_nos_in_selection">
+<span class="sig-name descname"><span class="pre">count_character_nos_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.count_character_nos_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택된영역의 글자수를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.count_file_nos_in_document">
+<span class="sig-name descname"><span class="pre">count_file_nos_in_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.count_file_nos_in_document" title="Link to this definition"></a></dt>
+<dd><p>현재 열려져있는 워드화일의 모든 걋수를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.count_paragraph_nos_in_document">
+<span class="sig-name descname"><span class="pre">count_paragraph_nos_in_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.count_paragraph_nos_in_document" title="Link to this definition"></a></dt>
+<dd><p>현재 활성화된 워드의 모든 문단수 갖고온다
+형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.count_paragraph_nos_in_selection">
+<span class="sig-name descname"><span class="pre">count_paragraph_nos_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.count_paragraph_nos_in_selection" title="Link to this definition"></a></dt>
+<dd><p>현재 선택되어진 영역에서의 모든 문단수
+형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.count_table_nos_in_document">
+<span class="sig-name descname"><span class="pre">count_table_nos_in_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.count_table_nos_in_document" title="Link to this definition"></a></dt>
+<dd><p>현재 워드화일안의 테이블의 총 갯수</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.count_word_nos_in_document">
+<span class="sig-name descname"><span class="pre">count_word_nos_in_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.count_word_nos_in_document" title="Link to this definition"></a></dt>
+<dd><p>현재 워드화일안의 총단어숫자</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.cut_selection">
+<span class="sig-name descname"><span class="pre">cut_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.cut_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역 잘라내기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.data_enum_word">
+<span class="sig-name descname"><span class="pre">data_enum_word</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.data_enum_word" title="Link to this definition"></a></dt>
+<dd><p>워드에서 사용되는 자주 사용하는 enum모음
+전부 소문자 이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.data_for_cursor">
+<span class="sig-name descname"><span class="pre">data_for_cursor</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.data_for_cursor" title="Link to this definition"></a></dt>
+<dd><p>현재 커서가 위치한곳의 정보 (커서의 시작위치, 끝위치)
+가끔 사용을 하다보면, 정확히 어디인지 모를때가 많아, 사용하기 쉽도록 커서의 위치를 모두 만들도록 하자</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.data_for_file">
+<span class="sig-name descname"><span class="pre">data_for_file</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.data_for_file" title="Link to this definition"></a></dt>
+<dd><p>현재 워드화일안에 대한 정보들</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.data_for_selection">
+<span class="sig-name descname"><span class="pre">data_for_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.data_for_selection" title="Link to this definition"></a></dt>
+<dd><p>현재 selection에 대한 정보들</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.data_for_table">
+<span class="sig-name descname"><span class="pre">data_for_table</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.data_for_table" title="Link to this definition"></a></dt>
+<dd><p>현재 워드화일안의 테이블들의 갯수들</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.data_var_word">
+<span class="sig-name descname"><span class="pre">data_var_word</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.data_var_word" title="Link to this definition"></a></dt>
+<dd><p>보통 라인이나 색들의 일반적인 변수들에대한 enum을 넣어서 공통적으로 사용하기 위한 것이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.delete_line_by_no">
+<span class="sig-name descname"><span class="pre">delete_line_by_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_line_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.delete_line_by_no" title="Link to this definition"></a></dt>
+<dd><p>현재 워드화일안의 전체문서중 라인번호로 삭제</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_line_no</strong> – 라인번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.delete_paragraph_by_no">
+<span class="sig-name descname"><span class="pre">delete_paragraph_by_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.delete_paragraph_by_no" title="Link to this definition"></a></dt>
+<dd><p>현재 워드화일안의 문단번호로 삭제
+형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 문단번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.delete_selection">
+<span class="sig-name descname"><span class="pre">delete_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.delete_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역을 삭제</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.delete_xline_in_table">
+<span class="sig-name descname"><span class="pre">delete_xline_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_nos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.delete_xline_in_table" title="Link to this definition"></a></dt>
+<dd><p>현재 워드화일안의 테이블객체에서 가로행 번호를 이용하여 가로행을 삭제
+테이블의 가로행을 삭제</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>x_position</strong> – 가로행의 시작번호</p></li>
+<li><p><strong>x_nos</strong> – 삭제한 가로행의 갯수</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.delete_yline_in_table">
+<span class="sig-name descname"><span class="pre">delete_yline_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_nos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.delete_yline_in_table" title="Link to this definition"></a></dt>
+<dd><p>현재 워드화일안의 테이블객체에서 세로행 번호를 이용하여 세로행을 삭제</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>y_position</strong> – 세로행의 시작번호</p></li>
+<li><p><strong>y_nos</strong> – 삭제한 세로행의 갯수</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.draw_borderline_in_selection">
+<span class="sig-name descname"><span class="pre">draw_borderline_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.draw_borderline_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 와곽선 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.draw_line_color_for_table">
+<span class="sig-name descname"><span class="pre">draw_line_color_for_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inside_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bla'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outside_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'bla'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.draw_line_color_for_table" title="Link to this definition"></a></dt>
+<dd><p>테이블의 선을 색칠하기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>inside_color</strong> – 안쪽 색이름</p></li>
+<li><p><strong>outside_color</strong> – 바깥쪽 색이름</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.draw_line_style_for_table">
+<span class="sig-name descname"><span class="pre">draw_line_style_for_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inside_line</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'-'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outside_line</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'-'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.draw_line_style_for_table" title="Link to this definition"></a></dt>
+<dd><p>테이블 선의 모양을 선정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>inside_line</strong> – 안쪽선의 모양</p></li>
+<li><p><strong>outside_line</strong> – 바깥쪽 선의 모양</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.draw_outline_in_selection">
+<span class="sig-name descname"><span class="pre">draw_outline_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.draw_outline_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역의 외곽선을  wdToggle스타일로 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.draw_outside_border_in_selection">
+<span class="sig-name descname"><span class="pre">draw_outside_border_in_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'blu'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'+'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.draw_outside_border_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 외곽선을 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_style</strong> – 선의 스타일을 선택</p></li>
+<li><p><strong>line_color</strong> – 선의 색을 선택</p></li>
+<li><p><strong>line_width</strong> – 선의 두께를 선택</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.draw_strikethrough_in_selection">
+<span class="sig-name descname"><span class="pre">draw_strikethrough_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.draw_strikethrough_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역에 취소선을 적용</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.draw_underline_in_selection">
+<span class="sig-name descname"><span class="pre">draw_underline_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.draw_underline_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역에 언더라인을 적용</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_all_chacters_no_for_document">
+<span class="sig-name descname"><span class="pre">get_all_chacters_no_for_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_all_chacters_no_for_document" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_file_name">
+<span class="sig-name descname"><span class="pre">get_file_name</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_file_name" title="Link to this definition"></a></dt>
+<dd><p>현재 활성화된 워드화일의 이름</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_file_name_all">
+<span class="sig-name descname"><span class="pre">get_file_name_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_file_name_all" title="Link to this definition"></a></dt>
+<dd><p>현재 열려있는 모든 문서의 이름을 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_line_no_at_start_of_selection">
+<span class="sig-name descname"><span class="pre">get_line_no_at_start_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_line_no_at_start_of_selection" title="Link to this definition"></a></dt>
+<dd><p>현재 활성화된 워드화일에서 선택된영역에서 제일 첫번째 라인의 글자들
+wdFirstCharacterLineNumber : 10</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_list1d_by_style_for_document">
+<span class="sig-name descname"><span class="pre">get_list1d_by_style_for_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_list1d_by_style_for_document" title="Link to this definition"></a></dt>
+<dd><p>전체 문서에서 스타일이 표준이외의것만 을 기준으로 하나로 만들어서 돌려주는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_paragraph_index_at_start_of_selection">
+<span class="sig-name descname"><span class="pre">get_paragraph_index_at_start_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_paragraph_index_at_start_of_selection" title="Link to this definition"></a></dt>
+<dd><p>현재 화성화된 문서에서 선택된 영역의 첫번째 문단이 전체문서중 몇번째 문단인 돌려준다
+형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_paragraph_object_all">
+<span class="sig-name descname"><span class="pre">get_paragraph_object_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_paragraph_object_all" title="Link to this definition"></a></dt>
+<dd><p>현재 화성화된 문서 모든 문단객체를 돌려준다
+형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_paragraph_object_by_index">
+<span class="sig-name descname"><span class="pre">get_paragraph_object_by_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_para_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_paragraph_object_by_index" title="Link to this definition"></a></dt>
+<dd><p>현재 화성화된 워드에서 문단번호로 문단객체를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_para_no</strong> – 문단번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_strat_chacacter_no_for_selection">
+<span class="sig-name descname"><span class="pre">get_strat_chacacter_no_for_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_strat_chacacter_no_for_selection" title="Link to this definition"></a></dt>
+<dd><p>현재 화성화된 워드에서 선택된 영역의 첫번째 글자가 전체 글자에서의 몇번째 글자번호인지 갖고오는 것
+선택된것이 없을때는 현재 커서가 대신한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_style_name_all">
+<span class="sig-name descname"><span class="pre">get_style_name_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_style_name_all" title="Link to this definition"></a></dt>
+<dd><p>현재 화성화된 워드 화일안의 모든 스타일을 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_table_obj_all">
+<span class="sig-name descname"><span class="pre">get_table_obj_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_table_obj_all" title="Link to this definition"></a></dt>
+<dd><p>현재 화성화된 워드 화일안의 모든 테이블객체를 돌려준다
+테이블 객체란 테이블에대한 모든 정보를 갖고있는 클래스의 인스턴스이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_table_obj_by_index">
+<span class="sig-name descname"><span class="pre">get_table_obj_by_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_table_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_table_obj_by_index" title="Link to this definition"></a></dt>
+<dd><p>현재 화성화된 워드 화일안의 테이블 번호로 테비블 객체를 갖고오는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_table_no</strong> – 테이블 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_table_obj_by_table_no">
+<span class="sig-name descname"><span class="pre">get_table_obj_by_table_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_table_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_table_obj_by_table_no" title="Link to this definition"></a></dt>
+<dd><p>현재 화성화된 워드 화일안의 테이블 번호로 테비블 객체를 갖고오는 것
+:param input_table_no: 테이블 번호
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_text_for_current_paragraph">
+<span class="sig-name descname"><span class="pre">get_text_for_current_paragraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_text_for_current_paragraph" title="Link to this definition"></a></dt>
+<dd><p>현재 커서가 있는 문단을 선택해서, 그 문단 전체의 text를 돌려준다
+형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.get_xy_for_selection">
+<span class="sig-name descname"><span class="pre">get_xy_for_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.get_xy_for_selection" title="Link to this definition"></a></dt>
+<dd><p>선택된 영역의 위치시작과 끝의 번호값을 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.history">
+<span class="sig-name descname"><span class="pre">history</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.history" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_header">
+<span class="sig-name descname"><span class="pre">insert_header</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_header" title="Link to this definition"></a></dt>
+<dd><p>헤더를 삽입</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_header_new">
+<span class="sig-name descname"><span class="pre">insert_header_new</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_header_new" title="Link to this definition"></a></dt>
+<dd><p>헤더를 삽입</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_many_xline_in_table">
+<span class="sig-name descname"><span class="pre">insert_many_xline_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_nos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_many_xline_in_table" title="Link to this definition"></a></dt>
+<dd><p>테이블객체의 테이블에 가로행을 추가하는 것 (아랫부분에 추가)</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>x_position</strong> – 가로행의 시작 번호</p></li>
+<li><p><strong>x_nos</strong> – 몇라인을 추가할것인지 설정</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_many_yline_in_table">
+<span class="sig-name descname"><span class="pre">insert_many_yline_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_position</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_nos</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_many_yline_in_table" title="Link to this definition"></a></dt>
+<dd><p>테이블객체의 테이블에 세로행을 추가하는 것 (오른쪽에 추가)</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>y_position</strong> – 세로행의 시작 번호</p></li>
+<li><p><strong>y_nos</strong> – 몇라인을 추가할것인지 설정</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_new_line_at_end_of_selection">
+<span class="sig-name descname"><span class="pre">insert_new_line_at_end_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_new_line_at_end_of_selection" title="Link to this definition"></a></dt>
+<dd><p>현재 커서의 위치에 줄바꿈문자를 넣어서 새로운 문단을 만드는 것이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_new_para_with_properties">
+<span class="sig-name descname"><span class="pre">insert_new_para_with_properties</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">14</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Arial'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">align</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'right'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">True</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'표준'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_new_para_with_properties" title="Link to this definition"></a></dt>
+<dd><p>선택한 위치에 글을 쓴다
+형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<p>wdAlignParagraphCenter  1       Center-aligned.
+wdAlignParagraphJustify 3       Fully justified.
+wdAlignParagraphLeft    0       Left-aligned.
+wdAlignParagraphRight   2       Right-aligned.</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>size</strong> – </p></li>
+<li><p><strong>font</strong> – </p></li>
+<li><p><strong>align</strong> – </p></li>
+<li><p><strong>bold</strong> – </p></li>
+<li><p><strong>input_color</strong> – </p></li>
+<li><p><strong>style</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_no_colored_table_at_cursor">
+<span class="sig-name descname"><span class="pre">insert_no_colored_table_at_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_no_colored_table_at_cursor" title="Link to this definition"></a></dt>
+<dd><p>커서위치에 테이블삽입
+단, 선의 색이 없는 것을 적용해서 문서를 넣어서 사용하는 것을 만드는 것이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_no</strong> – </p></li>
+<li><p><strong>y_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_one_xline_at_end_of_table">
+<span class="sig-name descname"><span class="pre">insert_one_xline_at_end_of_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_one_xline_at_end_of_table" title="Link to this definition"></a></dt>
+<dd><p>테이블에 가로행을 추가하는것 (아랫부분에 추가)</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>table_obj</strong> – 테이블 객제</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_picture_at_cursor">
+<span class="sig-name descname"><span class="pre">insert_picture_at_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_full_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_w</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size_h</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_picture_at_cursor" title="Link to this definition"></a></dt>
+<dd><p>커서위치에 그림삽입</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>file_full_name</strong> – </p></li>
+<li><p><strong>size_w</strong> – </p></li>
+<li><p><strong>size_h</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_table_at_cursor">
+<span class="sig-name descname"><span class="pre">insert_table_at_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_table_at_cursor" title="Link to this definition"></a></dt>
+<dd><p>커서위치에 테이블삽입</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x_no</strong> – </p></li>
+<li><p><strong>y_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_table_at_end_of_paragraph">
+<span class="sig-name descname"><span class="pre">insert_table_at_end_of_paragraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">para_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_xy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[5,</span> <span class="pre">5]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_table_at_end_of_paragraph" title="Link to this definition"></a></dt>
+<dd><p>없애도 되는 것
+선택한 문단뒤에 테이블을 만든다
+형태적인 분류 - active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 - active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence - 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>para_no</strong> – </p></li>
+<li><p><strong>table_xy</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_text_at_end_of_selection">
+<span class="sig-name descname"><span class="pre">insert_text_at_end_of_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'aaaaaaaa'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_text_at_end_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역의 제일 뒷부분에 text값을 값을 넣것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력값</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.insert_text_at_start_of_selection">
+<span class="sig-name descname"><span class="pre">insert_text_at_start_of_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'aaaaaaaa'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.insert_text_at_start_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역의 제일 앞부분에 text값을 값을 넣것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력값</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.make_table_obj">
+<span class="sig-name descname"><span class="pre">make_table_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row_line_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_line_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.make_table_obj" title="Link to this definition"></a></dt>
+<dd><p>기본적인 형태의 테이블 객체를 만든다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>row_line_no</strong> – </p></li>
+<li><p><strong>col_line_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.merge_entire_xline_at_table">
+<span class="sig-name descname"><span class="pre">merge_entire_xline_at_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.merge_entire_xline_at_table" title="Link to this definition"></a></dt>
+<dd><p>선택된 가로줄을 전부 병합시키는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>start_x</strong> – 가로줄번호</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.merge_entire_yline_at_table">
+<span class="sig-name descname"><span class="pre">merge_entire_yline_at_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.merge_entire_yline_at_table" title="Link to this definition"></a></dt>
+<dd><p>선택된 세로줄을 전부 병합시키는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>start_y</strong> – 세로줄번호</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.merge_selection_area_in_table">
+<span class="sig-name descname"><span class="pre">merge_selection_area_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyxy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.merge_selection_area_in_table" title="Link to this definition"></a></dt>
+<dd><p>테이블의 가로와 세로번호까지의 영역을 병합</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>xyxy</strong> – [가로시작, 세로시작, 가로끝, 세로끝]</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.merge_xyxy_at_table">
+<span class="sig-name descname"><span class="pre">merge_xyxy_at_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xyxy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.merge_xyxy_at_table" title="Link to this definition"></a></dt>
+<dd><p>시작지점에서 몇개를 병합할것인지</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>start_x</strong> – </p></li>
+<li><p><strong>start_y</strong> – </p></li>
+<li><p><strong>x_len</strong> – </p></li>
+<li><p><strong>y_len</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_by_index">
+<span class="sig-name descname"><span class="pre">move_cursor_by_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x_char</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_by_index" title="Link to this definition"></a></dt>
+<dd><p>문서의 맨처음에서 n번째 글자로 커서를 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>x_char</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_from_end_of_selection">
+<span class="sig-name descname"><span class="pre">move_cursor_from_end_of_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_from_end_of_selection" title="Link to this definition"></a></dt>
+<dd><p>현재 선택한영역에서 n번째 문자뒤로 커서를 옮기는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_index</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_end_of_document">
+<span class="sig-name descname"><span class="pre">move_cursor_to_end_of_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_end_of_document" title="Link to this definition"></a></dt>
+<dd><p>문서의 끝으로 커서를 이동
+맨마지막에 글자를 추가하거나 할때 사용한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_end_of_selection">
+<span class="sig-name descname"><span class="pre">move_cursor_to_end_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_end_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 끝으로 커서를 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_n_line_from_selection">
+<span class="sig-name descname"><span class="pre">move_cursor_to_n_line_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_n_line_from_selection" title="Link to this definition"></a></dt>
+<dd><p>선택된 라인에서 몇번째 라인뒤로 이동하는 것 (라인을 기준으로 이동)
+계속해서 사용하면 기본으로 1로 설정이 되어있어서, 한줄씩 내려갈수 있다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_next_nth_character">
+<span class="sig-name descname"><span class="pre">move_cursor_to_next_nth_character</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_next_nth_character" title="Link to this definition"></a></dt>
+<dd><p>현재 커서에서 글자수로 n번째 뒤로 이동 (글자를 기준으로 이동)</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_next_nth_line">
+<span class="sig-name descname"><span class="pre">move_cursor_to_next_nth_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_next_nth_line" title="Link to this definition"></a></dt>
+<dd><p>선택된 커서를 기준으로 몇번째 라인뒤로 이동하는 것 (라인을 기준으로 이동)
+마이너스값을 넣으면 앞으로 이동한다
+몇줄 뒤로 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_next_nth_paragraph">
+<span class="sig-name descname"><span class="pre">move_cursor_to_next_nth_paragraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_next_nth_paragraph" title="Link to this definition"></a></dt>
+<dd><p>몇줄 뒤로 이동 (라인을 기준으로 이동)
+마이너스값을 넣으면 앞으로 이동한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_next_nth_word">
+<span class="sig-name descname"><span class="pre">move_cursor_to_next_nth_word</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_next_nth_word" title="Link to this definition"></a></dt>
+<dd><p>현재커서의 위치를 기준으로 몇번째 단어 뒤로 이동 (단어를 기준으로 이동)
+마이너스값을 넣으면 앞으로 이동한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_previous_nth_character">
+<span class="sig-name descname"><span class="pre">move_cursor_to_previous_nth_character</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_previous_nth_character" title="Link to this definition"></a></dt>
+<dd><p>현재커서의 위치에서 n번째 이전 단어로 커서 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_previous_nth_line">
+<span class="sig-name descname"><span class="pre">move_cursor_to_previous_nth_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_previous_nth_line" title="Link to this definition"></a></dt>
+<dd><p>현재커서의 위치에서 1줄 이전으로 커서 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_previous_nth_paragraph">
+<span class="sig-name descname"><span class="pre">move_cursor_to_previous_nth_paragraph</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_previous_nth_paragraph" title="Link to this definition"></a></dt>
+<dd><p>현재커서의 위치에서 1줄 이전으로 커서 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_previous_nth_word">
+<span class="sig-name descname"><span class="pre">move_cursor_to_previous_nth_word</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_previous_nth_word" title="Link to this definition"></a></dt>
+<dd><p>현재커서의 위치에서 n번째 이전 단어로 커서 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_start_of_document">
+<span class="sig-name descname"><span class="pre">move_cursor_to_start_of_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_start_of_document" title="Link to this definition"></a></dt>
+<dd><p>활성화된 워드화일의 처음으로 커서를 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_start_of_line_no">
+<span class="sig-name descname"><span class="pre">move_cursor_to_start_of_line_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_start_of_line_no" title="Link to this definition"></a></dt>
+<dd><p>원하는 순서의 라인의 첫번째 위치로 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – 번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.move_cursor_to_start_of_selection">
+<span class="sig-name descname"><span class="pre">move_cursor_to_start_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.move_cursor_to_start_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역의 처음으로 커서를 이동</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.new_document">
+<span class="sig-name descname"><span class="pre">new_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.new_document" title="Link to this definition"></a></dt>
+<dd><p>새 문서를 하나더 만듦</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paint_border_in_selection">
+<span class="sig-name descname"><span class="pre">paint_border_in_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_border_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 외곽선을 그리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_color</strong> – 색이름</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paint_color_for_cell_in_table">
+<span class="sig-name descname"><span class="pre">paint_color_for_cell_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_color_for_cell_in_table" title="Link to this definition"></a></dt>
+<dd><p>테이블객체의 가로세로번호의 셀의 배경색을 색칠하기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>xy</strong> – </p></li>
+<li><p><strong>color_index</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paint_highlight_from_char_no1_to_char_no2">
+<span class="sig-name descname"><span class="pre">paint_highlight_from_char_no1_to_char_no2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_no2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'blu'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_highlight_from_char_no1_to_char_no2" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 글자들의 배경을 하이라이트를 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_color</strong> – 색이름</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paint_highlight_in_selection">
+<span class="sig-name descname"><span class="pre">paint_highlight_in_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_highlight_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 글자들의 배경을 하이라이트를 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_color</strong> – 색이름</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paint_shading_background_in_selection">
+<span class="sig-name descname"><span class="pre">paint_shading_background_in_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_shading_background_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 배경색의 음영설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_color</strong> – 색이름</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paint_shading_foreground_in_selection">
+<span class="sig-name descname"><span class="pre">paint_shading_foreground_in_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_shading_foreground_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 foreground의 음영설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_color</strong> – 색이름</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paste_selection">
+<span class="sig-name descname"><span class="pre">paste_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paste_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역에 붙여넣기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.quit">
+<span class="sig-name descname"><span class="pre">quit</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.quit" title="Link to this definition"></a></dt>
+<dd><p>워드 프로그램 종료하기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_all_text_in_document">
+<span class="sig-name descname"><span class="pre">read_all_text_in_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_all_text_in_document" title="Link to this definition"></a></dt>
+<dd><p>현재 문서에서 모든 텍스트만 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_bookmark_list">
+<span class="sig-name descname"><span class="pre">read_bookmark_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_bookmark_list" title="Link to this definition"></a></dt>
+<dd><p>북마크의 리스트를 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_cursor_position">
+<span class="sig-name descname"><span class="pre">read_cursor_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_cursor_position" title="Link to this definition"></a></dt>
+<dd><p>현재 커서의 위치를 돌려준다
+영역이 선택되지 않으면 selection은 cursor를 가르킨다
+기본적으로 시작점을 나타내도록 한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_font_size_in_selection">
+<span class="sig-name descname"><span class="pre">read_font_size_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_font_size_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역의 폰트 크기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_line_no_at_end_of_selection">
+<span class="sig-name descname"><span class="pre">read_line_no_at_end_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_line_no_at_end_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역의 마지막 줄번호</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_line_no_at_start_of_selection">
+<span class="sig-name descname"><span class="pre">read_line_no_at_start_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_line_no_at_start_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 첫글자가 있는 전체 워드에서의 줄번호</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_paragraph_no_at_end_of_selection">
+<span class="sig-name descname"><span class="pre">read_paragraph_no_at_end_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_paragraph_no_at_end_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역에서 마지막 문단번호
+형태적인 분류 - active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 - active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence - 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_paragraph_no_at_start_of_selection">
+<span class="sig-name descname"><span class="pre">read_paragraph_no_at_start_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_paragraph_no_at_start_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 첫번째 문장이 전체 워드화일의 문장중 몇번째 문장번호인지 알려주는 것
+형태적인 분류 - active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 - active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence - 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_selection">
+<span class="sig-name descname"><span class="pre">read_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_selection" title="Link to this definition"></a></dt>
+<dd><p>현재 커서가 위치한곳의 뒷글자 하나를 나타낸다
+선택한 영역이 떨어져있으면 하나로 인식</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_between_para_1_to_para_2">
+<span class="sig-name descname"><span class="pre">read_text_between_para_1_to_para_2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">para1_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">para2_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_between_para_1_to_para_2" title="Link to this definition"></a></dt>
+<dd><p>선택한 2개의 문단 번호 사이의 글을 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>para1_index</strong> – </p></li>
+<li><p><strong>para2_index</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_for_current_paragraph">
+<span class="sig-name descname"><span class="pre">read_text_for_current_paragraph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_for_current_paragraph" title="Link to this definition"></a></dt>
+<dd><p>현재 커서가 있는 문단의 전체 text를 돌려줍니다
+형태적인 분류 - active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 - active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence - 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_for_paragraph_index">
+<span class="sig-name descname"><span class="pre">read_text_for_paragraph_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_for_paragraph_index" title="Link to this definition"></a></dt>
+<dd><p>paragraph 번호에 따라서 해당하는 paragraph의 text 를 갖고오는것
+형태적인 분류 - active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 - active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence - 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_for_range">
+<span class="sig-name descname"><span class="pre">read_text_for_range</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_for_range" title="Link to this definition"></a></dt>
+<dd><p>range영역의 text를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_from_begin_of_paragraph_by_len">
+<span class="sig-name descname"><span class="pre">read_text_from_begin_of_paragraph_by_len</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_from_begin_of_paragraph_by_len" title="Link to this definition"></a></dt>
+<dd><p>선택된 문단에서 몇번째의 글을 선택하는 것
+일정 영역의 자료를 갖고오는 3
+paragraph를 선택한다, 없으면 맨처음부터
+형태적인 분류 - active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 - active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence - 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_index</strong> – </p></li>
+<li><p><strong>x</strong> – </p></li>
+<li><p><strong>length</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_from_index1_to_index2">
+<span class="sig-name descname"><span class="pre">read_text_from_index1_to_index2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index_2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_from_index1_to_index2" title="Link to this definition"></a></dt>
+<dd><p>활성화된 워드화일의 문자번호 사이의 글자를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index_1</strong> – </p></li>
+<li><p><strong>index_2</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_from_x_to_y">
+<span class="sig-name descname"><span class="pre">read_text_from_x_to_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_from_x_to_y" title="Link to this definition"></a></dt>
+<dd><p>활성화된 워드화일의 문자번호 사이의 글자를 갖고온다
+화일의 글자수를 기준으로 text를 읽어오는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – </p></li>
+<li><p><strong>y</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_in_selection">
+<span class="sig-name descname"><span class="pre">read_text_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택된 영역의 text를 갖고오는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_text_in_table_by_xy">
+<span class="sig-name descname"><span class="pre">read_text_in_table_by_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lxly</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_text_in_table_by_xy" title="Link to this definition"></a></dt>
+<dd><p>테이블객체에서 가로세로번호의 셀의 text값을 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_index</strong> – </p></li>
+<li><p><strong>lxly</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_word_no_at_end_of_selection">
+<span class="sig-name descname"><span class="pre">read_word_no_at_end_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_word_no_at_end_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역에서 제일 마지막 단어의 번호</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.read_word_no_at_start_of_selection">
+<span class="sig-name descname"><span class="pre">read_word_no_at_start_of_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.read_word_no_at_start_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역에서 제일 첫번째 단어의 번호</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.release_selection">
+<span class="sig-name descname"><span class="pre">release_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.release_selection" title="Link to this definition"></a></dt>
+<dd><p>커서를 selection의 맨 끝을 기준으로 옮겨서 해제한것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.replace_all">
+<span class="sig-name descname"><span class="pre">replace_all</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">before_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">after_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.replace_all" title="Link to this definition"></a></dt>
+<dd><p>워드화일에서 한번에 원하는 글자를 바꾸는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>before_text</strong> – 찾을 문자</p></li>
+<li><p><strong>after_text</strong> – 바꿀 문자</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.replace_all_1">
+<span class="sig-name descname"><span class="pre">replace_all_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">before_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">after_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.replace_all_1" title="Link to this definition"></a></dt>
+<dd><p>원하는 문자를 한번에 모두 바꾸는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>before_text</strong> – 찾을 문자</p></li>
+<li><p><strong>after_text</strong> – 바꿀 문자</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.replace_all_with_color">
+<span class="sig-name descname"><span class="pre">replace_all_with_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">after</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.replace_all_with_color" title="Link to this definition"></a></dt>
+<dd><p>화일안의 모든 문자를 바꾸고 색칠하기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>after</strong> – </p></li>
+<li><p><strong>color_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.replace_all_with_color_from_selection_to_end">
+<span class="sig-name descname"><span class="pre">replace_all_with_color_from_selection_to_end</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">after</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.replace_all_with_color_from_selection_to_end" title="Link to this definition"></a></dt>
+<dd><p>현재위치 이후의 모든것을 변경</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>after</strong> – </p></li>
+<li><p><strong>color_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.replace_one_time_from_selection">
+<span class="sig-name descname"><span class="pre">replace_one_time_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">before</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">after</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.replace_one_time_from_selection" title="Link to this definition"></a></dt>
+<dd><p>전체가 아니고 제일 처음의 것만 바꾸는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>before</strong> – </p></li>
+<li><p><strong>after</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.replace_text_for_selection">
+<span class="sig-name descname"><span class="pre">replace_text_for_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.replace_text_for_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한 영역안에서 에서만 글자를 변경하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.save">
+<span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.save" title="Link to this definition"></a></dt>
+<dd><p>화일 저장하기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.save_as">
+<span class="sig-name descname"><span class="pre">save_as</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.save_as" title="Link to this definition"></a></dt>
+<dd><p>다른이름으로 화일을 저장</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.save_as_pdf">
+<span class="sig-name descname"><span class="pre">save_as_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.save_as_pdf" title="Link to this definition"></a></dt>
+<dd><p>pdf로 저장</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.search_all_with_color_and_return_position">
+<span class="sig-name descname"><span class="pre">search_all_with_color_and_return_position</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.search_all_with_color_and_return_position" title="Link to this definition"></a></dt>
+<dd><p>전체 화일에서 입력글자를 찾아서 색깔을 넣기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.search_first_text_from_cursor">
+<span class="sig-name descname"><span class="pre">search_first_text_from_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.search_first_text_from_cursor" title="Link to this definition"></a></dt>
+<dd><p>현재 위치에서 찾는것을 입력하면, 바로 다음것을 선택하는 것
+search를 사용할것인지 find를 사용할것인지 정해보자
+replace</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_all_chacters">
+<span class="sig-name descname"><span class="pre">select_all_chacters</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_all_chacters" title="Link to this definition"></a></dt>
+<dd><p>영역을 선택하는 것
+맨앞에서 몇번째부터，얼마의 길이를 선택할지를 선정</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_all_text">
+<span class="sig-name descname"><span class="pre">select_all_text</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_all_text" title="Link to this definition"></a></dt>
+<dd><p>모든 문서를 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_bookmark">
+<span class="sig-name descname"><span class="pre">select_bookmark</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">bookmark_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_bookmark" title="Link to this definition"></a></dt>
+<dd><p>북마크의 이름을 기준으로 그 영역을 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>bookmark_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_by_range">
+<span class="sig-name descname"><span class="pre">select_by_range</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_by_range" title="Link to this definition"></a></dt>
+<dd><p>range 객체의 일정부분을 영역으로 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_chacters_from_no_to_length">
+<span class="sig-name descname"><span class="pre">select_chacters_from_no_to_length</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengh</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_chacters_from_no_to_length" title="Link to this definition"></a></dt>
+<dd><p>영역을 선택하는 것
+맨앞에서 몇번째부터，얼마의 길이를 선택할지를 선정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – </p></li>
+<li><p><strong>lengh</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_char_nos_from_cursor">
+<span class="sig-name descname"><span class="pre">select_char_nos_from_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_char_nos_from_cursor" title="Link to this definition"></a></dt>
+<dd><p>(글자 선택) 현재커서의 위치에서 몇번째 문자로 에서부터 선택시작</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>x</strong> – 시작점</p></li>
+<li><p><strong>length</strong> – 시작점에서부터 몇개를 선택할것 인지</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_current_line">
+<span class="sig-name descname"><span class="pre">select_current_line</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_current_line" title="Link to this definition"></a></dt>
+<dd><p>현재 위치에서 줄의 끝까지 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_current_paragraph">
+<span class="sig-name descname"><span class="pre">select_current_paragraph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_current_paragraph" title="Link to this definition"></a></dt>
+<dd><p>현재 위치의 문단을 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_current_sentence">
+<span class="sig-name descname"><span class="pre">select_current_sentence</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_current_sentence" title="Link to this definition"></a></dt>
+<dd><p>현재 위치에서 줄의 처음까지</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_file_by_name">
+<span class="sig-name descname"><span class="pre">select_file_by_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_file_by_name" title="Link to this definition"></a></dt>
+<dd><p>현재 open된 문서중 이름으로 active문서로 활성화 시키기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_from_index1_to_index2_by_character_from_selection">
+<span class="sig-name descname"><span class="pre">select_from_index1_to_index2_by_character_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">index1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">index2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_from_index1_to_index2_by_character_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(글자 선택) 맨앞에서 몇번째 글자를 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>index1</strong> – </p></li>
+<li><p><strong>index2</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_line_by_line_no_from_cursor">
+<span class="sig-name descname"><span class="pre">select_line_by_line_no_from_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_line_by_line_no_from_cursor" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 현재 커서부터 n번째 라인 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>line_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_multi_line_from_selection">
+<span class="sig-name descname"><span class="pre">select_multi_line_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_multi_line_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_no_start</strong> – 시작번호</p></li>
+<li><p><strong>line_len</strong> – 줄수</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_multi_paragraph_from_selection">
+<span class="sig-name descname"><span class="pre">select_multi_paragraph_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_multi_paragraph_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(문단 선택) 전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_no_start</strong> – 시작번호</p></li>
+<li><p><strong>line_len</strong> – 줄수</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_multi_selection_basic">
+<span class="sig-name descname"><span class="pre">select_multi_selection_basic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_content</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'line'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_multi_selection_basic" title="Link to this definition"></a></dt>
+<dd><p>전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_no_start</strong> – 시작번호</p></li>
+<li><p><strong>line_len</strong> – </p></li>
+<li><p><strong>input_content</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_multi_sentence_from_selection">
+<span class="sig-name descname"><span class="pre">select_multi_sentence_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_multi_sentence_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(sentence 선택) 전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_no_start</strong> – 라인의 시작 번호</p></li>
+<li><p><strong>line_len</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_multi_word_from_selection">
+<span class="sig-name descname"><span class="pre">select_multi_word_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no_start</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">line_len</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_multi_word_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(단어 선택) 전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_no_start</strong> – 라인의 시작 번호</p></li>
+<li><p><strong>line_len</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_n_more_word_from_selection">
+<span class="sig-name descname"><span class="pre">select_n_more_word_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_n_more_word_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(단어 선택) 현재 위치에서 단어하나를 추가해서 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_basic">
+<span class="sig-name descname"><span class="pre">select_next_basic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expand_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_basic" title="Link to this definition"></a></dt>
+<dd><p>기본적인 형태로 사용이 가능하도록 만든것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_type</strong> – </p></li>
+<li><p><strong>input_count</strong> – </p></li>
+<li><p><strong>expand_type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_line_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_line_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_line_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 다음 줄로 이동하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_n_chacter_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_n_chacter_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_n_chacter_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(글자 선택) 현재 선택한 영역의 뒤로, n번째 글자를 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_n_line_from_cursor">
+<span class="sig-name descname"><span class="pre">select_next_n_line_from_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_n_line_from_cursor" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>line_no</strong> – 라인번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_n_line_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_n_line_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_n_line_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 전체 문서에서 줄수로 선택하는것
+self.selection.Start = 1</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>line_no</strong> – 라인번호</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_n_paragraphs_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_n_paragraphs_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_n_paragraphs_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(문단 선택) 현재 위치에서 몇개단어 뒤까지 선택하는것</p>
+<p>형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_n_sentence_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_n_sentence_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_n_sentence_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(sentence 선택) 현재 선택한 영역의 뒤로, n번째 문장을 선택하는 것</p>
+<p>형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_n_words_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_n_words_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_n_words_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(단어 선택) 현재 선택한 영역의 뒤로, n번째 단어를 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_one_word_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_one_word_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_one_word_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(단어 선택) 현재 선택한 영역의 바로뒤의 단어를 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_paragraph_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_paragraph_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_paragraph_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(문단 선택) 현재 선택한 영역의 뒤로, 바로뒤의 paragraph를 선택하는 것
+형태적인 분류 : active_document(화일) &gt; sentence(문장) &gt; word(한 단어) &gt; character(한글자)
+의미적인 분류 : active_document(화일) &gt; paragraph(문단) &gt; line(줄) &gt; word(한 단어) &gt; character(한글자)
+sentence : 표현이 완결된 단위, 그 자체로 하나의 서술된 문장이 되는 것
+paragraph : 줄바꿈이 이루어지기 전까지의 자료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_sentence_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_sentence_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_sentence_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(sentence 선택) 현재 선택한 영역의 뒤로, 바로뒤의 sentence를 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_next_word_from_selection">
+<span class="sig-name descname"><span class="pre">select_next_word_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_next_word_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(단어 선택) 현재 선택한 영역의 뒤로, 바로뒤의 단어를 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_nth_line_from_begin">
+<span class="sig-name descname"><span class="pre">select_nth_line_from_begin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_nth_line_from_begin" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 문서의 처음부터 원하는 n번째 라인을 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>line_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_nth_line_from_cursor">
+<span class="sig-name descname"><span class="pre">select_nth_line_from_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_nth_line_from_cursor" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 문서의 처음부터 원하는 n번째 라인을 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>line_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_nth_paragraph_from_begin">
+<span class="sig-name descname"><span class="pre">select_nth_paragraph_from_begin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_nth_paragraph_from_begin" title="Link to this definition"></a></dt>
+<dd><p>(문단 선택) 문서의 처음부터 원하는 n번째 라인을 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_nth_paragraph_from_cursor">
+<span class="sig-name descname"><span class="pre">select_nth_paragraph_from_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_nth_paragraph_from_cursor" title="Link to this definition"></a></dt>
+<dd><p>(문단 선택) 현재 커서의 위치를 기준으로 n번째 문단을 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_one_word_by_no">
+<span class="sig-name descname"><span class="pre">select_one_word_by_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_one_word_by_no" title="Link to this definition"></a></dt>
+<dd><p>(단어 선택) 전체 문서에서 몇번째 단어를 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_basic">
+<span class="sig-name descname"><span class="pre">select_previous_basic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_type</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_count</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">expand_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_basic" title="Link to this definition"></a></dt>
+<dd><p>입력형태에 따라서 영역을 선택하는것
+기본적인 형태로 사용이 가능하도록 만든것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_type</strong> – </p></li>
+<li><p><strong>input_count</strong> – </p></li>
+<li><p><strong>expand_type</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_line_from_selection">
+<span class="sig-name descname"><span class="pre">select_previous_line_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_line_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 현재 선택된 영역을 기준으로 전 줄로 이동하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_n_line_from_selection">
+<span class="sig-name descname"><span class="pre">select_previous_n_line_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_line</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_n_line_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(라인 선택) 현재 선택된 영역을 기준으로 앞으로 n번째 줄을 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_line</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_n_paragraph_from_selection">
+<span class="sig-name descname"><span class="pre">select_previous_n_paragraph_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_n_paragraph_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(문단 선택) 현재 선택된 영역을 기준으로 n번째 문장을 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_n_sentence_from_selection">
+<span class="sig-name descname"><span class="pre">select_previous_n_sentence_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_n_sentence_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(sentence 선택) 현재 선택된 영역을 기준으로 전 센텐스로 이동하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_n_word_from_selection">
+<span class="sig-name descname"><span class="pre">select_previous_n_word_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_n_word_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(단어 선택) 현재 선택된 영역을 기준으로 전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_paragraph_from_selection">
+<span class="sig-name descname"><span class="pre">select_previous_paragraph_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_paragraph_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(문단 선택) 현재 선택된 영역을 기준으로 전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_sentence_from_selection">
+<span class="sig-name descname"><span class="pre">select_previous_sentence_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_sentence_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(sentence 선택) 현재 선택된 영역을 기준으로 전 센텐스로 이동하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_previous_word_from_selection">
+<span class="sig-name descname"><span class="pre">select_previous_word_from_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_previous_word_from_selection" title="Link to this definition"></a></dt>
+<dd><p>(단어 선택) 현재 선택된 영역을 기준으로 전체 문서에서 줄수로 선택하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_some_char_in_paragraphs">
+<span class="sig-name descname"><span class="pre">select_some_char_in_paragraphs</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">para_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">length</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_some_char_in_paragraphs" title="Link to this definition"></a></dt>
+<dd><p>(글자 선택) 문단 번호로 문단 전체의 영역을 선택하는 것
+paragraph 를 선택한다, 없으면 맨처음부터</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>para_no</strong> – </p></li>
+<li><p><strong>y</strong> – </p></li>
+<li><p><strong>length</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_some_character_in_line">
+<span class="sig-name descname"><span class="pre">select_some_character_in_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">line_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">count_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_some_character_in_line" title="Link to this definition"></a></dt>
+<dd><p>(글자 선택) 전체 문서에서 몇번째 라인의 앞에서 a~b까지의 글자를 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>line_no</strong> – 줄번호</p></li>
+<li><p><strong>start_no</strong> – 글자의 시작번호</p></li>
+<li><p><strong>count_no</strong> – 글자의 갯수</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_table_by_index">
+<span class="sig-name descname"><span class="pre">select_table_by_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_table_by_index" title="Link to this definition"></a></dt>
+<dd><p>테이블 번호로 테이블을 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>table_index</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_xy_cell_in_table">
+<span class="sig-name descname"><span class="pre">select_xy_cell_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengh</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_xy_cell_in_table" title="Link to this definition"></a></dt>
+<dd><p>테이블안의 셀안의 값을 선택하는 방법</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_index</strong> – </p></li>
+<li><p><strong>table_xy</strong> – </p></li>
+<li><p><strong>x</strong> – </p></li>
+<li><p><strong>lengh</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_active_document">
+<span class="sig-name descname"><span class="pre">set_active_document</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_active_document" title="Link to this definition"></a></dt>
+<dd><p>현재 활성화된 문서를 기본 문서로 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_backgroundcolor_in_selection">
+<span class="sig-name descname"><span class="pre">set_backgroundcolor_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_backgroundcolor_in_selection" title="Link to this definition"></a></dt>
+<dd><p>배경색넣기
+#       16764057        wdColorPaleBlue Pale blue color
+#       16711935        wdColorPink     Pink color
+#       6697881 wdColorPlum     Plum color
+#       255     wdColorRed      Red color
+#       13408767        wdColorRose     Rose color
+#       6723891 wdColorSeaGreen Sea green color
+#       16763904        wdColorSkyBlue  Sky blue color
+#       10079487        wdColorTan      Tan color
+#       8421376 wdColorTeal     Teal color
+#       16776960        wdColorTurquoise        Turquoise color
+#       8388736 wdColorViolet   Violet color
+#       16777215        wdColorWhite    White color
+#       65535   wdColorYellow   Yellow color</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_bookmark_at_range">
+<span class="sig-name descname"><span class="pre">set_bookmark_at_range</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_range</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bookmark_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_bookmark_at_range" title="Link to this definition"></a></dt>
+<dd><p>북마크를 영역으로 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_range</strong> – </p></li>
+<li><p><strong>bookmark_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_bookmark_by_xy">
+<span class="sig-name descname"><span class="pre">set_bookmark_by_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bookmark_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_bookmark_by_xy" title="Link to this definition"></a></dt>
+<dd><p>북마크를 이름으로 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>xy</strong> – </p></li>
+<li><p><strong>bookmark_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_bottom_margin">
+<span class="sig-name descname"><span class="pre">set_bottom_margin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_bottom_margin" title="Link to this definition"></a></dt>
+<dd><p>페이지의 아래 마진을 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_bottom_margin_for_page">
+<span class="sig-name descname"><span class="pre">set_bottom_margin_for_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_bottom_margin_for_page" title="Link to this definition"></a></dt>
+<dd><p>페이지셋업 : 아래쪽 띄우기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_bold_in_selection">
+<span class="sig-name descname"><span class="pre">set_font_bold_in_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_bold_in_selection" title="Link to this definition"></a></dt>
+<dd><p>두껍게</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_color_in_selection">
+<span class="sig-name descname"><span class="pre">set_font_color_in_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_color_in_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한것의 폰트 크기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_color</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_color_in_selection_by_scolor">
+<span class="sig-name descname"><span class="pre">set_font_color_in_selection_by_scolor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_color_in_selection_by_scolor" title="Link to this definition"></a></dt>
+<dd><p>선택한것의 폰트 크기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_color</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_name_for_selection">
+<span class="sig-name descname"><span class="pre">set_font_name_for_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Georgia'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_name_for_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역에 폰트를 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_name_for_table">
+<span class="sig-name descname"><span class="pre">set_font_name_for_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Georgia'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_name_for_table" title="Link to this definition"></a></dt>
+<dd><p>테이블의 폰트이름을 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_name_for_xy_cell_in_table">
+<span class="sig-name descname"><span class="pre">set_font_name_for_xy_cell_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">cell_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'Georgia'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_name_for_xy_cell_in_table" title="Link to this definition"></a></dt>
+<dd><p>테이블의 xy의 폰트를 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_index</strong> – </p></li>
+<li><p><strong>cell_index</strong> – </p></li>
+<li><p><strong>input_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_size_down_for_selection">
+<span class="sig-name descname"><span class="pre">set_font_size_down_for_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_size_down_for_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한것의 폰트를 한단계 내리기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_size_for_selection">
+<span class="sig-name descname"><span class="pre">set_font_size_for_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_size_for_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한것의 폰트 크기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_size_for_table">
+<span class="sig-name descname"><span class="pre">set_font_size_for_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">font_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_size_for_table" title="Link to this definition"></a></dt>
+<dd><p>표에 대한 글자크기를 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_index</strong> – </p></li>
+<li><p><strong>font_size</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_font_size_up_for_selection">
+<span class="sig-name descname"><span class="pre">set_font_size_up_for_selection</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_font_size_up_for_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한것의 폰트를 한단계 올린다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_left_margin">
+<span class="sig-name descname"><span class="pre">set_left_margin</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_left_margin" title="Link to this definition"></a></dt>
+<dd><p>왼쪽 띄우기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_left_margin_for_page">
+<span class="sig-name descname"><span class="pre">set_left_margin_for_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_left_margin_for_page" title="Link to this definition"></a></dt>
+<dd><p>페이지셋업 : 왼쪽 띄우기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_line_width_for_table">
+<span class="sig-name descname"><span class="pre">set_line_width_for_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">inside_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">outside_width</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_line_width_for_table" title="Link to this definition"></a></dt>
+<dd><p>테이블의 선두께</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>inside_width</strong> – </p></li>
+<li><p><strong>outside_width</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_orientation_for_page">
+<span class="sig-name descname"><span class="pre">set_orientation_for_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_orientation_for_page" title="Link to this definition"></a></dt>
+<dd><p>페이지의 회전을 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_orientation_for_page_setup">
+<span class="sig-name descname"><span class="pre">set_orientation_for_page_setup</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_orientation_for_page_setup" title="Link to this definition"></a></dt>
+<dd><p>페이지의 회전을 설정</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_range_obj_by_xy">
+<span class="sig-name descname"><span class="pre">set_range_obj_by_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xy_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_range_obj_by_xy" title="Link to this definition"></a></dt>
+<dd><p>글자의 위치로 range객체를 만드는것
+북마크등을 하기위한것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>xy_list</strong> – [시작위치, 끝위치]</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_range_obj_from_letter_no1_to_letter_no2">
+<span class="sig-name descname"><span class="pre">set_range_obj_from_letter_no1_to_letter_no2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_range_obj_from_letter_no1_to_letter_no2" title="Link to this definition"></a></dt>
+<dd><p>영역 선택</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>start_no</strong> – </p></li>
+<li><p><strong>end_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_right_margin_for_page">
+<span class="sig-name descname"><span class="pre">set_right_margin_for_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_right_margin_for_page" title="Link to this definition"></a></dt>
+<dd><p>페이지셋업 : 오른쪽 띄우기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_style_for_selection">
+<span class="sig-name descname"><span class="pre">set_style_for_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'제목</span> <span class="pre">1'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_style_for_selection" title="Link to this definition"></a></dt>
+<dd><p>스타일 지정하는 코드</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_top_margin_for_page">
+<span class="sig-name descname"><span class="pre">set_top_margin_for_page</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_top_margin_for_page" title="Link to this definition"></a></dt>
+<dd><p>페이지셋업 : 위쪽 띄우기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.split_all_file_by_style_name_as_list2d">
+<span class="sig-name descname"><span class="pre">split_all_file_by_style_name_as_list2d</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.split_all_file_by_style_name_as_list2d" title="Link to this definition"></a></dt>
+<dd><p>전체 문서를 스타일이 다른것을 기준으로 분리하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.terms">
+<span class="sig-name descname"><span class="pre">terms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.terms" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.unmerge_for_table">
+<span class="sig-name descname"><span class="pre">unmerge_for_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.unmerge_for_table" title="Link to this definition"></a></dt>
+<dd><p>워드는 unmerge가 없으며, 셀분할로 만들어야 한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_obj</strong> – 테이블 객제</p></li>
+<li><p><strong>start_x</strong> – </p></li>
+<li><p><strong>start_y</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_end_doc">
+<span class="sig-name descname"><span class="pre">write_end_doc</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'커서</span> <span class="pre">뒤에</span> <span class="pre">삽입되었어요'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_end_doc" title="Link to this definition"></a></dt>
+<dd><p>화일의 제일 뒤에 글자 추가</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_list2d_with_style">
+<span class="sig-name descname"><span class="pre">write_list2d_with_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list2d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_list2d_with_style" title="Link to this definition"></a></dt>
+<dd><blockquote>
+<div><p>[[‘050630</p>
+</div></blockquote>
+<p>‘, ‘제목’, ‘n
+‘]] ==&gt; [제목, 제목의 스타일이름, 내용]</p>
+<blockquote>
+<div><p>위와같은 형태의 자료를 새로운 워드를 오픈해서 작성하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">param input_list2d<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p></dd>
+<dt class="field-even">return<span class="colon">:</span></dt>
+<dd class="field-even"><p></p></dd>
+</dl>
+</div></blockquote>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_styled_text_at_end_of_document">
+<span class="sig-name descname"><span class="pre">write_styled_text_at_end_of_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_styled_text_at_end_of_document" title="Link to this definition"></a></dt>
+<dd><p>맨뒤에 글쓰기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>style_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_as_list1d_for_each_paragraph">
+<span class="sig-name descname"><span class="pre">write_text_as_list1d_for_each_paragraph</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_as_list1d_for_each_paragraph" title="Link to this definition"></a></dt>
+<dd><p>모든 paragraph를 리스트로 만들어서 돌려주는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_cursor_to_right_with_space">
+<span class="sig-name descname"><span class="pre">write_text_at_cursor_to_right_with_space</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_cursor_to_right_with_space" title="Link to this definition"></a></dt>
+<dd><p>현재의 위치에 앞에 공백을 넣고 글자를 추가하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_end_for_selection">
+<span class="sig-name descname"><span class="pre">write_text_at_end_for_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_end_for_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한것의 뒤에 글씨넣기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_end_of_cursor">
+<span class="sig-name descname"><span class="pre">write_text_at_end_of_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_end_of_cursor" title="Link to this definition"></a></dt>
+<dd><p>선택한것의 뒤에 글씨넣기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_end_of_word_document">
+<span class="sig-name descname"><span class="pre">write_text_at_end_of_word_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_end_of_word_document" title="Link to this definition"></a></dt>
+<dd><p>문서의 제일 뒷부분에 글을 넣는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_left_for_selection">
+<span class="sig-name descname"><span class="pre">write_text_at_left_for_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_left_for_selection" title="Link to this definition"></a></dt>
+<dd><p>선택한것의 앞에 글씨넣기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_line_no">
+<span class="sig-name descname"><span class="pre">write_text_at_line_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_line_no" title="Link to this definition"></a></dt>
+<dd><p>현재 커서의 위치중 첫번째 라인에 새로운 라인을 넣는 다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_no</strong> – </p></li>
+<li><p><strong>input_text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_nth_cell_in_table">
+<span class="sig-name descname"><span class="pre">write_text_at_nth_cell_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_nth_cell_in_table" title="Link to this definition"></a></dt>
+<dd><p>테이블의 n번째 셀에 값넣기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_index</strong> – </p></li>
+<li><p><strong>input_no</strong> – </p></li>
+<li><p><strong>input_text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_start_of_cursor">
+<span class="sig-name descname"><span class="pre">write_text_at_start_of_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_start_of_cursor" title="Link to this definition"></a></dt>
+<dd><p>보관용
+선택한것의 뒤에 글씨넣기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_value</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_start_of_selection">
+<span class="sig-name descname"><span class="pre">write_text_at_start_of_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_start_of_selection" title="Link to this definition"></a></dt>
+<dd><p>선택영역의 뒷부분에 글쓰기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_at_xy_cell_in_table">
+<span class="sig-name descname"><span class="pre">write_text_at_xy_cell_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_table_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_at_xy_cell_in_table" title="Link to this definition"></a></dt>
+<dd><p>테이블의 셀 위치에 값넣기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_table_no</strong> – </p></li>
+<li><p><strong>xy</strong> – </p></li>
+<li><p><strong>input_text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_in_table_by_xy">
+<span class="sig-name descname"><span class="pre">write_text_in_table_by_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">xy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_in_table_by_xy" title="Link to this definition"></a></dt>
+<dd><p>테이블의 셀에 글씨 입력하기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>table_index</strong> – </p></li>
+<li><p><strong>xy</strong> – </p></li>
+<li><p><strong>input_text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_with_new_line_at_end_of_document">
+<span class="sig-name descname"><span class="pre">write_text_with_new_line_at_end_of_document</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_with_new_line_at_end_of_document" title="Link to this definition"></a></dt>
+<dd><p>맨뒤에 글쓰기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_value_at_end_of_para_no">
+<span class="sig-name descname"><span class="pre">write_value_at_end_of_para_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">para_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'hfs1234234234;lmk'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_value_at_end_of_para_no" title="Link to this definition"></a></dt>
+<dd><p>문단의 번호로 선택된 문단의 제일 뒷부분에 글을 넣는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>para_no</strong> – </p></li>
+<li><p><strong>input_text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.zzz_fstring">
+<span class="sig-name descname"><span class="pre">zzz_fstring</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.zzz_fstring" title="Link to this definition"></a></dt>
+<dd><p>매번 혼돈되는 f-format에 대해서 간단히 적어 본다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, sjpark.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>

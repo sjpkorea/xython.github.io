@@ -1,0 +1,939 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>xython.mailmail module &mdash; xython 1.16 문서</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=06785e48"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=b5f768d8"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            xython
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#id5">xython패키지의 각 모듈의 설명</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython.html">xython package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">xython</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">xython.mailmail module</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/mailmail_rst.rst.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="module-xython.mailmail">
+<span id="xython-mailmail-module"></span><h1>xython.mailmail module<a class="headerlink" href="#module-xython.mailmail" title="Link to this heading"></a></h1>
+<dl class="py class">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.mailmail.</span></span><span class="sig-name descname"><span class="pre">mailmail</span></span><a class="headerlink" href="#xython.mailmail.mailmail" title="Link to this definition"></a></dt>
+<dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.check_outlook_email_test">
+<span class="sig-name descname"><span class="pre">check_outlook_email_test</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.check_outlook_email_test" title="Link to this definition"></a></dt>
+<dd><p>테스트를 위한것
+전체메일 갯수등의 자료들을 보여주는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.data_all_properties_names_for_mail">
+<span class="sig-name descname"><span class="pre">data_all_properties_names_for_mail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.data_all_properties_names_for_mail" title="Link to this definition"></a></dt>
+<dd><p>매일객체의 속성들</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_10_latest_mail_data_in_default_input_folder">
+<span class="sig-name descname"><span class="pre">get_10_latest_mail_data_in_default_input_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_10_latest_mail_data_in_default_input_folder" title="Link to this definition"></a></dt>
+<dd><p>기본편지함에서 최신 10개의 메일 정보를 갖고오는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_10_latest_mails">
+<span class="sig-name descname"><span class="pre">get_10_latest_mails</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_10_latest_mails" title="Link to this definition"></a></dt>
+<dd><p>받은편지함에서 최근 10개의 메일을 돌려받는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_all_default_folder_information">
+<span class="sig-name descname"><span class="pre">get_all_default_folder_information</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_all_default_folder_information" title="Link to this definition"></a></dt>
+<dd><p>모든 기본폴더에 대한 정보</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_all_information_for_one_mail">
+<span class="sig-name descname"><span class="pre">get_all_information_for_one_mail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_all_information_for_one_mail" title="Link to this definition"></a></dt>
+<dd><p>한개의 메일에 대한 모든 정보를 돌려주는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_mail_obj</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_all_mail_information_for_mail_folder_obj_by_limit">
+<span class="sig-name descname"><span class="pre">get_all_mail_information_for_mail_folder_obj_by_limit</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_folder_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_all_mail_information_for_mail_folder_obj_by_limit" title="Link to this definition"></a></dt>
+<dd><p>폴더 객체안의 모든 메세지에대한 정보를 리스트+사전 형태로 만든다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_mail_folder_obj</strong> – </p></li>
+<li><p><strong>limit_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_all_mails_in_mail_folder_obj">
+<span class="sig-name descname"><span class="pre">get_all_mails_in_mail_folder_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_folder_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_all_mails_in_mail_folder_obj" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_mail_folder_obj</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_attached_filename_all_for_one_mail">
+<span class="sig-name descname"><span class="pre">get_attached_filename_all_for_one_mail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_attached_filename_all_for_one_mail" title="Link to this definition"></a></dt>
+<dd><p>이메일 안에 들어있는 첨부화일의 이름들 알아보기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_mail</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_basic_draft_folder">
+<span class="sig-name descname"><span class="pre">get_basic_draft_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_basic_draft_folder" title="Link to this definition"></a></dt>
+<dd><p>기본적인 보낸 편지함</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_basic_input_folder">
+<span class="sig-name descname"><span class="pre">get_basic_input_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_basic_input_folder" title="Link to this definition"></a></dt>
+<dd><p>기본적인 받은 편지함</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_basic_promise_folder">
+<span class="sig-name descname"><span class="pre">get_basic_promise_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_basic_promise_folder" title="Link to this definition"></a></dt>
+<dd><p>기본적인 보관함 폴더</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_each_mail_in_mail_folder_obj_by_limit_no">
+<span class="sig-name descname"><span class="pre">get_each_mail_in_mail_folder_obj_by_limit_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_folder_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">limit_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_each_mail_in_mail_folder_obj_by_limit_no" title="Link to this definition"></a></dt>
+<dd><p>폴더객체안의 날짜기준으로 최근에 들어온 몇개의 메세지만 갖고오는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_mail_folder_obj</strong> – </p></li>
+<li><p><strong>limit_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_each_mail_information_for_mails">
+<span class="sig-name descname"><span class="pre">get_each_mail_information_for_mails</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mails</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_each_mail_information_for_mails" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_mails</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_latest_mail_data_in_default_input_folder_by_limit_no">
+<span class="sig-name descname"><span class="pre">get_latest_mail_data_in_default_input_folder_by_limit_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_latest_mail_data_in_default_input_folder_by_limit_no" title="Link to this definition"></a></dt>
+<dd><p>기본 입력 폴더의 최근 갯수의 메일 자료를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_latest_mail_items_at_input_mail_folder_obj">
+<span class="sig-name descname"><span class="pre">get_latest_mail_items_at_input_mail_folder_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_latest_mail_items_at_input_mail_folder_obj" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_datas_for_one_mail_item">
+<span class="sig-name descname"><span class="pre">get_mail_datas_for_one_mail_item</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_datas_for_one_mail_item" title="Link to this definition"></a></dt>
+<dd><p>입력된 메일객체에대한 기본적인 정보들</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_mail_item</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_by_default_index_no">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_by_default_index_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">default_index_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_default_index_no" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>default_index_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_by_folder_index">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_by_folder_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_folder_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_folder_index" title="Link to this definition"></a></dt>
+<dd><p>top 폴더의 index 와
+원하는 폴더 번호를 넣으면 폴더 객체를 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>top_folder_index</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_by_sub_folder_name">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_by_sub_folder_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_folder_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sub_folder_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_sub_folder_name" title="Link to this definition"></a></dt>
+<dd><p>top 폴더의 index 와 원하는 폴더 번호를 넣으면 폴더 객체를 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>top_folder_name</strong> – </p></li>
+<li><p><strong>sub_folder_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_by_sub_folder_name_only">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_by_sub_folder_name_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_folder_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_sub_folder_name_only" title="Link to this definition"></a></dt>
+<dd><p>폴더이름으로 폴더 객체를 만들고 확인하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_folder_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_by_top_n_sub_folder_index">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_by_top_n_sub_folder_index</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_folder_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sub_folder_index</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">6</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_top_n_sub_folder_index" title="Link to this definition"></a></dt>
+<dd><p>폴더의 이름으로 찾는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>top_folder_index</strong> – </p></li>
+<li><p><strong>sub_folder_index</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_by_top_n_sub_folder_name">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_by_top_n_sub_folder_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_folder_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sub_folder_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_by_top_n_sub_folder_name" title="Link to this definition"></a></dt>
+<dd><p>top 폴더와 서브폴더이름으로 폴더 객체를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>top_folder_name</strong> – </p></li>
+<li><p><strong>sub_folder_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_for_default_input_folder">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_for_default_input_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_for_default_input_folder" title="Link to this definition"></a></dt>
+<dd><p>기본 받은편지함 객체</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_of_default_draft_folder">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_of_default_draft_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_of_default_draft_folder" title="Link to this definition"></a></dt>
+<dd><p>임시보관함의 메일박스</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_folder_obj_of_default_promise_folder">
+<span class="sig-name descname"><span class="pre">get_mail_folder_obj_of_default_promise_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_folder_obj_of_default_promise_folder" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_items_in_folder">
+<span class="sig-name descname"><span class="pre">get_mail_items_in_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_object</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_items_in_folder" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>folder_object</strong> – </p></li>
+<li><p><strong>input_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_obj_in_mail_folder_obj_between_date">
+<span class="sig-name descname"><span class="pre">get_mail_obj_in_mail_folder_obj_between_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_folder_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt_obj_from</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dt_obj_to</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_obj_in_mail_folder_obj_between_date" title="Link to this definition"></a></dt>
+<dd><p>날짜사이의 메일 객체들을 갖고오는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_mail_folder_obj</strong> – 메일박스</p></li>
+<li><p><strong>dt_obj_from</strong> – 시작날짜 (2023-10-1)</p></li>
+<li><p><strong>dt_obj_to</strong> – 종료날짜 (2023-10-3)</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mail_obj_in_mail_folder_obj_from_index_day">
+<span class="sig-name descname"><span class="pre">get_mail_obj_in_mail_folder_obj_from_index_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_folder_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_day_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mail_obj_in_mail_folder_obj_from_index_day" title="Link to this definition"></a></dt>
+<dd><p>오늘을 기준으로 입력한 몇일전까지의 메일을 갖고오는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_mail_folder_obj</strong> – 메일박스</p></li>
+<li><p><strong>input_day_no</strong> – 몇일전까지일지 넣는 숫자</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_mails_in_mail_folder_obj_by_from_to">
+<span class="sig-name descname"><span class="pre">get_mails_in_mail_folder_obj_by_from_to</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_folder_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">from_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">to_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">25</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_mails_in_mail_folder_obj_by_from_to" title="Link to this definition"></a></dt>
+<dd><p>폴더객체안의 날짜기준으로 정렬됭ㄴ자료에서, 최근에 들어온 몇개의 메세지만 갖고오는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_mail_folder_obj</strong> – </p></li>
+<li><p><strong>from_no</strong> – </p></li>
+<li><p><strong>to_no</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_new_mails_on_today_in_default_input_folder">
+<span class="sig-name descname"><span class="pre">get_new_mails_on_today_in_default_input_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_new_mails_on_today_in_default_input_folder" title="Link to this definition"></a></dt>
+<dd><p>받은편지함의 자료를 읽어서 새로운것만 제목보여주기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_nos_of_mails_in_mail_folder_obj">
+<span class="sig-name descname"><span class="pre">get_nos_of_mails_in_mail_folder_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mail_folder_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_nos_of_mails_in_mail_folder_obj" title="Link to this definition"></a></dt>
+<dd><p>폴더객체안의 메일 갯수</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mail_folder_obj</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_nos_of_unread_mails_in_mail_folder_obj">
+<span class="sig-name descname"><span class="pre">get_nos_of_unread_mails_in_mail_folder_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">mail_folder_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_nos_of_unread_mails_in_mail_folder_obj" title="Link to this definition"></a></dt>
+<dd><p>폴더객체안의 읽지않은 메일 갯수 확인</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>mail_folder_obj</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_one_mail_information">
+<span class="sig-name descname"><span class="pre">get_one_mail_information</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">one_email</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_one_mail_information" title="Link to this definition"></a></dt>
+<dd><p>하나의 메일객체에 대한 일반적인 정보들에 대하여 알려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>one_email</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_selected_mails">
+<span class="sig-name descname"><span class="pre">get_selected_mails</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_selected_mails" title="Link to this definition"></a></dt>
+<dd><p>아웃룩에서 어떤때를 보면, 선택한 자료를 확인할 필요가 있다
+이럴때 사용하기 힘든 것이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_sub_folder_index_by_folder_name">
+<span class="sig-name descname"><span class="pre">get_sub_folder_index_by_folder_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">top_folder_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">sub_folder_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_sub_folder_index_by_folder_name" title="Link to this definition"></a></dt>
+<dd><p>폴더이름으로 폴더 객체를 만들고 확인하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>self</strong> – </p></li>
+<li><p><strong>top_folder_name</strong> – </p></li>
+<li><p><strong>sub_folder_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_sub_folders_names">
+<span class="sig-name descname"><span class="pre">get_sub_folders_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_sub_folders_names" title="Link to this definition"></a></dt>
+<dd><p>입력폴더의 하위 폴더들의 이름을 갖고오는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>folder_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_top_folder_index_by_folder_name">
+<span class="sig-name descname"><span class="pre">get_top_folder_index_by_folder_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_top_folder_index_by_folder_name" title="Link to this definition"></a></dt>
+<dd><p>폴더이름을 입력하면 index 를 돌려주는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>folder_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_top_folder_name_all">
+<span class="sig-name descname"><span class="pre">get_top_folder_name_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_top_folder_name_all" title="Link to this definition"></a></dt>
+<dd><p>가장 상위에있는 메일 폴더들의 이름</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_total_mail_no_at_folder">
+<span class="sig-name descname"><span class="pre">get_total_mail_no_at_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_total_mail_no_at_folder" title="Link to this definition"></a></dt>
+<dd><p>폴더이름안의 메일 갯수를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>folder_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_unread_mails_in_default_input_folder">
+<span class="sig-name descname"><span class="pre">get_unread_mails_in_default_input_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_unread_mails_in_default_input_folder" title="Link to this definition"></a></dt>
+<dd><p>기본 받은 편지함의 읽지 않은 메일을 객체로 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_unread_mails_in_mail_folder_obj">
+<span class="sig-name descname"><span class="pre">get_unread_mails_in_mail_folder_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail_folder_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_unread_mails_in_mail_folder_obj" title="Link to this definition"></a></dt>
+<dd><p>입력한 폴데객체의 읽지 않은 메일을 객체로 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_mail_folder_obj</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_unread_mails_in_mails">
+<span class="sig-name descname"><span class="pre">get_unread_mails_in_mails</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">messages</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_unread_mails_in_mails" title="Link to this definition"></a></dt>
+<dd><p>읽지않은 메일객체를 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>messages</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_unread_mails_information_in_default_input_folder">
+<span class="sig-name descname"><span class="pre">get_unread_mails_information_in_default_input_folder</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_unread_mails_information_in_default_input_folder" title="Link to this definition"></a></dt>
+<dd><p>받은 편치함의 자료를 읽어서 새로운것만 제목보여주기</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.make_draft_new_mail">
+<span class="sig-name descname"><span class="pre">make_draft_new_mail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">dic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.make_draft_new_mail" title="Link to this definition"></a></dt>
+<dd><p># 빈 메일객체를 하나 만든것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dic</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.make_new_empty_mail">
+<span class="sig-name descname"><span class="pre">make_new_empty_mail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.make_new_empty_mail" title="Link to this definition"></a></dt>
+<dd><p>빈 메일객체를 하나 만든것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.make_new_mail_in_draft_folder">
+<span class="sig-name descname"><span class="pre">make_new_mail_in_draft_folder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="o"><span class="pre">**</span></span><span class="n"><span class="pre">dic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.make_new_mail_in_draft_folder" title="Link to this definition"></a></dt>
+<dd><p>빈 임시보관함으로 보내는 메일객체를 하나 만든것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>dic</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.manual">
+<span class="sig-name descname"><span class="pre">manual</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.manual" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.manual_mail">
+<span class="sig-name descname"><span class="pre">manual_mail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.manual_mail" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.move_mails_to_target_mail_folder_obj">
+<span class="sig-name descname"><span class="pre">move_mails_to_target_mail_folder_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mails</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">target_mail_folder_obj</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.move_mails_to_target_mail_folder_obj" title="Link to this definition"></a></dt>
+<dd><p>메일 객체를 다른 폴더로 옮기는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_mails</strong> – </p></li>
+<li><p><strong>target_mail_folder_obj</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.read_basic_input_mails_data_with_outlook">
+<span class="sig-name descname"><span class="pre">read_basic_input_mails_data_with_outlook</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.read_basic_input_mails_data_with_outlook" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.read_sub_folder_name_all_in_folder_name">
+<span class="sig-name descname"><span class="pre">read_sub_folder_name_all_in_folder_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.read_sub_folder_name_all_in_folder_name" title="Link to this definition"></a></dt>
+<dd><p>top 폴더의 하위폴더들의 이름을 돌려주는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_folder_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.read_total_unread_mail_no_with_outlook">
+<span class="sig-name descname"><span class="pre">read_total_unread_mail_no_with_outlook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">folder_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.read_total_unread_mail_no_with_outlook" title="Link to this definition"></a></dt>
+<dd><blockquote>
+<div><p>읽지않은 메일 갯수를 갖고온다</p>
+</div></blockquote>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>folder_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.read_unread_mail_from_basic_input_folder_with_outlook">
+<span class="sig-name descname"><span class="pre">read_unread_mail_from_basic_input_folder_with_outlook</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.read_unread_mail_from_basic_input_folder_with_outlook" title="Link to this definition"></a></dt>
+<dd><p>아웃룩에서 읽지않은 메일객체들을 돌려준다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.save_attached_file_for_one_mail">
+<span class="sig-name descname"><span class="pre">save_attached_file_for_one_mail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_mail</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">surname</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">new_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.save_attached_file_for_one_mail" title="Link to this definition"></a></dt>
+<dd><p># 이메일 안에 들어있는 첨부화일을 다른 이름으로 저장하기
+# path : 저장할 경로，없으면 현재의 위치
+# surname : 기존이름앞에 붙이는 목적，없으면 그대로
+# new_name : 새로운 이름으로 변경</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_mail</strong> – </p></li>
+<li><p><strong>path</strong> – </p></li>
+<li><p><strong>surname</strong> – </p></li>
+<li><p><strong>new_name</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.send_mail_by_input_dic">
+<span class="sig-name descname"><span class="pre">send_mail_by_input_dic</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.send_mail_by_input_dic" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_dic</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.send_mail_by_outlook">
+<span class="sig-name descname"><span class="pre">send_mail_by_outlook</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.send_mail_by_outlook" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_dic</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.send_new_mail">
+<span class="sig-name descname"><span class="pre">send_new_mail</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">to</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">subject</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">body</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">attachments</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">None</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.send_new_mail" title="Link to this definition"></a></dt>
+<dd><p>새로운 메일 보내기</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>to</strong> – 수신인</p></li>
+<li><p><strong>subject</strong> – 제목</p></li>
+<li><p><strong>body</strong> – 내용</p></li>
+<li><p><strong>attachments</strong> – 첨부물</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.send_new_mail_by_dic_type">
+<span class="sig-name descname"><span class="pre">send_new_mail_by_dic_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_dic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.send_new_mail_by_dic_type" title="Link to this definition"></a></dt>
+<dd><p>사전형식으로된 메일 자료를 매일객체를 만들어서 송부하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_dic</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.version">
+<span class="sig-name descname"><span class="pre">version</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.version" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+</dd></dl>
+
+</section>
+
+
+           </div>
+          </div>
+          <footer>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, sjpark.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
