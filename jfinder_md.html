@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="ko" >
+<head>
+  <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jfinder &mdash; xython 1.16 문서</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=06785e48"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=b5f768d8"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="색인" href="genindex.html" />
+    <link rel="search" title="검색" href="search.html" />
+    <link rel="next" title="mailmail" href="mailmail_md.html" />
+    <link rel="prev" title="ganada" href="ganada_md.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            xython
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#id5">xython패키지의 각 모듈의 설명</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">Jfinder</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">jfinder의 사용법</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython.html">xython package</a></li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Mobile navigation menu" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">xython</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Page navigation">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+      <li class="breadcrumb-item active">Jfinder</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/jfinder_md.md.txt" rel="nofollow"> View page source</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="jfinder">
+<h1>Jfinder<a class="headerlink" href="#jfinder" title="Link to this heading"></a></h1>
+<p>이름을 <strong>Jfinder</strong>라고 지었으며, 아래와 같은 특성을 가지고 있다</p>
+<ol class="arabic simple">
+<li><p>건수는 ~를 사용하여 4~5라는 식으로 표현을 하였고</p></li>
+<li><p>한글, 영어와 같은 것은 대괄호를 사용하여 적용하였다 [한글]</p></li>
+<li><p>처음과 끝은 [처음], [끝]처럼 나타냈다</p></li>
+<li><p>그리고 이것은 누가 보아도 아~~ 무엇을 찾을려고 했는지를 알수있도록 하기위한것이며</p></li>
+<li><p>찾기기능중에 전부 찾아서 보기쉽도록 돌려주는 것과 같은 몇가지 메소드들을 만들어 넣었읍니다
+제일 중요한 코드를 만드는 기능은 아래와 같읍니다
+대략적으로 위의것을 읽은후에 보시면 이해가 되실부분이 많읍니다</p></li>
+</ol>
+<ul>
+<li><p>아래의 코드들은 정규표현식을 사용하면서, 내가 만든 표현식조차도 다시 읽기가 어려워서, 나름 다른 형태로 만들어 본것인데. 생각보다 가독성이 좋아서 같이 공유해보는것이다
+또한 만든김에 결과로 돌려주는것도 하나만 받으면 전부 가능하도록 만들어 보았다
+위에서 언급한 이메일 형식이 맞느지를 보는 것은 상당히 반복적이기 때문에 크게 혼돈은 없다
+하지만, 실제 코드를 사용하다 보면, 외계어를 해석하는 상태까지 와야할 경우가 있다</p>
+<p>([a-zA-Z0-9_.+-]+)&#64;[a-zA-Z0-9_.+-]+.[a-zA-Z0-9_.+-]+</p>
+</li>
+<li><p>이정도만해도 간단한 축에 속한다. 맨처음 만들때는 그나마 이해를 하지만, 다른사람이 만든 것을 이해하는데 상당한 시간이 걸린다는 것이고, 또한 일반적인 사용자들이 이것을 공부하고 이해하는데 어려움이 잇을 것 같으면서 동시에, 정규표현식의 강력함을 사용할수 있도록 생각해 보는 것이다
+그래서 좀더 간단하게 사용법을 만들고,</p>
+<p>[영어&amp;숫자.+-:1~]&#64;[영어&amp;숫자.+-:1~].[영어&amp;숫자.+-:1~]
+이렇게 바꾸면 좀더 읽기가 쉬워진다</p>
+</li>
+</ul>
+<p><strong>jfinder</strong>에는 자주사용하는 언어를 등록할수도 있읍니다. 예를 들어 일본어나 한자를 등록한것처럼 하면 사용이 가능하다.
+간단하게 다시 사용하는 방법을 알려주면, 너무 줄여놓은 정규표현식을 좀더 늘이는 것이라고 생각하면 됩니다. 여기에서 느낀 부분은 전문가가 사용하기에는 좋지만, 비전문가가 사용하기 쉽게, 예전에는 단어1개가 아주 중요한 속도까지 영향을 주지만, 지금은너무 줄이지 않아도 된다는 것이다. 기계에 가까운 언어에서 좀더 사용자에 가까운 언어로 만들어도 된다는 것이지요
+파이선이 사용하기에 좀더 편한방법이 되는 것이지요</p>
+<div class="highlight-none notranslate"><div class="highlight"><pre><span></span>- 대괄호로 묶는다
+- 반복갯수는 대괄호안에 사용하며 ~로 나타낸다
+- 맨처음 맨마지막등의 용어는 [처음], [끝]등의 이유로 나타낸다 
+- 특수문자(re모듈내에 의미가있는 문자)는 \를 붙여서 사용한다
+- 어떤문자의 앞과뒤에있을때는 (앞에있음:abc)이라고 사용하면 abc가 앞에있는 문자열을 찾는것이다
+</pre></div>
+</div>
+<section id="id1">
+<h2>jfinder의 사용법<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">jfinder</span>
+
+<span class="n">myre</span> <span class="o">=</span> <span class="n">jfinder</span><span class="o">.</span><span class="n">jfinder</span><span class="p">()</span>
+<span class="n">input_text</span> <span class="o">=</span> <span class="s2">&quot;가나다라1234abc오육칠&quot;</span>
+<span class="n">myre</span><span class="o">.</span><span class="n">search_all_by_resql</span><span class="p">(</span><span class="s2">&quot;[숫자:1~2][영어:1~2]&quot;</span><span class="p">,</span> <span class="n">input_text</span><span class="p">)</span>
+</pre></div>
+</div>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
+        <a href="ganada_md.html" class="btn btn-neutral float-left" title="ganada" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="mailmail_md.html" class="btn btn-neutral float-right" title="mailmail" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Copyright 2023, sjpark.</p>
+  </div>
+
+  Built with <a href="https://www.sphinx-doc.org/">Sphinx</a> using a
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a>
+    provided by <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
