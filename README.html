@@ -101,8 +101,7 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <p><a class="reference internal" href="#www.xython.co.kr"><span class="xref myst">==&gt; xython으로 가기</span></a></p>
-<p><img src="D:\my_code\icons\xython.png" width="10%" height="10%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img></p>
+  <p><img src="D:\my_code\icons\xython.png" width="10%" height="10%" title="px(픽셀) 크기 설정" alt="RubberDuck"></img></p>
 <section id="about-xython-module">
 <h1>About xython module / 개요<a class="headerlink" href="#about-xython-module" title="Link to this heading"></a></h1>
 <p>Functional Programming for Excel, Word, Outlook, Color, Etc by Python</p>
@@ -663,6 +662,92 @@ now under making GUI toolkit for easy &amp; no installing for python for this pa
 
 <span class="c1"># get today style</span>
 <span class="n">today</span> <span class="o">=</span> <span class="n">sigan</span><span class="o">.</span><span class="n">get_today_as_yyyy_mm_dd_style</span><span class="p">()</span>
+
+<span class="c1">#현재 선택된 영역을 돌려주는 것</span>
+<span class="c1">#return된값은 r_rsa의 형태로 하도록 한다</span>
+<span class="c1"># 만약 같은 값이 있을때는, 1,2등의 숫자를 붙이도록 한다</span>
+<span class="n">r_rsa</span><span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">read_selection_address</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r_rsa</span><span class="p">)</span>
+<span class="c1">#[3,3,7,7]을 선택하도록 하자</span>
+<span class="n">range_1</span> <span class="o">=</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">]</span>
+
+<span class="n">excel</span><span class="o">.</span><span class="n">select_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">range_1</span><span class="p">)</span>
+<span class="c1">#선택한 영역에 빨간색을 열흐게 칠해보자</span>
+
+<span class="n">excel</span><span class="o">.</span><span class="n">paint_range_by_scolor</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">range_1</span><span class="p">,</span> <span class="s2">&quot;red95&quot;</span><span class="p">)</span>
+<span class="c1">#선택한 영역에 숫자를 쓰도록 하자</span>
+<span class="k">for</span> <span class="n">x</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span><span class="mi">7</span><span class="o">+</span><span class="mi">1</span><span class="p">):</span>
+	<span class="k">for</span> <span class="n">y</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="mi">3</span><span class="p">,</span> <span class="mi">7</span><span class="o">+</span> <span class="mi">1</span><span class="p">):</span>
+		<span class="n">excel</span><span class="o">.</span><span class="n">write_value_in_cell</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">],</span> <span class="s2">&quot;셀 :&quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">x</span><span class="p">)</span><span class="o">+</span><span class="s2">&quot;, &quot;</span><span class="o">+</span><span class="nb">str</span><span class="p">(</span><span class="n">y</span><span class="p">))</span>
+
+
+<span class="c1">#선택한 영역에 기본선의 형태로 설정된 선을 굿도록 하자</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">draw_line_in_range_as_basic</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">range_1</span><span class="p">)</span>
+<span class="c1">#엑셀의 값을 이동시킨다</span>
+<span class="n">range_2</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">move_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">range_1</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">range_2</span><span class="p">)</span>
+
+<span class="c1">#영역을 복사하기</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">copy_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">range_2</span><span class="p">)</span>
+<span class="n">range_3</span> <span class="o">=</span> <span class="p">[</span><span class="mi">6</span><span class="p">,</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">paste_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="n">range_3</span><span class="p">)</span>
+
+<span class="c1">#선택된영역의 3번째 마다 값을 삭제</span>
+<span class="n">excel</span><span class="o">.</span> <span class="n">delete_value_in_range_by_step</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="mi">3</span><span class="p">)</span>
+
+<span class="c1">#빈셀을 위의 것으로 체우기</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">write_uppercell_value_in_emptycell_in_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">2</span><span class="p">])</span><span class="c1">#수정 필요, 여러줄일때 오류</span>
+
+<span class="c1">#정규표현식을 사용하는 방법</span>
+<span class="kn">import</span> <span class="nn">jfinder</span>
+<span class="n">myre</span> <span class="o">=</span> <span class="n">jfinder</span><span class="o">.</span><span class="n">jfinder</span><span class="p">()</span>
+<span class="n">r_rvir</span> <span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">read_value_in_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
+<span class="n">re_sql</span><span class="o">=</span> <span class="s2">&quot;:([숫자:1~1])(,)&quot;</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">list_1d</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">r_rvir</span><span class="p">):</span>
+	<span class="n">r_sabj</span> <span class="o">=</span> <span class="n">myre</span><span class="o">.</span><span class="n">search_all_by_jfsql</span><span class="p">(</span><span class="n">re_sql</span><span class="p">,</span> <span class="n">list_1d</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+	<span class="nb">print</span><span class="p">(</span><span class="n">r_sabj</span><span class="p">)</span>
+	<span class="n">excel</span><span class="o">.</span><span class="n">write_value_in_cell</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">list_1d</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+	<span class="n">excel</span><span class="o">.</span><span class="n">write_value_in_cell</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">r_sabj</span><span class="p">)</span>
+	<span class="n">excel</span><span class="o">.</span><span class="n">write_value_in_cell</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">20</span><span class="p">,</span> <span class="mi">3</span><span class="p">],</span> <span class="nb">str</span><span class="p">(</span><span class="n">r_sabj</span><span class="p">))</span>
+
+<span class="c1">#excel.delete_empty._sheet #이 함수가 없어짐, 빈 시트 삭제하기</span>
+<span class="c1">#영역의 픽셀값을 갖고온다</span>
+<span class="n">r_cxtp</span> <span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">change_xyxy_to_pxyxy</span><span class="p">([</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">7</span><span class="p">])</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">r_cxtp</span><span class="p">)</span>
+
+
+
+<span class="c1">#현재 선택한 영역의 라인의 모든 값을 읽어온다</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">select_cell</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">3</span><span class="p">,</span><span class="mi">3</span><span class="p">])</span>
+<span class="n">r_raia</span> <span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">read_address_in_activecell</span><span class="p">()</span>
+<span class="n">r_rvx</span> <span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">read_value_in_xline</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">r_raia</span><span class="p">[</span><span class="mi">0</span><span class="p">],</span><span class="n">r_raia</span><span class="p">[</span><span class="mi">0</span><span class="p">]])</span>
+<span class="c1">#print(r_rvx)</span>
+
+<span class="c1">#여러개의 단어를 한번에 변경하자</span>
+<span class="n">change_words</span> <span class="o">=</span> <span class="p">[[</span><span class="s2">&quot;3,4&quot;</span><span class="p">,</span> <span class="s2">&quot;삼점사&quot;</span><span class="p">],</span> <span class="p">[</span><span class="s2">&quot;5,5&quot;</span><span class="p">,</span> <span class="s2">&quot;5점5&quot;</span><span class="p">]]</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">replace_many_word_in_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span> <span class="p">,</span><span class="n">change_words</span><span class="p">)</span> <span class="c1">#x,y,가 잘못됨, 수정 필요</span>
+
+<span class="c1">#시트이름바꾸기</span>
+<span class="n">r_ran</span> <span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">read_activesheet_name</span><span class="p">()</span>
+<span class="n">all_sheet_name</span> <span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">read_all_sheet_name</span><span class="p">()</span>
+<span class="k">if</span> <span class="n">r_ran</span> <span class="o">!=</span> <span class="s2">&quot;Sheet1l&quot;</span> <span class="ow">and</span> <span class="ow">not</span> <span class="n">r_ran</span> <span class="ow">in</span> <span class="n">all_sheet_name</span><span class="p">:</span>
+	<span class="n">excel</span><span class="o">.</span> <span class="n">change_sheet_name</span><span class="p">(</span><span class="n">r_ran</span><span class="p">,</span> <span class="s2">&quot;Sheet1&quot;</span><span class="p">)</span>
+
+<span class="c1">#새로운시트를 추가</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">insert_sheet_with_name</span><span class="p">(</span><span class="s2">&quot;새로운시트&quot;</span><span class="p">)</span>
+
+<span class="c1">#기존의 시트로 돌아오기</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">select_sheet</span><span class="p">(</span><span class="s2">&quot;Sheet1&quot;</span><span class="p">)</span>
+
+<span class="c1">#선택영역에 왼쪽에 글자를 추가하는 것</span>
+<span class="n">excel</span><span class="o">.</span><span class="n">add_text_in_range_at_left</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="s2">&quot;추가-&quot;</span><span class="p">)</span>
+
+<span class="c1">#사진하나 추가하기</span>
+<span class="n">picture_path</span> <span class="o">=</span> <span class="s2">&quot;&quot;</span>
+<span class="k">if</span> <span class="n">picture_path</span> <span class="o">!=</span> <span class="s2">&quot;&quot;</span><span class="p">:</span>
+	<span class="n">excel</span><span class="o">.</span><span class="n">insert_picture_with_same_size_of_input_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">17</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">20</span><span class="p">,</span><span class="mi">4</span><span class="p">],</span> <span class="n">picture_path</span><span class="p">)</span>
+
+
 </pre></div>
 </div>
 </section>
