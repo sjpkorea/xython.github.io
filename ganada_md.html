@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ganada (Example) &mdash; xython 1.16 문서</title>
+  <title>ganada &mdash; xython 1.16 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -48,8 +48,8 @@
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">ganada (Example)</a><ul>
-<li class="toctree-l2"><a class="reference internal" href="#ganada">ganada의 용어 설명</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">ganada</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="#id1">ganada의 용어 설명</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
@@ -84,7 +84,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">ganada (Example)</li>
+      <li class="breadcrumb-item active">ganada</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/ganada_md.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -94,10 +94,10 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="ganada-example">
-<h1>ganada (Example)<a class="headerlink" href="#ganada-example" title="Link to this heading"></a></h1>
-<section id="ganada">
-<h2>ganada의 용어 설명<a class="headerlink" href="#ganada" title="Link to this heading"></a></h2>
+  <section id="ganada">
+<h1>ganada<a class="headerlink" href="#ganada" title="Link to this heading"></a></h1>
+<section id="id1">
+<h2>ganada의 용어 설명<a class="headerlink" href="#id1" title="Link to this heading"></a></h2>
 <p>워드를 좀더 쉽게 사용하기 위한 방법이다. 기본적으로 워드는 전반적인 사용은 직접 다루는 것이 편하기 때문에, 엑셀의 자료를 잘 갖고와서
 특정한 곳에 변경을 하거나 집어 넣는 부분에 촛점을 맞추었다</p>
 <table class="docutils align-default">
@@ -161,6 +161,93 @@
 <span class="n">input_text</span> <span class="o">=</span> <span class="s2">&quot;가나다&quot;</span>
 <span class="c1">#워드의 테이블 1번의 가로 2, 세로 3의 위치에 값을 넣는것</span>
 <span class="n">word</span><span class="o">.</span><span class="n">write_text_in_table_by_xy</span><span class="p">(</span><span class="s2">&quot;table_1&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">],</span> <span class="n">input_text</span><span class="p">)</span>
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">pcell</span>
+<span class="n">excel</span> <span class="o">=</span> <span class="n">pcell</span><span class="o">.</span><span class="n">pcell</span><span class="p">()</span>
+<span class="kn">import</span> <span class="nn">ganada</span>
+<span class="n">word</span> <span class="o">=</span> <span class="n">ganada</span><span class="o">.</span><span class="n">ganada</span><span class="p">()</span>
+<span class="c1">#현재 열린문서의 모든 글자를 삭제한다</span>
+<span class="n">word</span><span class="o">.</span><span class="n">select_all</span><span class="p">()</span>
+<span class="n">word</span><span class="o">.</span><span class="n">delete_selection</span><span class="p">()</span>
+<span class="n">text</span> <span class="o">=</span><span class="s2">&quot;&quot;&quot;님의 침묵</span>
+<span class="s2">한용운</span>
+<span class="s2">님은 갔습니다. 아아, 사랑하는 나의 님은 갔습니다.</span>
+<span class="s2">푸른 산빛을 깨치고 단풍나무 숲을 향하여 난 작은 길을 걸어서, 차마 떨치고 갔습니다.</span>
+<span class="s2">황금의 꽃같이 굳고 빛나던 옛 맹세는 차디찬 티끌이 되어서 한숨의 미풍에 날아갔습니다.</span>
+<span class="s2">날카로운 첫 키스의 추억은 나의 운명의 지침을 돌려놓고, 뒷걸음쳐서 사라졌습니다.</span>
+<span class="s2">나는 향기로운 님의 말소리에 귀먹고, 꽃다운 님의 얼굴에 눈멀었습니다.</span>
+<span class="s2">사랑도 사람의 일이라, 만날 때에 미리 떠날 것을 염려하고 경계하지 아니한 것은 아니지만,</span>
+<span class="s2">이별은 뜻밖의 일이 되고, 놀란 가슴은 새로운 슬픔에 터집니다.</span>
+<span class="s2">그러나 이별을 쓸데없는 눈물의 원천을[1] 만들고 마는 것은 스스로 사랑을 깨치는 것인 줄 아는 까닭에,</span>
+<span class="s2">걷잡을 수 없는 슬픔의 힘을 옮겨서 새 희망의 정수박이에 들어부었습니다.</span>
+<span class="s2">우리는 만날 때에 떠날 것을 염려하는 것과 같이 떠날 때에 다시 만날 것을 믿습니다.</span>
+<span class="s2">아아, 님은 갔지마는 나는 님을 보내지 아니하였습니다.</span>
+<span class="s2">제 곡조를 못 이기는 사랑의 노래는 님의 침묵을 휩싸고 돕니다.</span>
+<span class="s2">&quot;&quot;&quot;</span>
+<span class="c1">#위의 글을 쓰는것</span>
+<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_end_of_word_document</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+
+<span class="c1">#바꾸기</span>
+<span class="n">word</span><span class="o">.</span><span class="n">replace_all</span><span class="p">(</span><span class="s2">&quot;님&quot;</span><span class="p">,</span> <span class="s2">&quot;니이이임&quot;</span><span class="p">)</span>
+<span class="n">r_sawcarp</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="n">search_all_with_color_and_return_position</span><span class="p">(</span><span class="s2">&quot;니이이임&quot;</span><span class="p">)</span>
+
+<span class="c1">#맨마지막으로 커서를 이동</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_document</span><span class="p">()</span>
+
+<span class="c1">#검정색 선의 테이블을 만든다</span>
+<span class="n">word</span><span class="o">.</span><span class="n">make_table_obj_with_black_line</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="c1">#테이블에 글을 쓰기</span>
+<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_xy_cell_in_table</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;2,2번째 셀입니다&quot;</span><span class="p">)</span>
+
+<span class="c1">#문서의 맨마지막에 글을  쓰기</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_document</span><span class="p">()</span>
+<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_end_of_word_document</span><span class="p">(</span><span class="s2">&quot;테스트용으로 넣은것&quot;</span><span class="p">)</span>
+
+<span class="c1">#검정색 선의 테이블을 만든다</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_document</span><span class="p">()</span>
+<span class="n">word</span><span class="o">.</span><span class="n">make_table_obj_with_black_line</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
+
+<span class="c1">#커서를 처음으로 이동</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_start_of_document</span><span class="p">()</span>
+
+<span class="c1">#3번째 라인을 선택</span>
+<span class="n">word</span><span class="o">.</span><span class="n">select_line_by_line_no_from_cursor</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">word</span><span class="o">.</span><span class="n">paint_border_in_selection</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
+
+<span class="c1">#한재 라인의 2번째 뒤의 라인을 선택</span>
+<span class="n">word</span><span class="o">.</span><span class="n">select_line_by_line_no_from_cursor</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">word</span><span class="o">.</span><span class="n">paint_border_in_selection</span><span class="p">(</span><span class="s2">&quot;blu&quot;</span><span class="p">)</span>
+<span class="n">word</span><span class="o">.</span><span class="n">select_all</span><span class="p">()</span>
+<span class="c1">#정규표현식으로 글자를 찾아서 변경하기</span>
+<span class="n">aaa</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="n">replace_in_document_by_jfsql</span><span class="p">(</span><span class="s2">&quot;[숫자:1~ 2],[숫자:1~2]&quot;</span><span class="p">,</span> <span class="s2">&quot;777777777777&quot;</span><span class="p">)</span>
+
+<span class="c1">#2번째 테이블의 3번째 셀부터, 리스트의 값을 순차적으로 집어 넣기</span>
+<span class="n">input_list1d</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1번&quot;</span><span class="p">,</span><span class="s2">&quot;2번&quot;</span><span class="p">,</span><span class="s2">&quot;3번&quot;</span><span class="p">,</span><span class="s2">&quot;4번&quot;</span><span class="p">,</span><span class="s2">&quot;5번&quot;</span><span class="p">,</span><span class="s2">&quot;6번&quot;</span><span class="p">,</span><span class="s2">&quot;7번&quot;</span><span class="p">,</span><span class="s2">&quot;8번&quot;</span><span class="p">]</span>
+<span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">one_value</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">input_list1d</span><span class="p">):</span>
+	<span class="n">word</span><span class="o">.</span><span class="n">select_xy_cell_in_table</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">3</span><span class="o">+</span><span class="n">index</span><span class="p">])</span>
+	<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_end_of_cursor</span><span class="p">(</span><span class="n">one_value</span><span class="p">)</span>
+
+<span class="c1">#헤더에 페이지를 넣는것</span>
+<span class="n">word</span><span class="o">.</span><span class="n">set_page_no_at_header</span><span class="p">(</span><span class="s2">&quot;xython.co.kr&quot;</span><span class="p">,</span><span class="mi">1</span><span class="p">)</span>
+
+<span class="c1">#사진 넣기</span>
+<span class="n">word</span><span class="o">.</span><span class="n">insert_picture_at_cursor</span><span class="p">(</span><span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">test_폴더</span><span class="se">\\</span><span class="s2">다운로드.jpg&quot;</span><span class="p">,</span><span class="mi">100</span><span class="p">,</span><span class="mi">100</span><span class="p">)</span>
+
+<span class="c1">#pdf로 출력하기</span>
+<span class="n">word</span><span class="o">.</span><span class="n">print_as_pdf</span><span class="p">(</span><span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">aaa.pdf&quot;</span><span class="p">)</span>
+
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_document</span><span class="p">()</span>
+
+<span class="c1">#글자를 넣으면서 색과 크기를 지정</span>
+<span class="n">word</span><span class="o">.</span><span class="n">write_text_in_selection_with_color_size_bold</span><span class="p">(</span><span class="s2">&quot;dasdasdadasda&quot;</span><span class="p">,</span> <span class="s2">&quot;blu&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+
+<span class="c1">#선택영역의 배경색을 지정</span>
+<span class="n">word</span><span class="o">.</span><span class="n">paint_background_color_in_selection</span><span class="p">(</span><span class="s2">&quot;pin90&quot;</span><span class="p">)</span>
+
+
 </pre></div>
 </div>
 </section>
