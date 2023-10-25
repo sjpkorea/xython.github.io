@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>mailmail (Example) &mdash; xython 1.16 문서</title>
+  <title>mailmail &mdash; xython 1.16 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -48,9 +48,9 @@
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">mailmail (Example)</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">mailmail</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
@@ -81,7 +81,7 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">mailmail (Example)</li>
+      <li class="breadcrumb-item active">mailmail</li>
       <li class="wy-breadcrumbs-aside">
             <a href="_sources/mailmail_md.md.txt" rel="nofollow"> View page source</a>
       </li>
@@ -91,8 +91,8 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="mailmail-example">
-<h1>mailmail (Example)<a class="headerlink" href="#mailmail-example" title="Link to this heading"></a></h1>
+  <section id="mailmail">
+<h1>mailmail<a class="headerlink" href="#mailmail" title="Link to this heading"></a></h1>
 <p>이름을 <strong>mailmail</strong>라고 지었으며, 아웃룩의 이메일을 관리하는 도구입니다<br></p>
 <ul class="simple">
 <li><p>이것의 장점은 엑셀이나 Util과 연동하여 편의성을 더욱 증대하고있읍니다</p></li>
@@ -101,6 +101,145 @@
 <p>아웃룩을 사용하기 쉽도록 하기위한 모듈이다.<br>
 기본적으로 아웃룩은 폴더의 형태관리를 하고있다.<br>
 또한 각 메일은 item이라는 객체로 관리가 된다<br></p>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">mailmail</span>
+<span class="n">outlook</span> <span class="o">=</span> <span class="n">mailmail</span><span class="o">.</span><span class="n">mailmail</span><span class="p">()</span>
+<span class="c1">#받은 편지함에서 최근의 10개 메일에 대한 정보들을 갖고오기</span>
+<span class="n">aaa</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_10_latest_mail_data_in_default_input_folder</span><span class="p">()</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">aaa</span><span class="p">)</span>
+
+
+<span class="c1">#받은 편지함에서 최근의 교개를 메일 객체로 들려받는것</span>
+<span class="n">letters</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_latest_mail_items_at_input_mail_folder_obj</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">letters</span><span class="p">)</span>
+
+<span class="c1">#기본 폴더들이 어떤것이 있는지 알려 주는것</span>
+<span class="n">letter_box_all_name</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_all_default_folder_information</span><span class="p">()</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">letter_box_all_name</span><span class="p">)</span>
+
+<span class="c1">#메일객체 1개에 대한 정보를 갖고오는 것</span>
+<span class="n">letter_information</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_all_information_for_one_mail</span><span class="p">(</span><span class="n">letters</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">letter_information</span><span class="p">)</span>
+
+<span class="c1">#한 메일객체에의 첨부 화일만 갖고오기</span>
+<span class="n">letter_attchments</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_attached_filename_all_for_one_mail</span><span class="p">(</span><span class="n">letters</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">letter_attchments</span><span class="p">)</span>
+
+<span class="c1">#플더 객체를 갖고오는 것</span>
+<span class="n">letter_box</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_mail_folder_obj_by_default_index_no</span><span class="p">(</span><span class="mi">6</span><span class="p">)</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">letter_box</span><span class="p">)</span>
+
+<span class="c1">#어떤 메일과 동일한 형식의 메일을 쓰기 위해서, 특정 메일의 정보를 갖고오는것</span>
+<span class="n">letter_information</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_one_mail_information</span> <span class="p">(</span><span class="n">letters</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+<span class="nb">print</span> <span class="p">(</span><span class="n">letter_information</span><span class="p">)</span>
+
+<span class="c1">#오늘을 기준으로 몇일전후의 자료를 갖고올것인지</span>
+<span class="n">letter_by_day</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_mail_obj_in_mail_folder_obj_from_index_day</span><span class="p">(</span><span class="n">letter_box</span><span class="p">,</span><span class="mi">2</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letter_by_day</span><span class="p">)</span>
+
+<span class="c1">#날짜사이의 모든 메일 객체를 갖고오는 것</span>
+<span class="n">letter_between_day</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_mail_obj_in_mail_folder_obj_between_date</span><span class="p">(</span><span class="n">letter_box</span><span class="p">,</span><span class="s2">&quot;2023-10-23&quot;</span><span class="p">,</span><span class="s2">&quot;2023-10-24&quot;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letter_between_day</span><span class="p">)</span>
+
+<span class="c1">#오늘 들어온 메일중 읽지 않은 메일</span>
+<span class="n">letters_today</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_new_mails_on_today_in_default_input_folder</span><span class="p">()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letters_today</span><span class="p">)</span>
+
+<span class="c1">#새로운 메일 보내기</span>
+<span class="c1">#혹시 그냥 발송될까봐 주석 처리함</span>
+<span class="c1">#outlook.send_new_mail(to=&quot;&quot;, subject=&quot;&quot;, body=&quot;&quot;, attachments=None)</span>
+
+<span class="c1"># 메일주소가 다른것만 갖고오기</span>
+<span class="n">letters_by_address</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">find_mail_items_in_input_folder_by_sender</span><span class="p">(</span><span class="n">letter_box</span><span class="p">,</span> <span class="s2">&quot;lotte.net&quot;</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">letters_by_address</span><span class="p">)</span>
+
+
+<span class="c1">#메일을 만들어서, 임시 보관함으로 저장하기</span>
+<span class="c1">#outlook.make _draft_ new_mail(**dic)</span>
+<span class="n">aaa</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_opened_mail_item</span><span class="p">()</span>
+	<span class="k">if</span> <span class="n">aaa</span><span class="p">:</span>
+		<span class="n">bbb</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">get_one_mail_information</span><span class="p">(</span><span class="n">aaa</span><span class="p">)</span>
+		<span class="nb">print</span><span class="p">(</span><span class="n">bbb</span><span class="p">)</span>
+<span class="n">outlook</span><span class="o">.</span><span class="n">reply_email</span><span class="p">(</span><span class="n">letters</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+
+
+</pre></div>
+</div>
+<div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1">#-*- coding: utf-8 -*-</span>
+<span class="kn">import</span> <span class="nn">mailmail</span>
+<span class="n">outlook</span> <span class="o">=</span> <span class="n">mailmail</span><span class="o">.</span><span class="n">mailmail</span><span class="p">()</span>
+
+<span class="c1">#메일에 css를 적용해서, 테이블을 만들고 보내는 방법</span>
+
+<span class="n">body_top</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;html&gt;</span>
+<span class="s2">&lt;head&gt;</span>
+<span class="s2">&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html; charset=UTF-8&quot;&gt; &quot;&quot;&quot;</span>
+
+<span class="n">style_start</span> <span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;style type=&quot;text/css&quot;&gt;</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">style_1</span> <span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">table_id_1 {</span>
+<span class="s2">	font-family: 맑은 고딕, Arial, Helvetica, sans-serif;</span>
+<span class="s2">	background-color: #EEEEEE</span>
+<span class="s2">	border-collapse: collapse;</span>
+<span class="s2">	width: 100%;</span>
+<span class="s2">	}</span>
+
+<span class="s2">table td, table th {</span>
+<span class="s2">	border: 1px solid #ddd;</span>
+<span class="s2">	padding: 0рх 0рх;</span>
+<span class="s2">}</span>
+<span class="s2">table th{</span>
+<span class="s2">	font-size: 15px;</span>
+<span class="s2">	font-weight: bold;</span>
+<span class="s2">	padding-top: 2px;</span>
+<span class="s2">	padding-bottom: 2px</span>
+<span class="s2">	text-align: left;</span>
+<span class="s2">	background-color: #660000;</span>
+<span class="s2">	color: white;</span>
+<span class="s2">}</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+
+<span class="n">style_end</span> <span class="o">=</span> <span class="s2">&quot;&quot;&quot;&lt;/style&gt;&quot;&quot;&quot;</span>
+
+<span class="n">body_middle_start</span><span class="o">=</span><span class="s2">&quot;&quot;</span>
+
+<span class="n">body_bottom</span> <span class="o">=</span><span class="s2">&quot;&quot;&quot;</span>
+<span class="s2">&lt;br&gt; &lt;br&gt; &lt;br&gt;</span>
+<span class="s2">xython.co.kr</span>
+<span class="s2">&quot;&quot;&quot;</span>
+
+<span class="n">tbe_title_data</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;업체명&quot;</span><span class="p">,</span><span class="s2">&quot;PR번호&quot;</span><span class="p">,</span> <span class="s2">&quot;요청납기&quot;</span><span class="p">,</span><span class="s2">&quot;예상 납기일자&quot;</span><span class="p">,</span> <span class="s2">&quot;납기소요일&quot;</span><span class="p">,</span><span class="s2">&quot;수량&quot;</span><span class="p">,</span> <span class="s2">&quot;비고&quot;</span><span class="p">]</span>
+<span class="c1">#여러자료증에서 원하는 y열들을 번호를 기준으로 갖고오는것</span>
+<span class="n">tbe_data</span> <span class="o">=</span><span class="p">[</span>
+<span class="p">[</span><span class="s2">&quot;aaa&quot;</span><span class="p">,</span> <span class="s2">&quot;123&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-10-11&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-10-11&quot;</span><span class="p">,</span> <span class="s2">&quot;90일&quot;</span><span class="p">,</span> <span class="s2">&quot;1 set&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
+<span class="p">[</span><span class="s2">&quot;bbb&quot;</span><span class="p">,</span> <span class="s2">&quot;456&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-10-12&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-10-12&quot;</span><span class="p">,</span> <span class="s2">&quot;91일&quot;</span><span class="p">,</span> <span class="s2">&quot;1 set&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
+<span class="p">[</span><span class="s2">&quot;ccc&quot;</span><span class="p">,</span> <span class="s2">&quot;789&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-10-13&quot;</span><span class="p">,</span> <span class="s2">&quot;2023-10-13&quot;</span><span class="p">,</span> <span class="s2">&quot;92일&quot;</span><span class="p">,</span> <span class="s2">&quot;1 set&quot;</span><span class="p">,</span> <span class="s2">&quot;&quot;</span><span class="p">],</span>
+<span class="p">]</span>
+
+<span class="n">doc_title</span> <span class="o">=</span> <span class="s2">&quot;업체 납기정보 공유건&quot;</span>
+<span class="c1">#htm로 테이블들의 자료를 만드는 것</span>
+<span class="n">input_text</span> <span class="o">=</span> <span class="s2">&quot;텍스트에 컬러를 넣는 방법&quot;</span>
+<span class="n">text_html_1</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">make_html_inline_text</span><span class="p">(</span><span class="n">input_text</span><span class="p">,</span> <span class="kc">True</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="s2">&quot;red&quot;</span><span class="p">)</span>
+<span class="n">user_text_1</span> <span class="o">=</span> <span class="s2">&quot;수고하십니다&lt;br&gt; &lt;br&gt;하기 구매요청 품목에 대한 TBE를 요청합니다&lt;br&gt; &lt;br&gt;구매품목 : 물건1 &lt;br&gt; &lt;br&gt;&quot;</span>
+<span class="n">table_html</span> <span class="o">=</span> <span class="n">outlook</span><span class="o">.</span><span class="n">make_table</span><span class="p">(</span><span class="s2">&quot;table_id_1&quot;</span><span class="p">,</span> <span class="n">tbe_title_data</span><span class="p">,</span> <span class="n">tbe_data</span><span class="p">)</span>
+<span class="n">body_top_all</span> <span class="o">=</span> <span class="n">body_top</span> <span class="o">+</span> <span class="n">style_start</span> <span class="o">+</span> <span class="n">style_1</span> <span class="o">+</span><span class="n">style_end</span>
+<span class="n">body_middle_all</span> <span class="o">=</span> <span class="n">body_middle_start</span> <span class="o">+</span> <span class="n">text_html_1</span> <span class="o">+</span> <span class="n">user_text_1</span> <span class="o">+</span> <span class="n">table_html</span> <span class="o">+</span><span class="n">text_html_1</span>
+<span class="n">body_bottom_all</span> <span class="o">=</span> <span class="n">body_bottom</span>
+
+<span class="n">body_all</span> <span class="o">=</span> <span class="n">body_top_all</span> <span class="o">+</span> <span class="n">body_middle_all</span> <span class="o">+</span> <span class="n">body_bottom_all</span>
+<span class="c1">#만든 자료들을 이용해서 outlook의 메일을 만드는것</span>
+<span class="n">aaa</span> <span class="o">=</span><span class="p">{}</span>
+<span class="n">aaa</span><span class="p">[</span><span class="s2">&quot;to&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;abc@def.com&quot;</span>
+<span class="n">aaa</span><span class="p">[</span><span class="s2">&quot;subject&quot;</span><span class="p">]</span><span class="o">=</span> <span class="n">doc_title</span>
+<span class="n">aaa</span><span class="p">[</span><span class="s2">&quot;cc&quot;</span><span class="p">]</span> <span class="o">=</span> <span class="s2">&quot;rgb@rgb.com;&quot;</span>
+<span class="n">outlook</span><span class="o">.</span><span class="n">make_draft_new_mail</span><span class="p">(</span><span class="n">to</span><span class="o">=</span><span class="n">aaa</span><span class="p">[</span><span class="s2">&quot;to&quot;</span><span class="p">],</span><span class="n">cc</span><span class="o">=</span><span class="n">aaa</span><span class="p">[</span><span class="s2">&quot;cc&quot;</span><span class="p">],</span> <span class="n">subject</span><span class="o">=</span><span class="n">aaa</span><span class="p">[</span><span class="s2">&quot;subject&quot;</span><span class="p">],</span> <span class="n">body</span><span class="o">=</span><span class="n">body_all</span><span class="p">)</span>
+</pre></div>
+</div>
 </section>
 
 
