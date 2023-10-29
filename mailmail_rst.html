@@ -46,14 +46,14 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython의 전반적 사용법 및 용어</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
@@ -95,6 +95,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_nos_of_mails_in_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.get_nos_of_mails_in_mail_folder_obj()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_nos_of_unread_mails_in_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.get_nos_of_unread_mails_in_mail_folder_obj()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_one_mail_information"><code class="docutils literal notranslate"><span class="pre">mailmail.get_one_mail_information()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_opened_mail_item"><code class="docutils literal notranslate"><span class="pre">mailmail.get_opened_mail_item()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_selected_mails"><code class="docutils literal notranslate"><span class="pre">mailmail.get_selected_mails()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_sub_folder_index_by_folder_name"><code class="docutils literal notranslate"><span class="pre">mailmail.get_sub_folder_index_by_folder_name()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_sub_folders_names"><code class="docutils literal notranslate"><span class="pre">mailmail.get_sub_folders_names()</span></code></a></li>
@@ -106,8 +107,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_unread_mails_in_mails"><code class="docutils literal notranslate"><span class="pre">mailmail.get_unread_mails_in_mails()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.get_unread_mails_information_in_default_input_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.get_unread_mails_information_in_default_input_folder()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.make_draft_new_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.make_draft_new_mail()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.make_html_inline_text"><code class="docutils literal notranslate"><span class="pre">mailmail.make_html_inline_text()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.make_new_empty_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.make_new_empty_mail()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.make_new_mail_in_draft_folder"><code class="docutils literal notranslate"><span class="pre">mailmail.make_new_mail_in_draft_folder()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.make_table"><code class="docutils literal notranslate"><span class="pre">mailmail.make_table()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.manual"><code class="docutils literal notranslate"><span class="pre">mailmail.manual()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.manual_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.manual_mail()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.move_mails_to_target_mail_folder_obj"><code class="docutils literal notranslate"><span class="pre">mailmail.move_mails_to_target_mail_folder_obj()</span></code></a></li>
@@ -115,6 +118,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.read_sub_folder_name_all_in_folder_name"><code class="docutils literal notranslate"><span class="pre">mailmail.read_sub_folder_name_all_in_folder_name()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.read_total_unread_mail_no_with_outlook"><code class="docutils literal notranslate"><span class="pre">mailmail.read_total_unread_mail_no_with_outlook()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.read_unread_mail_from_basic_input_folder_with_outlook"><code class="docutils literal notranslate"><span class="pre">mailmail.read_unread_mail_from_basic_input_folder_with_outlook()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.reply_email"><code class="docutils literal notranslate"><span class="pre">mailmail.reply_email()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.save_attached_file_for_one_mail"><code class="docutils literal notranslate"><span class="pre">mailmail.save_attached_file_for_one_mail()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.send_mail_by_input_dic"><code class="docutils literal notranslate"><span class="pre">mailmail.send_mail_by_input_dic()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.mailmail.mailmail.send_mail_by_outlook"><code class="docutils literal notranslate"><span class="pre">mailmail.send_mail_by_outlook()</span></code></a></li>
@@ -628,6 +632,11 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.get_opened_mail_item">
+<span class="sig-name descname"><span class="pre">get_opened_mail_item</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_opened_mail_item" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="xython.mailmail.mailmail.get_selected_mails">
 <span class="sig-name descname"><span class="pre">get_selected_mails</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.get_selected_mails" title="Link to this definition"></a></dt>
 <dd><p>아웃룩에서 어떤때를 보면, 선택한 자료를 확인할 필요가 있다
@@ -775,6 +784,11 @@
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.make_html_inline_text">
+<span class="sig-name descname"><span class="pre">make_html_inline_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">bold</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">size</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.make_html_inline_text" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="xython.mailmail.mailmail.make_new_empty_mail">
 <span class="sig-name descname"><span class="pre">make_new_empty_mail</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.make_new_empty_mail" title="Link to this definition"></a></dt>
 <dd><p>빈 메일객체를 하나 만든것</p>
@@ -798,6 +812,11 @@
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.make_table">
+<span class="sig-name descname"><span class="pre">make_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">style</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">title_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">data_list2d</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.make_table" title="Link to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.mailmail.mailmail.manual">
@@ -886,6 +905,11 @@
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.mailmail.mailmail.reply_email">
+<span class="sig-name descname"><span class="pre">reply_email</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">one_mail_item</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.mailmail.mailmail.reply_email" title="Link to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.mailmail.mailmail.save_attached_file_for_one_mail">

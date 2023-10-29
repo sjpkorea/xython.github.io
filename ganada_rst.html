@@ -46,14 +46,14 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython의 전반적 사용법 및 용어</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
@@ -120,6 +120,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_text_at_end_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.insert_text_at_end_of_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.insert_text_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.insert_text_at_start_of_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.make_table_obj"><code class="docutils literal notranslate"><span class="pre">ganada.make_table_obj()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.make_table_obj_with_black_line"><code class="docutils literal notranslate"><span class="pre">ganada.make_table_obj_with_black_line()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.merge_entire_xline_at_table"><code class="docutils literal notranslate"><span class="pre">ganada.merge_entire_xline_at_table()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.merge_entire_yline_at_table"><code class="docutils literal notranslate"><span class="pre">ganada.merge_entire_yline_at_table()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.merge_selection_area_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.merge_selection_area_in_table()</span></code></a></li>
@@ -141,13 +142,16 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_start_of_line_no"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_start_of_line_no()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.move_cursor_to_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.move_cursor_to_start_of_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.new_document"><code class="docutils literal notranslate"><span class="pre">ganada.new_document()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_background_color_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_background_color_in_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_border_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_border_in_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_border_in_selection_no_line"><code class="docutils literal notranslate"><span class="pre">ganada.paint_border_in_selection_no_line()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_color_for_cell_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.paint_color_for_cell_in_table()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_highlight_from_char_no1_to_char_no2"><code class="docutils literal notranslate"><span class="pre">ganada.paint_highlight_from_char_no1_to_char_no2()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_highlight_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_highlight_in_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_shading_background_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_shading_background_in_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paint_shading_foreground_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paint_shading_foreground_in_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.paste_selection"><code class="docutils literal notranslate"><span class="pre">ganada.paste_selection()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.print_as_pdf"><code class="docutils literal notranslate"><span class="pre">ganada.print_as_pdf()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.quit"><code class="docutils literal notranslate"><span class="pre">ganada.quit()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_all_text_in_document"><code class="docutils literal notranslate"><span class="pre">ganada.read_all_text_in_document()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.read_bookmark_list"><code class="docutils literal notranslate"><span class="pre">ganada.read_bookmark_list()</span></code></a></li>
@@ -174,6 +178,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_all_1"><code class="docutils literal notranslate"><span class="pre">ganada.replace_all_1()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_all_with_color"><code class="docutils literal notranslate"><span class="pre">ganada.replace_all_with_color()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_all_with_color_from_selection_to_end"><code class="docutils literal notranslate"><span class="pre">ganada.replace_all_with_color_from_selection_to_end()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_in_document_by_jfsql"><code class="docutils literal notranslate"><span class="pre">ganada.replace_in_document_by_jfsql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_one_time_from_selection"><code class="docutils literal notranslate"><span class="pre">ganada.replace_one_time_from_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.replace_text_for_selection"><code class="docutils literal notranslate"><span class="pre">ganada.replace_text_for_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.save"><code class="docutils literal notranslate"><span class="pre">ganada.save()</span></code></a></li>
@@ -181,6 +186,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.save_as_pdf"><code class="docutils literal notranslate"><span class="pre">ganada.save_as_pdf()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.search_all_with_color_and_return_position"><code class="docutils literal notranslate"><span class="pre">ganada.search_all_with_color_and_return_position()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.search_first_text_from_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.search_first_text_from_cursor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_all"><code class="docutils literal notranslate"><span class="pre">ganada.select_all()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_all_chacters"><code class="docutils literal notranslate"><span class="pre">ganada.select_all_chacters()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_all_text"><code class="docutils literal notranslate"><span class="pre">ganada.select_all_text()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_bookmark"><code class="docutils literal notranslate"><span class="pre">ganada.select_bookmark()</span></code></a></li>
@@ -229,6 +235,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_some_character_in_line"><code class="docutils literal notranslate"><span class="pre">ganada.select_some_character_in_line()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_table_by_index"><code class="docutils literal notranslate"><span class="pre">ganada.select_table_by_index()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_xy_cell_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.select_xy_cell_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.select_xy_cell_in_table_old"><code class="docutils literal notranslate"><span class="pre">ganada.select_xy_cell_in_table_old()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_active_document"><code class="docutils literal notranslate"><span class="pre">ganada.set_active_document()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_backgroundcolor_in_selection"><code class="docutils literal notranslate"><span class="pre">ganada.set_backgroundcolor_in_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_bookmark_at_range"><code class="docutils literal notranslate"><span class="pre">ganada.set_bookmark_at_range()</span></code></a></li>
@@ -250,6 +257,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_line_width_for_table"><code class="docutils literal notranslate"><span class="pre">ganada.set_line_width_for_table()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_orientation_for_page"><code class="docutils literal notranslate"><span class="pre">ganada.set_orientation_for_page()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_orientation_for_page_setup"><code class="docutils literal notranslate"><span class="pre">ganada.set_orientation_for_page_setup()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_page_no_at_header"><code class="docutils literal notranslate"><span class="pre">ganada.set_page_no_at_header()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_range_obj_by_xy"><code class="docutils literal notranslate"><span class="pre">ganada.set_range_obj_by_xy()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_range_obj_from_letter_no1_to_letter_no2"><code class="docutils literal notranslate"><span class="pre">ganada.set_range_obj_from_letter_no1_to_letter_no2()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.set_right_margin_for_page"><code class="docutils literal notranslate"><span class="pre">ganada.set_right_margin_for_page()</span></code></a></li>
@@ -272,6 +280,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_start_of_cursor"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_start_of_cursor()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_start_of_selection"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_start_of_selection()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_at_xy_cell_in_table"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_at_xy_cell_in_table()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_in_selection_with_color_size_bold"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_in_selection_with_color_size_bold()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_in_table_by_xy"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_in_table_by_xy()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_text_with_new_line_at_end_of_document"><code class="docutils literal notranslate"><span class="pre">ganada.write_text_with_new_line_at_end_of_document()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.ganada.ganada.write_value_at_end_of_para_no"><code class="docutils literal notranslate"><span class="pre">ganada.write_value_at_end_of_para_no()</span></code></a></li>
@@ -1151,6 +1160,11 @@ paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.make_table_obj_with_black_line">
+<span class="sig-name descname"><span class="pre">make_table_obj_with_black_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">row_line_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_line_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.make_table_obj_with_black_line" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="xython.ganada.ganada.merge_entire_xline_at_table">
 <span class="sig-name descname"><span class="pre">merge_entire_xline_at_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.merge_entire_xline_at_table" title="Link to this definition"></a></dt>
 <dd><p>선택된 가로줄을 전부 병합시키는것</p>
@@ -1451,8 +1465,18 @@ paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paint_background_color_in_selection">
+<span class="sig-name descname"><span class="pre">paint_background_color_in_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_background_color_in_selection" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="xython.ganada.ganada.paint_border_in_selection">
 <span class="sig-name descname"><span class="pre">paint_border_in_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_border_in_selection" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.paint_border_in_selection_no_line">
+<span class="sig-name descname"><span class="pre">paint_border_in_selection_no_line</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.paint_border_in_selection_no_line" title="Link to this definition"></a></dt>
 <dd><p>선택영역의 외곽선을 그리기</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1545,6 +1569,20 @@ paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.print_as_pdf">
+<span class="sig-name descname"><span class="pre">print_as_pdf</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.print_as_pdf" title="Link to this definition"></a></dt>
+<dd><p>pdf로 저장</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
 </dd>
 </dl>
 </dd></dl>
@@ -1922,6 +1960,11 @@ paragraph - 줄바꿈이 이루어지기 전까지의 자료</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.replace_in_document_by_jfsql">
+<span class="sig-name descname"><span class="pre">replace_in_document_by_jfsql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jfsql</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'[숫ㅏ:1~2],[숫자:1~2]'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.replace_in_document_by_jfsql" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="xython.ganada.ganada.replace_one_time_from_selection">
 <span class="sig-name descname"><span class="pre">replace_one_time_from_selection</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">before</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">after</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.replace_one_time_from_selection" title="Link to this definition"></a></dt>
 <dd><p>전체가 아니고 제일 처음의 것만 바꾸는것</p>
@@ -2023,6 +2066,11 @@ replace</p>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_all">
+<span class="sig-name descname"><span class="pre">select_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_all" title="Link to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.ganada.ganada.select_all_chacters">
@@ -2697,7 +2745,12 @@ paragraph 를 선택한다, 없으면 맨처음부터</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.ganada.ganada.select_xy_cell_in_table">
-<span class="sig-name descname"><span class="pre">select_xy_cell_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengh</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_xy_cell_in_table" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">select_xy_cell_in_table</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_xy_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_xy_cell_in_table" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.select_xy_cell_in_table_old">
+<span class="sig-name descname"><span class="pre">select_xy_cell_in_table_old</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_index</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">lengh</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.select_xy_cell_in_table_old" title="Link to this definition"></a></dt>
 <dd><p>테이블안의 셀안의 값을 선택하는 방법</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -3024,6 +3077,11 @@ paragraph 를 선택한다, 없으면 맨처음부터</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.set_page_no_at_header">
+<span class="sig-name descname"><span class="pre">set_page_no_at_header</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">left_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">right_start_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_page_no_at_header" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="xython.ganada.ganada.set_range_obj_by_xy">
 <span class="sig-name descname"><span class="pre">set_range_obj_by_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">xy_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.set_range_obj_by_xy" title="Link to this definition"></a></dt>
 <dd><p>글자의 위치로 range객체를 만드는것
@@ -3343,6 +3401,11 @@ paragraph 를 선택한다, 없으면 맨처음부터</p>
 </dd>
 </dl>
 </dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.ganada.ganada.write_text_in_selection_with_color_size_bold">
+<span class="sig-name descname"><span class="pre">write_text_in_selection_with_color_size_bold</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">i_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i_size</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i_bold</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.ganada.ganada.write_text_in_selection_with_color_size_bold" title="Link to this definition"></a></dt>
+<dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.ganada.ganada.write_text_in_table_by_xy">

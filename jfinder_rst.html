@@ -46,66 +46,61 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython의 전반적 사용법 및 용어</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_rst.html">ganada - 함수들 설명문서화</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">jfinder - 함수들의 문서화</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#xython.jfinder.jfinder"><code class="docutils literal notranslate"><span class="pre">jfinder</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.change_jfsql_to_resql"><code class="docutils literal notranslate"><span class="pre">jfinder.change_jfsql_to_resql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.change_ezre_sql_to_re_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.change_ezre_sql_to_re_sql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.change_html_tag_to_re_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.change_html_tag_to_re_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.change_number_to_tel_style"><code class="docutils literal notranslate"><span class="pre">jfinder.change_number_to_tel_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.data_special_char_set"><code class="docutils literal notranslate"><span class="pre">jfinder.data_special_char_set()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.data_well_used_re"><code class="docutils literal notranslate"><span class="pre">jfinder.data_well_used_re()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete"><code class="docutils literal notranslate"><span class="pre">jfinder.delete()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_all_explanation"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_all_explanation()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_by_jfsql"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_by_jfsql()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_by_resql"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_by_resql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_eng_num"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_eng_num()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_except_num_eng"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_except_num_eng()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_except_specialchar"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_except_specialchar()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_except_special_char"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_except_special_char()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_koren_eng_num"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_koren_eng_num()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_no_meaning_words"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_no_meaning_words()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_num_comma"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_num_comma()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_over_2_empty_lines"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_over_2_empty_lines()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_specialchar"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_specialchar()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_text_specialletter"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_text_specialletter()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.history"><code class="docutils literal notranslate"><span class="pre">jfinder.history()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_special_char"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_special_char()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_text_special_letter"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_text_special_letter()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.delete_with_ezre_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.delete_with_ezre_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.is_handphone_only"><code class="docutils literal notranslate"><span class="pre">jfinder.is_handphone_only()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.is_korean_only"><code class="docutils literal notranslate"><span class="pre">jfinder.is_korean_only()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.is_number_only"><code class="docutils literal notranslate"><span class="pre">jfinder.is_number_only()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.is_special_char"><code class="docutils literal notranslate"><span class="pre">jfinder.is_special_char()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.is_special_char_in"><code class="docutils literal notranslate"><span class="pre">jfinder.is_special_char_in()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.jfinder"><code class="docutils literal notranslate"><span class="pre">jfinder.jfinder()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.make_list_on_re_compile"><code class="docutils literal notranslate"><span class="pre">jfinder.make_list_on_re_compile()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.manual"><code class="docutils literal notranslate"><span class="pre">jfinder.manual()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.replace"><code class="docutils literal notranslate"><span class="pre">jfinder.replace()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.replace_by_jfsql"><code class="docutils literal notranslate"><span class="pre">jfinder.replace_by_jfsql()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.run_by_jfsql"><code class="docutils literal notranslate"><span class="pre">jfinder.run_by_jfsql()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.run_by_resql"><code class="docutils literal notranslate"><span class="pre">jfinder.run_by_resql()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_all_by_jfsql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_all_by_jfsql()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_all_by_resql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_all_by_resql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.replace_with_ezre_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.replace_with_ezre_sql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.run_with_ezre_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.run_with_ezre_sql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_all_by_ezre_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_all_by_ezre_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_all_cap"><code class="docutils literal notranslate"><span class="pre">jfinder.search_all_cap()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_between_brackets_by_jfsql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_between_brackets_by_jfsql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_between_brackets_by_ezre_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_between_brackets_by_ezre_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_between_len1_len2"><code class="docutils literal notranslate"><span class="pre">jfinder.search_between_len1_len2()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_between_word1_word2_by_jfsql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_between_word1_word2_by_jfsql()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_by_jfsql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_by_jfsql()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_by_resql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_by_resql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_between_word1_word2_by_ezre_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_between_word1_word2_by_ezre_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_dash_date"><code class="docutils literal notranslate"><span class="pre">jfinder.search_dash_date()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_email_address"><code class="docutils literal notranslate"><span class="pre">jfinder.search_email_address()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_eng_only"><code class="docutils literal notranslate"><span class="pre">jfinder.search_eng_only()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_handphone_only"><code class="docutils literal notranslate"><span class="pre">jfinder.search_handphone_only()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_eng"><code class="docutils literal notranslate"><span class="pre">jfinder.search_eng()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_handphone"><code class="docutils literal notranslate"><span class="pre">jfinder.search_handphone()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_in_result"><code class="docutils literal notranslate"><span class="pre">jfinder.search_in_result()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_ip_address"><code class="docutils literal notranslate"><span class="pre">jfinder.search_ip_address()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_korean_only"><code class="docutils literal notranslate"><span class="pre">jfinder.search_korean_only()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_num_only"><code class="docutils literal notranslate"><span class="pre">jfinder.search_num_only()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_korean"><code class="docutils literal notranslate"><span class="pre">jfinder.search_korean()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_num"><code class="docutils literal notranslate"><span class="pre">jfinder.search_num()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_number_between_len1_len2"><code class="docutils literal notranslate"><span class="pre">jfinder.search_number_between_len1_len2()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_special_char"><code class="docutils literal notranslate"><span class="pre">jfinder.search_special_char()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.terms"><code class="docutils literal notranslate"><span class="pre">jfinder.terms()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_text"><code class="docutils literal notranslate"><span class="pre">jfinder.search_text()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_with_ezre_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_with_ezre_sql()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -149,12 +144,29 @@
 <em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.jfinder.</span></span><span class="sig-name descname"><span class="pre">jfinder</span></span><a class="headerlink" href="#xython.jfinder.jfinder" title="Link to this definition"></a></dt>
 <dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.change_jfsql_to_resql">
-<span class="sig-name descname"><span class="pre">change_jfsql_to_resql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_re</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_jfsql_to_resql" title="Link to this definition"></a></dt>
-<dd><p>jfsql을 regex스타일로 바꾸는것</p>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.change_ezre_sql_to_re_sql">
+<span class="sig-name descname"><span class="pre">change_ezre_sql_to_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ezre_sql</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_ezre_sql_to_re_sql" title="Link to this definition"></a></dt>
+<dd><p>ezre_sql을 regex스타일로 바꾸는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>jf_re</strong> – </p>
+<dd class="field-odd"><p><strong>ezre_sql</strong> – 정규표현식을 쉽게 만들도록 변경한 형태의 문장</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.change_html_tag_to_re_sql">
+<span class="sig-name descname"><span class="pre">change_html_tag_to_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">one_tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option_tag_show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_html_tag_to_re_sql" title="Link to this definition"></a></dt>
+<dd><p>htm태그안의 값을 갖고오는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>one_tag</strong> – </p></li>
+<li><p><strong>option_tag_show</strong> – </p></li>
+</ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -172,9 +184,10 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.data_well_used_re">
-<span class="sig-name descname"><span class="pre">data_well_used_re</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.data_well_used_re" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.data_special_char_set">
+<span class="sig-name descname"><span class="pre">data_special_char_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.data_special_char_set" title="Link to this definition"></a></dt>
+<dd><p>특수문자들을 돌려준다</p>
+<dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
 </dd>
@@ -182,18 +195,13 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete">
-<span class="sig-name descname"><span class="pre">delete</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_re</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete" title="Link to this definition"></a></dt>
-<dd><p>입력자료중 jfsql에 맞는 형식을 삭제하는것</p>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.data_well_used_re">
+<span class="sig-name descname"><span class="pre">data_well_used_re</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.data_well_used_re" title="Link to this definition"></a></dt>
+<dd><p>잘 사용하는 re코드들
+[이름, 찾을코드, 바꿀코드, 설명</p>
 <dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>jf_re</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
 </dd>
 </dl>
 </dd></dl>
@@ -206,45 +214,7 @@
 </div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_by_jfsql">
-<span class="sig-name descname"><span class="pre">delete_by_jfsql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_re</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_by_jfsql" title="Link to this definition"></a></dt>
-<dd><blockquote>
-<div><p>jfsql형식에 맞는 자료들 삭제</p>
-</div></blockquote>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>jf_re</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p>[[결과값, 시작순서, 끝순서, [그룹1, 그룹2…], match결과]…..]</p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_by_resql">
-<span class="sig-name descname"><span class="pre">delete_by_resql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_by_resql" title="Link to this definition"></a></dt>
-<dd><blockquote>
-<div><p>입력자료에서 삭제</p>
-</div></blockquote>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>re_sql</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
-</ul>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -258,7 +228,7 @@
 <dd><p>알파벳과 숫자만 삭제하는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -272,7 +242,7 @@
 <dd><p>영문과 숫자와 공백을 제외하고 다 제거를 하는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -281,15 +251,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_except_specialchar">
-<span class="sig-name descname"><span class="pre">delete_except_specialchar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_except_specialchar" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_except_special_char">
+<span class="sig-name descname"><span class="pre">delete_except_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_except_special_char" title="Link to this definition"></a></dt>
 <dd><blockquote>
 <div><p>공백과 특수문자등을 제외하고 같으면 새로운 y열에 1을 넣는 함수
 리스트의 사이즈를 조정한다</p>
 </div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -303,7 +273,7 @@
 <dd><p>한글, 영어, 숫자만 지우는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -334,7 +304,7 @@
 1,234,567 =&gt; 1234567</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -347,7 +317,7 @@
 <span class="sig-name descname"><span class="pre">delete_over_2_empty_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_over_2_empty_lines" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -356,13 +326,13 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_specialchar">
-<span class="sig-name descname"><span class="pre">delete_specialchar</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_specialchar" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_special_char">
+<span class="sig-name descname"><span class="pre">delete_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_special_char" title="Link to this definition"></a></dt>
 <dd><p>공백과 특수문자등을 제외하고 같으면 새로운 y열에 1을 넣는 함수
 리스트의 사이즈를 조정한다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -371,8 +341,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_text_specialletter">
-<span class="sig-name descname"><span class="pre">delete_text_specialletter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_text_specialletter" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_text_special_letter">
+<span class="sig-name descname"><span class="pre">delete_text_special_letter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_text_special_letter" title="Link to this definition"></a></dt>
 <dd><p>입력받은 텍스트로된 리스트의 자료를 전부 특수문자를 없앤후 돌려주는 것이다
 입력된 자료가 1차원 리스트인지 판단한다</p>
 <dl class="field-list simple">
@@ -386,12 +356,18 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.history">
-<span class="sig-name descname"><span class="pre">history</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.history" title="Link to this definition"></a></dt>
-<dd><p>이모듈의 변경 내역</p>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_with_ezre_sql">
+<span class="sig-name descname"><span class="pre">delete_with_ezre_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ezre_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_with_ezre_sql" title="Link to this definition"></a></dt>
+<dd><p>입력자료중 ezre_sql에 맞는 형식을 삭제하는것</p>
 <dl class="field-list simple">
-<dt class="field-odd">반환<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p>
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ezre_sql</strong> – 정규표현식을 쉽게 만들도록 변경한 형태의 문장</p></li>
+<li><p><strong>input_text</strong> – 입력되는 text문장</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
 </dd>
 </dl>
 </dd></dl>
@@ -404,7 +380,7 @@
 </div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -420,7 +396,7 @@
 </div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -434,7 +410,7 @@
 <dd><p>소슷점까지는 포함한것이다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -443,14 +419,14 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.is_special_char">
-<span class="sig-name descname"><span class="pre">is_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_special_char" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.is_special_char_in">
+<span class="sig-name descname"><span class="pre">is_special_char_in</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_special_char_in" title="Link to this definition"></a></dt>
 <dd><blockquote>
 <div><p>특수문자가들어가있는지</p>
 </div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -461,10 +437,10 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.jfinder">
 <span class="sig-name descname"><span class="pre">jfinder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.jfinder" title="Link to this definition"></a></dt>
-<dd><p>기본저긴 jfsql -&gt; resql형식으로 만들어 주는것</p>
+<dd><p>기본저긴 ezre_sql -&gt; re_sql형식으로 만들어 주는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -474,13 +450,13 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.make_list_on_re_compile">
-<span class="sig-name descname"><span class="pre">make_list_on_re_compile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_txt</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.make_list_on_re_compile" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_list_on_re_compile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.make_list_on_re_compile" title="Link to this definition"></a></dt>
 <dd><p>텍스트화일을 읽어서 re에 맞도록 한것을 리스트로 만드는 것이다
 함수인 def를 기준으로 저장을 하며, [[공백을없앤자료, 원래자료, 시작줄번호]…..]</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>re_txt</strong> – </p></li>
+<li><p><strong>re_sql</strong> – 정규표현식으로 만들어진 형태</p></li>
 <li><p><strong>file_name</strong> – </p></li>
 </ul>
 </dd>
@@ -491,26 +467,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.manual">
-<span class="sig-name descname"><span class="pre">manual</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.manual" title="Link to this definition"></a></dt>
-<dd><p>기본적인 사용법에 대한것</p>
-<dl class="field-list simple">
-<dt class="field-odd">반환<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.replace">
-<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.replace" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.replace_with_ezre_sql">
+<span class="sig-name descname"><span class="pre">replace_with_ezre_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ezre_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.replace_with_ezre_sql" title="Link to this definition"></a></dt>
 <dd><p>입력자료를 원하는 문자로 바꾸는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>re_sql</strong> – </p></li>
+<li><p><strong>re_sql</strong> – 정규표현식으로 만들어진 형태</p></li>
 <li><p><strong>replace_word</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>input_text</strong> – 입력되는 text문장</p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
@@ -520,33 +485,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.replace_by_jfsql">
-<span class="sig-name descname"><span class="pre">replace_by_jfsql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_re</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.replace_by_jfsql" title="Link to this definition"></a></dt>
-<dd><p>입력자료를 원하는 문자로 바꾸는것</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>jf_re</strong> – </p></li>
-<li><p><strong>replace_word</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.run_by_jfsql">
-<span class="sig-name descname"><span class="pre">run_by_jfsql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_re</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.run_by_jfsql" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.run_with_ezre_sql">
+<span class="sig-name descname"><span class="pre">run_with_ezre_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ezre_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.run_with_ezre_sql" title="Link to this definition"></a></dt>
 <dd><p>결과값을 얻는것이 여러조건들이 있어서 이것을 하나로 만듦
 [[결과값, 시작순서, 끝순서, [그룹1, 그룹2…], match결과]…..]</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>jf_re</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>ezre_sql</strong> – 정규표현식을 쉽게 만들도록 변경한 형태의 문장</p></li>
+<li><p><strong>input_text</strong> – 입력되는 text문장</p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
@@ -556,50 +503,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.run_by_resql">
-<span class="sig-name descname"><span class="pre">run_by_resql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.run_by_resql" title="Link to this definition"></a></dt>
-<dd><blockquote>
-<div><p>regex의 스타일을 실행시키는것</p>
-</div></blockquote>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>input_sql</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_all_by_jfsql">
-<span class="sig-name descname"><span class="pre">search_all_by_jfsql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_re</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_all_by_jfsql" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>jf_re</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_all_by_resql">
-<span class="sig-name descname"><span class="pre">search_all_by_resql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_all_by_resql" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_all_by_ezre_sql">
+<span class="sig-name descname"><span class="pre">search_all_by_ezre_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_all_by_ezre_sql" title="Link to this definition"></a></dt>
 <dd><p>결과값을 얻는것이 여러조건들이 있어서 이것을 하나로 만듦
 [[결과값, 시작순서, 끝순서, [그룹1, 그룹2…], match결과]…..]</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>re_sql</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>re_sql</strong> – 정규표현식으로 만들어진 형태</p></li>
+<li><p><strong>input_text</strong> – 입력되는 text문장</p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
@@ -614,7 +526,7 @@
 <dd><p>모두 알파벳대문자</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -623,14 +535,14 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_between_brackets_by_jfsql">
-<span class="sig-name descname"><span class="pre">search_between_brackets_by_jfsql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_brackets_by_jfsql" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_between_brackets_by_ezre_sql">
+<span class="sig-name descname"><span class="pre">search_between_brackets_by_ezre_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_brackets_by_ezre_sql" title="Link to this definition"></a></dt>
 <dd><p>괄호안의 문자 갖고오기
 괄호 내부 내용만 추출 : ‘(([^)]+)’
 앞 뒤 괄호까지 포함 : ‘([^)]+)’</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -647,7 +559,7 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>m</strong> – </p></li>
 <li><p><strong>n</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>input_text</strong> – 입력되는 text문장</p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
@@ -657,47 +569,15 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_between_word1_word2_by_jfsql">
-<span class="sig-name descname"><span class="pre">search_between_word1_word2_by_jfsql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">word_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_word1_word2_by_jfsql" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_between_word1_word2_by_ezre_sql">
+<span class="sig-name descname"><span class="pre">search_between_word1_word2_by_ezre_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">word_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_word1_word2_by_ezre_sql" title="Link to this definition"></a></dt>
 <dd><p>두 단어사이의 글자를 갖고오는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>word_a</strong> – </p></li>
 <li><p><strong>word_b</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_by_jfsql">
-<span class="sig-name descname"><span class="pre">search_by_jfsql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_re</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_by_jfsql" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>jf_re</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_by_resql">
-<span class="sig-name descname"><span class="pre">search_by_resql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_by_resql" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>re_sql</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>input_text</strong> – 입력되는 text문장</p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
@@ -712,7 +592,7 @@
 <dd><p>모두 알파벳대문자</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -726,7 +606,7 @@
 <dd><p>이메일주소 입력</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -735,12 +615,12 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_eng_only">
-<span class="sig-name descname"><span class="pre">search_eng_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_eng_only" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_eng">
+<span class="sig-name descname"><span class="pre">search_eng</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_eng" title="Link to this definition"></a></dt>
 <dd><p>모두 영문인지</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -749,12 +629,29 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_handphone_only">
-<span class="sig-name descname"><span class="pre">search_handphone_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_handphone_only" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_handphone">
+<span class="sig-name descname"><span class="pre">search_handphone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_handphone" title="Link to this definition"></a></dt>
 <dd><p>특수문자가들어가있는지</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_in_result">
+<span class="sig-name descname"><span class="pre">search_in_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result_list2d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">ezre_sql</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_in_result" title="Link to this definition"></a></dt>
+<dd><p># 결과값으로 넘어온 자료를 다시 검색하해서 결과를 알려주는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>result_list2d</strong> – </p></li>
+<li><p><strong>ezre_sql</strong> – 정규표현식을 쉽게 만들도록 변경한 형태의 문장</p></li>
+</ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -768,7 +665,7 @@
 <dd><p>이메일주소 입력</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -777,12 +674,12 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_korean_only">
-<span class="sig-name descname"><span class="pre">search_korean_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_korean_only" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_korean">
+<span class="sig-name descname"><span class="pre">search_korean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_korean" title="Link to this definition"></a></dt>
 <dd><p>모두 한글인지</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -791,14 +688,14 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_num_only">
-<span class="sig-name descname"><span class="pre">search_num_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_num_only" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_num">
+<span class="sig-name descname"><span class="pre">search_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_num" title="Link to this definition"></a></dt>
 <dd><blockquote>
 <div><p>단어중에 나와있는 숫자만 분리하는기능</p>
 </div></blockquote>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -815,7 +712,7 @@
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>m</strong> – </p></li>
 <li><p><strong>n</strong> – </p></li>
-<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>input_text</strong> – 입력되는 text문장</p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
@@ -830,7 +727,7 @@
 <dd><p>특수문자가들어가있는지</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text</strong> – </p>
+<dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -839,12 +736,34 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.terms">
-<span class="sig-name descname"><span class="pre">terms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.terms" title="Link to this definition"></a></dt>
-<dd><p>주요 용어의 설명</p>
-<dl class="field-list simple">
-<dt class="field-odd">반환<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_text">
+<span class="sig-name descname"><span class="pre">search_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_char</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_char</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_text" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>start_char</strong> – </p></li>
+<li><p><strong>end_char</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_with_ezre_sql">
+<span class="sig-name descname"><span class="pre">search_with_ezre_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ezre_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_with_ezre_sql" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>ezre_sql</strong> – 정규표현식을 쉽게 만들도록 변경한 형태의 문장</p></li>
+<li><p><strong>input_text</strong> – 입력되는 text문장</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
 </dd>
 </dl>
 </dd></dl>
