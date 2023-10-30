@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pyclick - 함수들의 문서화 &mdash; xython 1.16 문서</title>
+  <title>pyclick - 함수들의 문서화 &mdash; xython 1.19 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -13,7 +13,7 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=06785e48"></script>
+        <script src="_static/documentation_options.js?v=ee62fd8a"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="_static/translations.js?v=b5f768d8"></script>
@@ -47,13 +47,13 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython의 전반적 사용법 및 용어</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
@@ -72,12 +72,13 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.click_mouse_right_down"><code class="docutils literal notranslate"><span class="pre">pyclick.click_mouse_right_down()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.click_mouse_right_up"><code class="docutils literal notranslate"><span class="pre">pyclick.click_mouse_right_up()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.copy"><code class="docutils literal notranslate"><span class="pre">pyclick.copy()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.data_keyboard"><code class="docutils literal notranslate"><span class="pre">pyclick.data_keyboard()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.data_keyboard_action_list"><code class="docutils literal notranslate"><span class="pre">pyclick.data_keyboard_action_list()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.dclick_mouse_left"><code class="docutils literal notranslate"><span class="pre">pyclick.dclick_mouse_left()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.dclick_mouse_right"><code class="docutils literal notranslate"><span class="pre">pyclick.dclick_mouse_right()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.drag_mouse_pxy1_to_pxy2"><code class="docutils literal notranslate"><span class="pre">pyclick.drag_mouse_pxy1_to_pxy2()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.drag_mouse_to_pwh"><code class="docutils literal notranslate"><span class="pre">pyclick.drag_mouse_to_pwh()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.drag_mouse_to_pxy"><code class="docutils literal notranslate"><span class="pre">pyclick.drag_mouse_to_pxy()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.focus_on"><code class="docutils literal notranslate"><span class="pre">pyclick.focus_on()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.get_pxy_for_selected_image"><code class="docutils literal notranslate"><span class="pre">pyclick.get_pxy_for_selected_image()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.get_text_from_clipboard"><code class="docutils literal notranslate"><span class="pre">pyclick.get_text_from_clipboard()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.key_down_with_one_key"><code class="docutils literal notranslate"><span class="pre">pyclick.key_down_with_one_key()</span></code></a></li>
@@ -91,15 +92,18 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.move_mouse_as_pwh"><code class="docutils literal notranslate"><span class="pre">pyclick.move_mouse_as_pwh()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.move_mouse_as_pxy"><code class="docutils literal notranslate"><span class="pre">pyclick.move_mouse_as_pxy()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.move_screen_by_scroll"><code class="docutils literal notranslate"><span class="pre">pyclick.move_screen_by_scroll()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.open_ie_and_enter"><code class="docutils literal notranslate"><span class="pre">pyclick.open_ie_and_enter()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.paste"><code class="docutils literal notranslate"><span class="pre">pyclick.paste()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.paste_clibboard_data"><code class="docutils literal notranslate"><span class="pre">pyclick.paste_clibboard_data()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.paste_for_clibboard_data"><code class="docutils literal notranslate"><span class="pre">pyclick.paste_for_clibboard_data()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.press_one_key"><code class="docutils literal notranslate"><span class="pre">pyclick.press_one_key()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.read_monitor_size"><code class="docutils literal notranslate"><span class="pre">pyclick.read_monitor_size()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.read_mouse_position"><code class="docutils literal notranslate"><span class="pre">pyclick.read_mouse_position()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.read_screen_size"><code class="docutils literal notranslate"><span class="pre">pyclick.read_screen_size()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.save"><code class="docutils literal notranslate"><span class="pre">pyclick.save()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.screen_capture_with_save_file"><code class="docutils literal notranslate"><span class="pre">pyclick.screen_capture_with_save_file()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.screen_capture_with_size"><code class="docutils literal notranslate"><span class="pre">pyclick.screen_capture_with_size()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.search_same_picture_xy"><code class="docutils literal notranslate"><span class="pre">pyclick.search_same_picture_xy()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.select_from_curent_cursor"><code class="docutils literal notranslate"><span class="pre">pyclick.select_from_curent_cursor()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.show_message"><code class="docutils literal notranslate"><span class="pre">pyclick.show_message()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.pyclick.pyclick.type_1000times_delete_key"><code class="docutils literal notranslate"><span class="pre">pyclick.type_1000times_delete_key()</span></code></a></li>
@@ -165,128 +169,305 @@
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.check_action_key">
 <span class="sig-name descname"><span class="pre">check_action_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.check_action_key" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>키보드의 액션을 하기위해 사용해야할 용어를 확인하는 부분이다
+:param input_value:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.click_mouse_general">
 <span class="sig-name descname"><span class="pre">click_mouse_general</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">click_type</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'click'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">click_times</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">interval_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.click_mouse_general" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>마우스 클릭에 대한 일반적인것
+입력형태 : pyautogui.click(button=’right’, clicks=3, interval =0.25)</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>click_type</strong> – 오른쪽인지, 왼쪽인지등의 위치</p></li>
+<li><p><strong>click_times</strong> – 클릭횟수</p></li>
+<li><p><strong>interval_time</strong> – 클릭당 시간간격</p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.click_mouse_left">
 <span class="sig-name descname"><span class="pre">click_mouse_left</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">click_times</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.click_mouse_left" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>왼쪽 마우스 버튼을 누르는 것
+:param click_times:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.click_mouse_left_down">
 <span class="sig-name descname"><span class="pre">click_mouse_left_down</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.click_mouse_left_down" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>왼쪽 마우스 버튼 눌른상태로 멈춤
+드리그등을 위한것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.click_mouse_left_up">
 <span class="sig-name descname"><span class="pre">click_mouse_left_up</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.click_mouse_left_up" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>욍ㄴ쪽 마우스 버튼 눌럿다 올린것
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.click_mouse_right">
 <span class="sig-name descname"><span class="pre">click_mouse_right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">click_times</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.click_mouse_right" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>오른쪽 마우스 클릭
+:param click_times:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.click_mouse_right_down">
 <span class="sig-name descname"><span class="pre">click_mouse_right_down</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.click_mouse_right_down" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>오른쪽 마우스 눌름
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.click_mouse_right_up">
 <span class="sig-name descname"><span class="pre">click_mouse_right_up</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.click_mouse_right_up" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>오른쪽 마우스 올림
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.copy">
 <span class="sig-name descname"><span class="pre">copy</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.copy" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>복사하기위해 사용하는 것
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.pyclick.pyclick.data_keyboard">
-<span class="sig-name descname"><span class="pre">data_keyboard</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.data_keyboard" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dt class="sig sig-object py" id="xython.pyclick.pyclick.data_keyboard_action_list">
+<span class="sig-name descname"><span class="pre">data_keyboard_action_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.data_keyboard_action_list" title="Link to this definition"></a></dt>
+<dd><p>키보드 액션의 종류들
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.dclick_mouse_left">
 <span class="sig-name descname"><span class="pre">dclick_mouse_left</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interval_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.dclick_mouse_left" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>왼쪽 마우스 더블 클릭
+:param interval_time:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.dclick_mouse_right">
 <span class="sig-name descname"><span class="pre">dclick_mouse_right</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">interval_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.25</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.dclick_mouse_right" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>오른쪽 마우스 더블 클릭
+:param interval_time:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.drag_mouse_pxy1_to_pxy2">
 <span class="sig-name descname"><span class="pre">drag_mouse_pxy1_to_pxy2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pxy1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">pxy2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drag_speed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.drag_mouse_pxy1_to_pxy2" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>마우스 드레그</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pxy1</strong> – </p></li>
+<li><p><strong>pxy2</strong> – </p></li>
+<li><p><strong>drag_speed</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.drag_mouse_to_pwh">
 <span class="sig-name descname"><span class="pre">drag_mouse_to_pwh</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">phw</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drag_speed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.drag_mouse_to_pwh" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>현재 마우스위치에서 상대적인 위치인 pxy로 이동
+상대적인 위치의 의미로 width 와 height 의 개념으로 pwh 를 사용 duration 은 드레그가 너무 빠를때 이동하는 시간을 설정하는 것이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>phw</strong> – </p></li>
+<li><p><strong>drag_speed</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.drag_mouse_to_pxy">
 <span class="sig-name descname"><span class="pre">drag_mouse_to_pxy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pxy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">drag_speed</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.drag_mouse_to_pxy" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>현재 마우스위치에서 절대위치인 머이로 이동 duration 은 드레그가 너무 빠를때 이동하는 시간을 설정하는 것이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>pxy</strong> – </p></li>
+<li><p><strong>drag_speed</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.pyclick.pyclick.focus_on">
+<span class="sig-name descname"><span class="pre">focus_on</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">original_xy</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">move_xy</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[10,</span> <span class="pre">10]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.focus_on" title="Link to this definition"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>original_xy</strong> – </p></li>
+<li><p><strong>move_xy</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.get_pxy_for_selected_image">
 <span class="sig-name descname"><span class="pre">get_pxy_for_selected_image</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.get_pxy_for_selected_image" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>화면에서 저장된 이미지랑 같은 위치를 찾아서 돌려주는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_file_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.get_text_from_clipboard">
 <span class="sig-name descname"><span class="pre">get_text_from_clipboard</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.get_text_from_clipboard" title="Link to this definition"></a></dt>
 <dd><p>클립보드에 입력된 내용을 복사를 하는 것이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.key_down_with_one_key">
 <span class="sig-name descname"><span class="pre">key_down_with_one_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">one_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.key_down_with_one_key" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>어떤키의 키보드를 눌름</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>one_key</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.key_up_with_one_key">
 <span class="sig-name descname"><span class="pre">key_up_with_one_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">one_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.key_up_with_one_key" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>어떤키의 키보드를 눌렀다 땜
+:param one_key:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.message_box_for_input_by_password_style">
 <span class="sig-name descname"><span class="pre">message_box_for_input_by_password_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_default_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.message_box_for_input_by_password_style" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>메세지박스 : 암호 입력용
+:param input_text:
+:param input_title:
+:param input_default_text:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.message_box_for_show">
 <span class="sig-name descname"><span class="pre">message_box_for_show</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_default_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.message_box_for_show" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>일반 메세지 박스</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>input_title</strong> – </p></li>
+<li><p><strong>input_default_text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.message_box_for_write">
 <span class="sig-name descname"><span class="pre">message_box_for_write</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_title</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.message_box_for_write" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>일반 메세지박스
+:param input_text:
+:param input_title:
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.message_box_for_write_with_input_list">
 <span class="sig-name descname"><span class="pre">message_box_for_write_with_input_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">button_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.message_box_for_write_with_input_list" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>메세지박스의 버튼을 만드는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>button_list</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.mouse_drag">
 <span class="sig-name descname"><span class="pre">mouse_drag</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pxy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.mouse_drag" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pxy</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.move_cursor">
 <span class="sig-name descname"><span class="pre">move_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">direction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">press_times</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.move_cursor" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>마우스커서를 기준으로 이동하는것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>direction</strong> – </p></li>
+<li><p><strong>press_times</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.move_mouse_as_pwh">
@@ -299,159 +480,454 @@
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.move_mouse_as_pxy">
 <span class="sig-name descname"><span class="pre">move_mouse_as_pxy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">pxy</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.move_mouse_as_pxy" title="Link to this definition"></a></dt>
 <dd><p>마우스의 위치를 이동시킨다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>pxy</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.move_screen_by_scroll">
 <span class="sig-name descname"><span class="pre">move_screen_by_scroll</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.move_screen_by_scroll" title="Link to this definition"></a></dt>
 <dd><p>현재 위치에서 상하로 스크롤하는 기능 #위로 올리는것은 +숫자，내리는것은 -숫자로 사용</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.pyclick.pyclick.open_ie_and_enter">
+<span class="sig-name descname"><span class="pre">open_ie_and_enter</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.open_ie_and_enter" title="Link to this definition"></a></dt>
+<dd><p>IE를 열고 암호를 넣어서 들어가는것까지 실행
+webdriver의 설치가 필요</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.paste">
 <span class="sig-name descname"><span class="pre">paste</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.paste" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>복사후 붙여넣기
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.paste_clibboard_data">
 <span class="sig-name descname"><span class="pre">paste_clibboard_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.paste_clibboard_data" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>클립보드에 저장된 텍스트를 붙여넣습니다.</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.paste_for_clibboard_data">
 <span class="sig-name descname"><span class="pre">paste_for_clibboard_data</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.paste_for_clibboard_data" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>클립보드에 저장된 텍스트를 붙여넣습니다.</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.press_one_key">
 <span class="sig-name descname"><span class="pre">press_one_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_key</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'enter'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.press_one_key" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>기본적인 키를 누르는 것을 설정하는 것이며
+기본값은 enter이다
+press의 의미는 down + up이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_key</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.read_monitor_size">
 <span class="sig-name descname"><span class="pre">read_monitor_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.read_monitor_size" title="Link to this definition"></a></dt>
 <dd><p>모니터의 해상도를 읽어오는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.read_mouse_position">
 <span class="sig-name descname"><span class="pre">read_mouse_position</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.read_mouse_position" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>마우스 위치
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.pyclick.pyclick.read_screen_size">
+<span class="sig-name descname"><span class="pre">read_screen_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.read_screen_size" title="Link to this definition"></a></dt>
+<dd><p>화면 사이즈</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.save">
 <span class="sig-name descname"><span class="pre">save</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.save" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>저장하기
+:return:</p>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.screen_capture_with_save_file">
 <span class="sig-name descname"><span class="pre">screen_capture_with_save_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'D:Wtemp_101.jpg'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.screen_capture_with_save_file" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>스크린 캡쳐를 해서, 화면을 저장하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_name</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.screen_capture_with_size">
 <span class="sig-name descname"><span class="pre">screen_capture_with_size</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.screen_capture_with_size" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>화면캡쳐를 지정한 크기에서 하는것
+:return:</p>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.pyclick.pyclick.search_same_picture_xy">
+<span class="sig-name descname"><span class="pre">search_same_picture_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">file_target</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.search_same_picture_xy" title="Link to this definition"></a></dt>
+<dd><p>입력한 그림이 화면에서 제일 비슷한 부분의 좌표를 알려주는 것
+cv의 설치가 필요</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>file_target</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.select_from_curent_cursor">
 <span class="sig-name descname"><span class="pre">select_from_curent_cursor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">direction</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">press_times</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.select_from_curent_cursor" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>현재위치에서 왼쪽이나 오른쪽으로 몇개를 선택하는 것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>direction</strong> – </p></li>
+<li><p><strong>press_times</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.show_message">
 <span class="sig-name descname"><span class="pre">show_message</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.show_message" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_1000times_delete_key">
 <span class="sig-name descname"><span class="pre">type_1000times_delete_key</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_1000times_delete_key" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>현재위치에서 자료를 지우는것
+최대 한줄의 자료를 다 지워서 x 의 위치가 변거나 textbox 안의 자료가 다지워져 위치이동이 없으면 종료</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_N_times_backspace">
 <span class="sig-name descname"><span class="pre">type_N_times_backspace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">number</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_N_times_backspace" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>현재위치에서 자료를 지우는것
+죄대 한줄의 자료를 다 지워서 x 의 위지가 변거나 textbox 안의 자료가 다지워져 위지이동이 없으면 종료</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>number</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_action_key">
 <span class="sig-name descname"><span class="pre">type_action_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">times</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_action_key" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>키타이핑</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> – </p></li>
+<li><p><strong>times</strong> – </p></li>
+<li><p><strong>input_interval</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_action_key_with_keyboard">
 <span class="sig-name descname"><span class="pre">type_action_key_with_keyboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">action</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">times</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_action_key_with_keyboard" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>action</strong> – </p></li>
+<li><p><strong>times</strong> – </p></li>
+<li><p><strong>input_interval</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_backspace_until_empty">
 <span class="sig-name descname"><span class="pre">type_backspace_until_empty</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_backspace_until_empty" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>자료를 다 삭제할때까지 지우는것
+최대 1000번까지 한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_backspace_until_finish">
 <span class="sig-name descname"><span class="pre">type_backspace_until_finish</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_backspace_until_finish" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>자료를 다 삭제할때까지 지우는것
+최대 1000번까지 한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">반환<span class="colon">:</span></dt>
+<dd class="field-odd"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_ctrl_n_one_letter">
 <span class="sig-name descname"><span class="pre">type_ctrl_n_one_letter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_ctrl_n_one_letter" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>ctrl + 키를 위한것</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_ctrl_plus_letter">
 <span class="sig-name descname"><span class="pre">type_ctrl_plus_letter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_ctrl_plus_letter" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_each_letter_by_interval_with_keyboard">
 <span class="sig-name descname"><span class="pre">type_each_letter_by_interval_with_keyboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_each_letter_by_interval_with_keyboard" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>그저 글자를 타이핑 치는 것이다
+pyautogui.pressfenter’, presses=3z interval=3) # enter 키를 3 초에 한번씩 세번 입력합니다.</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>input_interval</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_hotkey">
 <span class="sig-name descname"><span class="pre">type_hotkey</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_keys</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_hotkey" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>pyautogui.hotkey(’ctrl’, <a href="#id1"><span class="problematic" id="id2">*</span></a>c’)
+ctrl-c to copy</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_keys</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_hotkey_n_key">
 <span class="sig-name descname"><span class="pre">type_hotkey_n_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hotkey</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_key</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_hotkey_n_key" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>pyautogui.hotkey(’ctrl’, <a href="#id3"><span class="problematic" id="id4">*</span></a>c’) ==&gt; ctrl-c to copy</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_hotkey</strong> – </p></li>
+<li><p><strong>input_key</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_normal_key">
 <span class="sig-name descname"><span class="pre">type_normal_key</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'enter'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_normal_key" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_text">
 <span class="sig-name descname"><span class="pre">type_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'enter'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_text" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>기본적인 키를 누르는 것을 설정하는 것이며
+기본값은 enter이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_text_for_hangul">
 <span class="sig-name descname"><span class="pre">type_text_for_hangul</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_text_for_hangul" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>영문은 어떻게 하면 입력이 잘되는데, 한글이나 유니코드는 잘되지 않아 찾아보니 아래의 형태로 사용하시면 가능합니다
+pyautogui 가 unicode 는 입력이 안됩니다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_text_one_by_one">
 <span class="sig-name descname"><span class="pre">type_text_one_by_one</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_text_one_by_one" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>영문은 어떻게 하면 입력이 잘되는데, 한글이나 유니코드는 잘되지 않아 찾아보니 아래의 형태로 사용하시면 가능합니다
+어떤경우는 여러개는 않되어서 한개씩 들어가는 형태로 한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_text_one_by_one_with_keyboard">
 <span class="sig-name descname"><span class="pre">type_text_one_by_one_with_keyboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_text_one_by_one_with_keyboard" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>영문은 어떻게 하면 입력이 잘되는데, 한글이나 유니코드는 잘되지 않아 찾아보니 아래의 형태로 사용하시면 가능합니다
+어떤경우는 여러개는 않되어서 한개씩 들어가는 형태로 한다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_text_with_interval">
 <span class="sig-name descname"><span class="pre">type_text_with_interval</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_interval</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.1</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_text_with_interval" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>그저 글자를 타이핑 치는 것이다
+pyautogui.pressfenter’, presses=3z interval=3) # enter 키를 3 초에 한번씩 세번 입력합니다.</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>input_text</strong> – </p></li>
+<li><p><strong>input_interval</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.type_text_with_keyboard">
 <span class="sig-name descname"><span class="pre">type_text_with_keyboard</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pyclick.pyclick.type_text_with_keyboard" title="Link to this definition"></a></dt>
-<dd></dd></dl>
+<dd><p>영문은 어떻게 하면 입력이 잘되는데, 한글이나 유니코드는 잘되지 않아 찾아보니 아래의 형태로 사용하시면 가능합니다
+pyautogui 가 unicode 는 입력이 안됩니다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_text</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pyclick.pyclick.zzz_sample_with_win32com">
