@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>anydb - 함수들의 문서화 &mdash; xython 1.16 문서</title>
+  <title>anydb - 함수들의 문서화 &mdash; xython 1.19 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -13,7 +13,7 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=06785e48"></script>
+        <script src="_static/documentation_options.js?v=ee62fd8a"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="_static/translations.js?v=b5f768d8"></script>
@@ -47,13 +47,13 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython의 전반적 사용법 및 용어</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">anydb - 함수들의 문서화</a><ul>
@@ -66,22 +66,22 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.change_list_to_df"><code class="docutils literal notranslate"><span class="pre">anydb.change_list_to_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.change_sqlite_table_data_to_df"><code class="docutils literal notranslate"><span class="pre">anydb.change_sqlite_table_data_to_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.change_sqlite_table_data_to_list"><code class="docutils literal notranslate"><span class="pre">anydb.change_sqlite_table_data_to_list()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.change_table_name_at_current_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.change_table_name_at_current_db_for_sqlite()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.check_col_name"><code class="docutils literal notranslate"><span class="pre">anydb.check_col_name()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.change_table_name_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.change_table_name_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.check_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.check_db_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.check_db_name_in_folder_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.check_db_name_in_folder_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.check_input_data"><code class="docutils literal notranslate"><span class="pre">anydb.check_input_data()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.check_range_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.check_range_in_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.check_x_index_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.check_x_index_in_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.check_y_index_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.check_y_index_in_df()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.check_yname"><code class="docutils literal notranslate"><span class="pre">anydb.check_yname()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.connect_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.connect_db_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_empty_yline_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.delete_empty_yline_in_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_empty_yline_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.delete_empty_yline_in_table_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_memory_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.delete_memory_db_for_sqlite()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_table_in_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.delete_table_in_db_for_sqlite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.delete_table_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_yline_in_list_db_by_index"><code class="docutils literal notranslate"><span class="pre">anydb.delete_yline_in_list_db_by_index()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_yline_in_list_db_by_name"><code class="docutils literal notranslate"><span class="pre">anydb.delete_yline_in_list_db_by_name()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_yline_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.delete_yline_in_table_for_sqlite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.delete_yline_in_table_by_yname_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.delete_yline_in_table_by_yname_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.get_all_db_name_in_path"><code class="docutils literal notranslate"><span class="pre">anydb.get_all_db_name_in_path()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.get_all_y_name_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.get_all_y_name_in_table_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.get_columns_data_from_no1_to_no2_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.get_columns_data_from_no1_to_no2_in_table_for_sqlite()</span></code></a></li>
@@ -91,29 +91,25 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.insert_yline_in_list_db"><code class="docutils literal notranslate"><span class="pre">anydb.insert_yline_in_list_db()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.insert_yline_in_list_db_by_index"><code class="docutils literal notranslate"><span class="pre">anydb.insert_yline_in_list_db_by_index()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.insert_yyline_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.insert_yyline_in_table_for_sqlite()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.is_col_names"><code class="docutils literal notranslate"><span class="pre">anydb.is_col_names()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.is_y_names"><code class="docutils literal notranslate"><span class="pre">anydb.is_y_names()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.make_cursor_for_sqlite_db"><code class="docutils literal notranslate"><span class="pre">anydb.make_cursor_for_sqlite_db()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.make_sql_text_for_dic_data"><code class="docutils literal notranslate"><span class="pre">anydb.make_sql_text_for_dic_data()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.make_sql_text_for_insert_by_col_names"><code class="docutils literal notranslate"><span class="pre">anydb.make_sql_text_for_insert_by_col_names()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.new_column_for_sqlite_memory_db"><code class="docutils literal notranslate"><span class="pre">anydb.new_column_for_sqlite_memory_db()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.new_columns_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.new_columns_in_table_for_sqlite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.make_sql_text_for_insert_by_ynames"><code class="docutils literal notranslate"><span class="pre">anydb.make_sql_text_for_insert_by_ynames()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.new_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.new_db_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.new_memory_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.new_memory_db_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.new_table_for_sqlite_memory_db"><code class="docutils literal notranslate"><span class="pre">anydb.new_table_for_sqlite_memory_db()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.new_table_in_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.new_table_in_db_for_sqlite()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.new_table_with_column_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.new_table_with_column_for_sqlite()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_col_name_for_sqlite_memory_db"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_col_name_for_sqlite_memory_db()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_col_name_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_col_name_in_table_for_sqlite()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_column_in_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_column_in_sqlite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.new_table_with_yline_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.new_table_with_yline_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_table_data_as_dic_style_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_table_data_as_dic_style_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_table_data_as_dic_style_for_sqlite_except_none"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_table_data_as_dic_style_for_sqlite_except_none()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_table_data_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_table_data_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_table_name_in_db_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_table_name_in_db_for_sqlite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_yname_for_sqlite_memory_db"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_yname_for_sqlite_memory_db()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_all_yname_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.read_all_yname_in_table_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_data_by_xy_for_sqlite_memory_db"><code class="docutils literal notranslate"><span class="pre">anydb.read_data_by_xy_for_sqlite_memory_db()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_data_with_col_name_by_xy_for_sqlite_memory_db"><code class="docutils literal notranslate"><span class="pre">anydb.read_data_with_col_name_by_xy_for_sqlite_memory_db()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_data_with_col_name_by_xy_for_sqlite_memory_db_except_none_data"><code class="docutils literal notranslate"><span class="pre">anydb.read_data_with_col_name_by_xy_for_sqlite_memory_db_except_none_data()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_pickle_file"><code class="docutils literal notranslate"><span class="pre">anydb.read_pickle_file()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_table_data_by_col_names_at_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.read_table_data_by_col_names_at_sqlite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_data_with_yname_by_xy_for_sqlite_memory_db"><code class="docutils literal notranslate"><span class="pre">anydb.read_data_with_yname_by_xy_for_sqlite_memory_db()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_data_with_yname_by_xy_for_sqlite_memory_db_except_none_data"><code class="docutils literal notranslate"><span class="pre">anydb.read_data_with_yname_by_xy_for_sqlite_memory_db_except_none_data()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_table_data_by_ynames_at_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.read_table_data_by_ynames_at_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_value_by_name_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.read_value_by_name_in_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_value_by_xy_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.read_value_by_xy_in_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_value_by_xyxy_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.read_value_by_xyxy_in_df()</span></code></a></li>
@@ -124,30 +120,17 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.read_yy_lines_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.read_yy_lines_in_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.run_sql_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.run_sql_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.run_sql_for_sqlite_memory_db"><code class="docutils literal notranslate"><span class="pre">anydb.run_sql_for_sqlite_memory_db()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.save_input_object_to_pickle_file"><code class="docutils literal notranslate"><span class="pre">anydb.save_input_object_to_pickle_file()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.save_sqlite_memory_db_to_disk_db"><code class="docutils literal notranslate"><span class="pre">anydb.save_sqlite_memory_db_to_disk_db()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.set_database"><code class="docutils literal notranslate"><span class="pre">anydb.set_database()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.set_database_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.set_database_for_sqlite()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.split_path_n_name"><code class="docutils literal notranslate"><span class="pre">anydb.split_path_n_name()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.terms"><code class="docutils literal notranslate"><span class="pre">anydb.terms()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_all_table_data_for_sqlite_to_df"><code class="docutils literal notranslate"><span class="pre">anydb.write_all_table_data_for_sqlite_to_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_data_in_table_for_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.write_data_in_table_for_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_df_data_to_excel"><code class="docutils literal notranslate"><span class="pre">anydb.write_df_data_to_excel()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_df_data_to_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.write_df_data_to_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_dic_data_to_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.write_dic_data_to_sqlite()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_list_data_to_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.write_list_data_to_sqlite()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_list_1d_data_to_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.write_list_1d_data_to_sqlite()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_value_by_xy_in_df"><code class="docutils literal notranslate"><span class="pre">anydb.write_value_by_xy_in_df()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.anydb.anydb.write_value_in_sqlite"><code class="docutils literal notranslate"><span class="pre">anydb.write_value_in_sqlite()</span></code></a></li>
-</ul>
-</li>
-<li class="toctree-l2"><a class="reference internal" href="#xython.anydb.xydb"><code class="docutils literal notranslate"><span class="pre">xydb</span></code></a><ul>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.xydb.check_x"><code class="docutils literal notranslate"><span class="pre">xydb.check_x()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.xydb.delete_x"><code class="docutils literal notranslate"><span class="pre">xydb.delete_x()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.xydb.delete_xy"><code class="docutils literal notranslate"><span class="pre">xydb.delete_xy()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.xydb.delete_y"><code class="docutils literal notranslate"><span class="pre">xydb.delete_y()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.xydb.read_all"><code class="docutils literal notranslate"><span class="pre">xydb.read_all()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.xydb.read_xy"><code class="docutils literal notranslate"><span class="pre">xydb.read_xy()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.anydb.xydb.write_xy"><code class="docutils literal notranslate"><span class="pre">xydb.write_xy()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -337,8 +320,8 @@ index :   {‘가로제목1’: {‘제목1’: 1, ‘제목2’: 2}, ‘가로�
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.change_table_name_at_current_db_for_sqlite">
-<span class="sig-name descname"><span class="pre">change_table_name_at_current_db_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name_old</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_name_new</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.change_table_name_at_current_db_for_sqlite" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.change_table_name_for_sqlite">
+<span class="sig-name descname"><span class="pre">change_table_name_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name_old</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">table_name_new</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.change_table_name_for_sqlite" title="Link to this definition"></a></dt>
 <dd><p>현재 db에서 테이블 이름 변경</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -347,20 +330,6 @@ index :   {‘가로제목1’: {‘제목1’: 1, ‘제목2’: 2}, ‘가로�
 <li><p><strong>table_name_new</strong> – </p></li>
 <li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
 </ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.check_col_name">
-<span class="sig-name descname"><span class="pre">check_col_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.check_col_name" title="Link to this definition"></a></dt>
-<dd><p>컬럼의 이름으로 쓰이는 것에 이상한 글자들이 들어가지 않도록 확인하는 것이다</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>col_name</strong> – y 컬럼이름</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -462,7 +431,7 @@ x=””또는 “all” ===&gt; 전부</p>
 <dt class="sig sig-object py" id="xython.anydb.anydb.check_y_index_in_df">
 <span class="sig-name descname"><span class="pre">check_y_index_in_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">df_obj</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_index</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.check_y_index_in_df" title="Link to this definition"></a></dt>
 <dd><p>index가 기본 index인 0부터 시작하는 것이 아닌 어떤 특정한 제목이 들어가 있는경우는
-숫자로 사용할수가 없다. 그래서 그서을 확인후에 기본 index가 아닌경우는 제목으로 변경해 주는
+숫자로 사용할수가 없다. 그래서 그것을 확인후에 기본 index가 아닌경우는 제목으로 변경해 주는
 것을 할려고 한다
 “2~3”  ===&gt;  ‘인천’:’대구’</p>
 <dl class="field-list simple">
@@ -471,6 +440,20 @@ x=””또는 “all” ===&gt; 전부</p>
 <li><p><strong>df_obj</strong> – dataframe객체</p></li>
 <li><p><strong>input_index</strong> – </p></li>
 </ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.anydb.anydb.check_yname">
+<span class="sig-name descname"><span class="pre">check_yname</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">yname</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.check_yname" title="Link to this definition"></a></dt>
+<dd><p>컬럼의 이름으로 쓰이는 것에 이상한 글자들이 들어가지 않도록 확인하는 것이다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>yname</strong> – y 컬럼이름</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -536,8 +519,8 @@ x=””또는 “all” ===&gt; 전부</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.delete_table_in_db_for_sqlite">
-<span class="sig-name descname"><span class="pre">delete_table_in_db_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.delete_table_in_db_for_sqlite" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.delete_table_for_sqlite">
+<span class="sig-name descname"><span class="pre">delete_table_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.delete_table_for_sqlite" title="Link to this definition"></a></dt>
 <dd><p>입력형태 : 테이블이름</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -589,15 +572,16 @@ list_db의 형태 : [[y_name-1, y_name_2…..],[[a1, a2, a3…], [b1, b2, b3…]
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.delete_yline_in_table_for_sqlite">
-<span class="sig-name descname"><span class="pre">delete_yline_in_table_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_name_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.delete_yline_in_table_for_sqlite" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.delete_yline_in_table_by_yname_for_sqlite">
+<span class="sig-name descname"><span class="pre">delete_yline_in_table_by_yname_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yname_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.delete_yline_in_table_by_yname_for_sqlite" title="Link to this definition"></a></dt>
 <dd><p>컬럼 삭제
-입력형태 : [“col_1”,”col_2”,”col_3”]</p>
+입력형태 : [“col_1”,”col_2”,”col_3”]
+yname : 컬럼이름</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>table_name</strong> – 테이블 이름</p></li>
-<li><p><strong>col_name_list</strong> – </p></li>
+<li><p><strong>yname_list</strong> – </p></li>
 <li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
 </ul>
 </dd>
@@ -771,8 +755,8 @@ col_data_list_s : [[“이름1”,”int”],[“이름2”,”text”]]
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.is_col_names">
-<span class="sig-name descname"><span class="pre">is_col_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.is_col_names" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.is_y_names">
+<span class="sig-name descname"><span class="pre">is_y_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.is_y_names" title="Link to this definition"></a></dt>
 <dd><p>입력으로 들어온 1 차원 리스트자료가 컬럼이름으로 사용되는것인지 아닌지 확인하는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -810,49 +794,14 @@ col_data_list_s : [[“이름1”,”int”],[“이름2”,”text”]]
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.make_sql_text_for_insert_by_col_names">
-<span class="sig-name descname"><span class="pre">make_sql_text_for_insert_by_col_names</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.make_sql_text_for_insert_by_col_names" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.make_sql_text_for_insert_by_ynames">
+<span class="sig-name descname"><span class="pre">make_sql_text_for_insert_by_ynames</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.make_sql_text_for_insert_by_ynames" title="Link to this definition"></a></dt>
 <dd><p>(sql구문 만들기) 컬럼이름을 추가하기위하여 sql구문 만들기</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>table_name</strong> – 테이블 이름</p></li>
 <li><p><strong>col_list</strong> – y컬럼 이름들</p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.new_column_for_sqlite_memory_db">
-<span class="sig-name descname"><span class="pre">new_column_for_sqlite_memory_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_data_list_s</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.new_column_for_sqlite_memory_db" title="Link to this definition"></a></dt>
-<dd><p>insert대신 new를 사용하는것이 더 좋지 않을까해서 만들어 보는 것</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>table_name</strong> – 테이블 이름</p></li>
-<li><p><strong>col_data_list_s</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.new_columns_in_table_for_sqlite">
-<span class="sig-name descname"><span class="pre">new_columns_in_table_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_data_list_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.new_columns_in_table_for_sqlite" title="Link to this definition"></a></dt>
-<dd><p>(새로운 컬럼 만들기) 새로운 컬럼 만들기</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>table_name</strong> – 테이블 이름</p></li>
-<li><p><strong>col_data_list_s</strong> – </p></li>
-<li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
@@ -924,8 +873,8 @@ memory에 생성하는 것은 바로 connection 이 만들어 진다</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.new_table_with_column_for_sqlite">
-<span class="sig-name descname"><span class="pre">new_table_with_column_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_data_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.new_table_with_column_for_sqlite" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.new_table_with_yline_for_sqlite">
+<span class="sig-name descname"><span class="pre">new_table_with_yline_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">column_data_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.new_table_with_yline_for_sqlite" title="Link to this definition"></a></dt>
 <dd><p>(새로운 테이블 만들기) 어떤 형태의 자료가 입력이 되어도 테이블을 만드는 sql을 만드는 것이다
 입력형태 1 : 테이블이름, [[‘번호1’,”text”], [‘번호2’,”text”],[‘번호3’,”text”],[‘번호4’,”text”]]
 입력형태 2 : 테이블이름, [‘번호1’,’번호2’,’번호3’,’번호4’]
@@ -937,52 +886,6 @@ memory에 생성하는 것은 바로 connection 이 만들어 진다</p>
 <li><p><strong>column_data_list</strong> – </p></li>
 <li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
 </ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.read_all_col_name_for_sqlite_memory_db">
-<span class="sig-name descname"><span class="pre">read_all_col_name_for_sqlite_memory_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_all_col_name_for_sqlite_memory_db" title="Link to this definition"></a></dt>
-<dd><p>(모든 컬럼 이름) 모든 컬럼의 이름을 갖고오는 것, 메모리 db</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>table_name</strong> – 테이블 이름</p>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.read_all_col_name_in_table_for_sqlite">
-<span class="sig-name descname"><span class="pre">read_all_col_name_in_table_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_all_col_name_in_table_for_sqlite" title="Link to this definition"></a></dt>
-<dd><p>(모든 컬럼 이름) 현재 있는 테이블의 이름에 특수문자들을 지우는 것이다
-공백을 _로 변경하는것, Column의 이름을 변경한다</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>table_name</strong> – 테이블 이름</p></li>
-<li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.read_all_column_in_sqlite">
-<span class="sig-name descname"><span class="pre">read_all_column_in_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_all_column_in_sqlite" title="Link to this definition"></a></dt>
-<dd><p>(모든 컬럼 이름) 기존의 테이블의 컬럼이름들을 갖고온다</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>table_name</strong> – 테이블 이름</p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -1053,6 +956,34 @@ memory에 생성하는 것은 바로 connection 이 만들어 진다</p>
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="xython.anydb.anydb.read_all_yname_for_sqlite_memory_db">
+<span class="sig-name descname"><span class="pre">read_all_yname_for_sqlite_memory_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_all_yname_for_sqlite_memory_db" title="Link to this definition"></a></dt>
+<dd><p>(모든 컬럼 이름) 모든 컬럼의 이름을 갖고오는 것, 메모리 db</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>table_name</strong> – 테이블 이름</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.anydb.anydb.read_all_yname_in_table_for_sqlite">
+<span class="sig-name descname"><span class="pre">read_all_yname_in_table_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_all_yname_in_table_for_sqlite" title="Link to this definition"></a></dt>
+<dd><p>(모든 컬럼 이름) 기존의 테이블의 컬럼이름들을 갖고온다</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>table_name</strong> – 테이블 이름</p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="xython.anydb.anydb.read_data_by_xy_for_sqlite_memory_db">
 <span class="sig-name descname"><span class="pre">read_data_by_xy_for_sqlite_memory_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_data_by_xy_for_sqlite_memory_db" title="Link to this definition"></a></dt>
 <dd><p>(한개의 값)메모리db의 x번째, y번째의 값</p>
@@ -1071,8 +1002,8 @@ memory에 생성하는 것은 바로 connection 이 만들어 진다</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.read_data_with_col_name_by_xy_for_sqlite_memory_db">
-<span class="sig-name descname"><span class="pre">read_data_with_col_name_by_xy_for_sqlite_memory_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_data_with_col_name_by_xy_for_sqlite_memory_db" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.read_data_with_yname_by_xy_for_sqlite_memory_db">
+<span class="sig-name descname"><span class="pre">read_data_with_yname_by_xy_for_sqlite_memory_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_data_with_yname_by_xy_for_sqlite_memory_db" title="Link to this definition"></a></dt>
 <dd><p>(한개의 값) 메모리db의 x번째, y번째의 값과 컬럼이름</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1089,8 +1020,8 @@ memory에 생성하는 것은 바로 connection 이 만들어 진다</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.read_data_with_col_name_by_xy_for_sqlite_memory_db_except_none_data">
-<span class="sig-name descname"><span class="pre">read_data_with_col_name_by_xy_for_sqlite_memory_db_except_none_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_data_with_col_name_by_xy_for_sqlite_memory_db_except_none_data" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.read_data_with_yname_by_xy_for_sqlite_memory_db_except_none_data">
+<span class="sig-name descname"><span class="pre">read_data_with_yname_by_xy_for_sqlite_memory_db_except_none_data</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">x_no</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_data_with_yname_by_xy_for_sqlite_memory_db_except_none_data" title="Link to this definition"></a></dt>
 <dd><p>메모리db의 x번째, y번째의 값과 컬럼이름, 단 None값은 제외한다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1107,27 +1038,13 @@ memory에 생성하는 것은 바로 connection 이 만들어 진다</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.read_pickle_file">
-<span class="sig-name descname"><span class="pre">read_pickle_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">path_n_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_pickle_file" title="Link to this definition"></a></dt>
-<dd><p>(pickle파일 읽어오기) pickle로 자료를 만든것을 읽어오는 것이다</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>path_n_name</strong> – </p>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.read_table_data_by_col_names_at_sqlite">
-<span class="sig-name descname"><span class="pre">read_table_data_by_col_names_at_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">col_name_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_table_data_by_col_names_at_sqlite" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.read_table_data_by_ynames_at_sqlite">
+<span class="sig-name descname"><span class="pre">read_table_data_by_ynames_at_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">yname_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">condition</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'all'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.read_table_data_by_ynames_at_sqlite" title="Link to this definition"></a></dt>
 <dd><p>컬럼이름으로 테이블 값을 갖고오기, 문자는 컬럼이름으로, 숫자는 몇번째인것으로…</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>col_name_s</strong> – </p></li>
+<li><p><strong>yname_s</strong> – </p></li>
 <li><p><strong>condition</strong> – </p></li>
 <li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
 </ul>
@@ -1323,24 +1240,6 @@ fetchall는
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.save_input_object_to_pickle_file">
-<span class="sig-name descname"><span class="pre">save_input_object_to_pickle_file</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_object</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">path</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'D:\\'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.save_input_object_to_pickle_file" title="Link to this definition"></a></dt>
-<dd><p>자료를 pickle 로 저장하는것</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>input_object</strong> – </p></li>
-<li><p><strong>file_name</strong> – </p></li>
-<li><p><strong>path</strong> – 경로</p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="xython.anydb.anydb.save_sqlite_memory_db_to_disk_db">
 <span class="sig-name descname"><span class="pre">save_sqlite_memory_db_to_disk_db</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.save_sqlite_memory_db_to_disk_db" title="Link to this definition"></a></dt>
 <dd><p>memory에 저장된것을 화일로 저장하는것
@@ -1383,31 +1282,6 @@ python 3.7부터는 backup이 가능</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.split_path_n_name">
-<span class="sig-name descname"><span class="pre">split_path_n_name</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.split_path_n_name" title="Link to this definition"></a></dt>
-<dd><p>입력값을 경로와 이름으로 분리</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_value</strong> – </p>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.terms">
-<span class="sig-name descname"><span class="pre">terms</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.terms" title="Link to this definition"></a></dt>
-<dd><p>이 클래스에서 중요하게 사용되는 용어들에 대한 설명입니다</p>
-<dl class="field-list simple">
-<dt class="field-odd">반환<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="xython.anydb.anydb.write_all_table_data_for_sqlite_to_df">
 <span class="sig-name descname"><span class="pre">write_all_table_data_for_sqlite_to_df</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.write_all_table_data_for_sqlite_to_df" title="Link to this definition"></a></dt>
 <dd><p>sqlite를 df로 만드는것</p>
@@ -1426,13 +1300,13 @@ python 3.7부터는 backup이 가능</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.anydb.anydb.write_data_in_table_for_sqlite">
-<span class="sig-name descname"><span class="pre">write_data_in_table_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_name_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_value_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.write_data_in_table_for_sqlite" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">write_data_in_table_for_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yname_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_value_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.write_data_in_table_for_sqlite" title="Link to this definition"></a></dt>
 <dd><p>값쓰기</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>table_name</strong> – 테이블 이름</p></li>
-<li><p><strong>col_name_s</strong> – </p></li>
+<li><p><strong>yname_s</strong> – </p></li>
 <li><p><strong>col_value_s</strong> – </p></li>
 <li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
 </ul>
@@ -1480,13 +1354,13 @@ python 3.7부터는 backup이 가능</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.anydb.anydb.write_dic_data_to_sqlite">
-<span class="sig-name descname"><span class="pre">write_dic_data_to_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">dic_data</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.write_dic_data_to_sqlite" title="Link to this definition"></a></dt>
-<dd><p>사전의 키를 y이름으로 해서 값을 입력한다</p>
+<span class="sig-name descname"><span class="pre">write_dic_data_to_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_dic</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.write_dic_data_to_sqlite" title="Link to this definition"></a></dt>
+<dd><p>사전형식의 값을 sqlite에 입력하는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>table_name</strong> – 테이블 이름</p></li>
-<li><p><strong>dic_data</strong> – </p></li>
+<li><p><strong>input_dic</strong> – </p></li>
 <li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
 </ul>
 </dd>
@@ -1497,15 +1371,15 @@ python 3.7부터는 backup이 가능</p>
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.anydb.write_list_data_to_sqlite">
-<span class="sig-name descname"><span class="pre">write_list_data_to_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">col_name_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">list_values</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.write_list_data_to_sqlite" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.anydb.anydb.write_list_1d_data_to_sqlite">
+<span class="sig-name descname"><span class="pre">write_list_1d_data_to_sqlite</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">table_name</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">yname_s</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_list_1d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">db_name</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.anydb.write_list_1d_data_to_sqlite" title="Link to this definition"></a></dt>
 <dd><p>리스트의 형태로 넘어오는것중에 y이름과 값을 분리해서 얻는 것이다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
 <li><p><strong>table_name</strong> – 테이블 이름</p></li>
-<li><p><strong>col_name_s</strong> – </p></li>
-<li><p><strong>list_values</strong> – </p></li>
+<li><p><strong>yname_s</strong> – </p></li>
+<li><p><strong>list_1d</strong> – </p></li>
 <li><p><strong>db_name</strong> – 데이터베이스 이름</p></li>
 </ul>
 </dd>
@@ -1522,7 +1396,7 @@ python 3.7부터는 backup이 가능</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>df</strong> – </p></li>
+<li><p><strong>df</strong> – dataframe</p></li>
 <li><p><strong>xy</strong> – </p></li>
 <li><p><strong>value</strong> – </p></li>
 </ul>
@@ -1543,110 +1417,6 @@ python 3.7부터는 backup이 가능</p>
 <li><p><strong>table_name</strong> – 테이블 이름</p></li>
 <li><p><strong>input_1</strong> – </p></li>
 <li><p><strong>input_2</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-</dd></dl>
-
-<dl class="py class">
-<dt class="sig sig-object py" id="xython.anydb.xydb">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.anydb.</span></span><span class="sig-name descname"><span class="pre">xydb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">filename</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.xydb" title="Link to this definition"></a></dt>
-<dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.xydb.check_x">
-<span class="sig-name descname"><span class="pre">check_x</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.xydb.check_x" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>x</strong> – </p>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.xydb.delete_x">
-<span class="sig-name descname"><span class="pre">delete_x</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.xydb.delete_x" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>x</strong> – </p>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.xydb.delete_xy">
-<span class="sig-name descname"><span class="pre">delete_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.xydb.delete_xy" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – </p></li>
-<li><p><strong>y</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.xydb.delete_y">
-<span class="sig-name descname"><span class="pre">delete_y</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.xydb.delete_y" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>y</strong> – </p>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.xydb.read_all">
-<span class="sig-name descname"><span class="pre">read_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.xydb.read_all" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">반환<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.xydb.read_xy">
-<span class="sig-name descname"><span class="pre">read_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.xydb.read_xy" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – </p></li>
-<li><p><strong>y</strong> – </p></li>
-</ul>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.anydb.xydb.write_xy">
-<span class="sig-name descname"><span class="pre">write_xy</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.anydb.xydb.write_xy" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><ul class="simple">
-<li><p><strong>x</strong> – </p></li>
-<li><p><strong>y</strong> – </p></li>
-<li><p><strong>value</strong> – </p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>

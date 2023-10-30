@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pynal - 함수들의 문서화 &mdash; xython 1.16 문서</title>
+  <title>pynal - 함수들의 문서화 &mdash; xython 1.19 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -13,7 +13,7 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=06785e48"></script>
+        <script src="_static/documentation_options.js?v=ee62fd8a"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
         <script src="_static/translations.js?v=b5f768d8"></script>
@@ -47,13 +47,13 @@
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython의 전반적 사용법 및 용어</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
@@ -616,13 +616,13 @@ ISO형식 : 2023-03-01T10:01:23.221000</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pynal.pynal.change_utc_to_dt_obj">
-<span class="sig-name descname"><span class="pre">change_utc_to_dt_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_utc_to_dt_obj" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_utc_to_dt_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_utc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_utc_to_dt_obj" title="Link to this definition"></a></dt>
 <dd><p>입력값 : utf시간숫자, 1640995200.0 또는 “”
 분 —–&gt; [‘07’]
 닞은숫자 -&gt; 많은글자 순으로 정리</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text_time</strong> – </p>
+<dd class="field-odd"><p><strong>input_utc</strong> – </p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -648,13 +648,13 @@ ISO형식 : 2023-03-01T10:01:23.221000</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pynal.pynal.change_utc_to_min_list">
-<span class="sig-name descname"><span class="pre">change_utc_to_min_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_utc_to_min_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_utc_to_min_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_utc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_utc_to_min_list" title="Link to this definition"></a></dt>
 <dd><p>입력값 : utf시간숫자, 1640995200.0 또는 “”
 분 —–&gt; [‘07’]
 닞은숫자 -&gt; 많은글자 순으로 정리</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text_time</strong> – </p>
+<dd class="field-odd"><p><strong>input_utc</strong> – </p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -728,12 +728,12 @@ ISO형식 : 2023-03-01T10:01:23.221000</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pynal.pynal.change_utc_to_year_list">
-<span class="sig-name descname"><span class="pre">change_utc_to_year_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_utc_to_year_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_utc_to_year_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_utc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_utc_to_year_list" title="Link to this definition"></a></dt>
 <dd><p>년 —–&gt; [‘22’, ‘2022’]
 닞은숫자 -&gt; 많은글자 순으로 정리</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text_time</strong> – </p>
+<dd class="field-odd"><p><strong>input_utc</strong> – </p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -747,7 +747,7 @@ ISO형식 : 2023-03-01T10:01:23.221000</p>
 <dd><p>utc를 2023-2-2형태로 돌려주는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_data</strong> – </p>
+<dd class="field-odd"><p><strong>input_utc</strong> – </p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -757,10 +757,10 @@ ISO형식 : 2023-03-01T10:01:23.221000</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pynal.pynal.change_utc_to_ymd_list">
-<span class="sig-name descname"><span class="pre">change_utc_to_ymd_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_utc_to_ymd_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_utc_to_ymd_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_utc</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_utc_to_ymd_list" title="Link to this definition"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_text_time</strong> – </p>
+<dd class="field-odd"><p><strong>input_utc</strong> – </p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -781,12 +781,12 @@ ISO형식 : 2023-03-01T10:01:23.221000</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pynal.pynal.change_ymd_list_to_dt_obj">
-<span class="sig-name descname"><span class="pre">change_ymd_list_to_dt_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_ymd_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_ymd_list_to_dt_obj" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_ymd_list_to_dt_obj</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text_time</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.change_ymd_list_to_dt_obj" title="Link to this definition"></a></dt>
 <dd><p>datetime객체는 최소한 년/월/일은 들어가야 생성된다
 dt = datetime.strptime(“21/11/06 16:30”, “%d/%m/%y %H:%M”)</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_ymd_list</strong> – </p>
+<dd class="field-odd"><p><strong>input_text_time</strong> – </p>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -1427,11 +1427,14 @@ yoon_or_not : 윤달인지 아닌지에 대한 설정</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pynal.pynal.get_month_range_for_ym_list">
-<span class="sig-name descname"><span class="pre">get_month_range_for_ym_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">ym_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.get_month_range_for_ym_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_month_range_for_ym_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_ym_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">[2002,</span> <span class="pre">3]</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.get_month_range_for_ym_list" title="Link to this definition"></a></dt>
 <dd><p>입력월의 첫날과 끝날을 알려주는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>ym_list</strong> – </p>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>year</strong> – </p></li>
+<li><p><strong>month</strong> – </p></li>
+</ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
 <dd class="field-even"><p></p>
@@ -1962,18 +1965,20 @@ input_data : [2009, 5, 5, 5, 5, ‘양’, 1, ‘’, ‘어린이날’]
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.pynal.pynal.shift_ymd_list_by_day">
-<span class="sig-name descname"><span class="pre">shift_ymd_list_by_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_ymd_list</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.shift_ymd_list_by_day" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">shift_ymd_list_by_day</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text_time</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.pynal.pynal.shift_ymd_list_by_day" title="Link to this definition"></a></dt>
 <dd><p>입력한 날짜리스트를 기준으로 날을 이동시키는것
-아무것도 입력하지 않으면 현재 시간</p>
+아무것도 입력하지 않으면 현재 시간
+입력값 : [2022, 03, 02]
+출력값 : 2022-01-01</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
-<li><p><strong>input_ymd_list</strong> – [2022, 03, 02]</p></li>
+<li><p><strong>input_text_time</strong> – </p></li>
 <li><p><strong>input_no</strong> – </p></li>
 </ul>
 </dd>
 <dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p>2022-01-01</p>
+<dd class="field-even"><p></p>
 </dd>
 </dl>
 </dd></dl>
