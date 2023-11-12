@@ -13,9 +13,9 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=ee62fd8a"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=96a20c3c"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
         <script src="_static/translations.js?v=b5f768d8"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
@@ -46,16 +46,16 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython의 전반적 사용법 및 용어</a></li>
-<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
+<li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_rst.html">ganada - 함수들 설명문서화</a></li>
 <li class="toctree-l1 current"><a class="current reference internal" href="#">jfinder - 함수들의 문서화</a><ul>
@@ -86,8 +86,10 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.replace"><code class="docutils literal notranslate"><span class="pre">jfinder.replace()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.replace_with_jf_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.replace_with_jf_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.run_with_jf_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.run_with_jf_sql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.run_with_re_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.run_with_re_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search"><code class="docutils literal notranslate"><span class="pre">jfinder.search()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_all_by_jf_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_all_by_jf_sql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_all_by_re_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_all_by_re_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_all_cap"><code class="docutils literal notranslate"><span class="pre">jfinder.search_all_cap()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_between_brackets_by_jf_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_between_brackets_by_jf_sql()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_between_len1_len2"><code class="docutils literal notranslate"><span class="pre">jfinder.search_between_len1_len2()</span></code></a></li>
@@ -103,7 +105,7 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_number_between_len1_len2"><code class="docutils literal notranslate"><span class="pre">jfinder.search_number_between_len1_len2()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_special_char"><code class="docutils literal notranslate"><span class="pre">jfinder.search_special_char()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_text"><code class="docutils literal notranslate"><span class="pre">jfinder.search_text()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_with_jf_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_with_jf_sql()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.jfinder.jfinder.search_with_re_sql"><code class="docutils literal notranslate"><span class="pre">jfinder.search_with_re_sql()</span></code></a></li>
 </ul>
 </li>
 </ul>
@@ -141,14 +143,14 @@
            <div itemprop="articleBody">
              
   <section id="jfinder">
-<h1>jfinder - 함수들의 문서화<a class="headerlink" href="#jfinder" title="Link to this heading"></a></h1>
-<dl class="py class" id="module-xython.jfinder">
+<h1>jfinder - 함수들의 문서화<a class="headerlink" href="#jfinder" title="이 제목에 대한 퍼머링크"></a></h1>
+<span class="target" id="module-xython.jfinder"></span><dl class="py class">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.jfinder.</span></span><span class="sig-name descname"><span class="pre">jfinder</span></span><a class="headerlink" href="#xython.jfinder.jfinder" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.jfinder.</span></span><span class="sig-name descname"><span class="pre">jfinder</span></span><a class="headerlink" href="#xython.jfinder.jfinder" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.change_html_tag_to_re_sql">
-<span class="sig-name descname"><span class="pre">change_html_tag_to_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">one_tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option_tag_show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_html_tag_to_re_sql" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_html_tag_to_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">one_tag</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">option_tag_show</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">False</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_html_tag_to_re_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>htm태그안의 값을 갖고오는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -165,7 +167,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.change_jf_sql_to_re_sql">
-<span class="sig-name descname"><span class="pre">change_jf_sql_to_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_jf_sql_to_re_sql" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_jf_sql_to_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_jf_sql_to_re_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>jf_sql을 regex스타일로 바꾸는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -179,7 +181,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.change_number_to_tel_style">
-<span class="sig-name descname"><span class="pre">change_number_to_tel_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_number_to_tel_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_number_to_tel_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.change_number_to_tel_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>전화번호나 핸드폰 번호 스타일을 바꿔주는것
 전화번호를 21345678 =&gt;02-134-5678 로 변경하는 것
 :param input_value:
@@ -188,7 +190,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.data_special_char_set">
-<span class="sig-name descname"><span class="pre">data_special_char_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.data_special_char_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_special_char_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.data_special_char_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>특수문자들을 돌려준다</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -199,7 +201,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.data_well_used_re">
-<span class="sig-name descname"><span class="pre">data_well_used_re</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.data_well_used_re" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_well_used_re</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.data_well_used_re" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>잘 사용하는 re코드들
 [이름, 찾을코드, 바꿀코드, 설명</p>
 <dl class="field-list simple">
@@ -211,7 +213,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_all_explanation">
-<span class="sig-name descname"><span class="pre">delete_all_explanation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_all_explanation" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_all_explanation</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_all_explanation" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><blockquote>
 <div><p>py화일의 설명문의 줄들을 제거하는 코드</p>
 </div></blockquote>
@@ -227,7 +229,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_eng_num">
-<span class="sig-name descname"><span class="pre">delete_eng_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_eng_num" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_eng_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_eng_num" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>알파벳과 숫자만 삭제하는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -241,7 +243,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_except_num_eng">
-<span class="sig-name descname"><span class="pre">delete_except_num_eng</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_except_num_eng" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_except_num_eng</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_except_num_eng" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>영문과 숫자와 공백을 제외하고 다 제거를 하는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -255,7 +257,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_except_special_char">
-<span class="sig-name descname"><span class="pre">delete_except_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_except_special_char" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_except_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_except_special_char" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><blockquote>
 <div><p>공백과 특수문자등을 제외하고 같으면 새로운 y열에 1을 넣는 함수
 리스트의 사이즈를 조정한다</p>
@@ -272,7 +274,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_koren_eng_num">
-<span class="sig-name descname"><span class="pre">delete_koren_eng_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_koren_eng_num" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_koren_eng_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_koren_eng_num" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>한글, 영어, 숫자만 지우는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -286,7 +288,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_no_meaning_words">
-<span class="sig-name descname"><span class="pre">delete_no_meaning_words</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">change_word_dic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_no_meaning_words" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_no_meaning_words</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">change_word_dic</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_no_meaning_words" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -302,7 +304,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_num_comma">
-<span class="sig-name descname"><span class="pre">delete_num_comma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_num_comma" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_num_comma</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_num_comma" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>숫자중에서 콤마(,)로 분비리된것중에서 ,만 없애는것
 1,234,567 =&gt; 1234567</p>
 <dl class="field-list simple">
@@ -317,7 +319,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_over_2_empty_lines">
-<span class="sig-name descname"><span class="pre">delete_over_2_empty_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_over_2_empty_lines" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_over_2_empty_lines</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_over_2_empty_lines" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>input_text</strong> – 입력되는 text문장</p>
@@ -330,7 +332,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_special_char">
-<span class="sig-name descname"><span class="pre">delete_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_special_char" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_special_char" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>공백과 특수문자등을 제외하고 같으면 새로운 y열에 1을 넣는 함수
 리스트의 사이즈를 조정한다</p>
 <dl class="field-list simple">
@@ -345,7 +347,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_text_special_letter">
-<span class="sig-name descname"><span class="pre">delete_text_special_letter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_text_special_letter" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_text_special_letter</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_text_special_letter" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력받은 텍스트로된 리스트의 자료를 전부 특수문자를 없앤후 돌려주는 것이다
 입력된 자료가 1차원 리스트인지 판단한다</p>
 <dl class="field-list simple">
@@ -360,7 +362,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.delete_with_jf_sql">
-<span class="sig-name descname"><span class="pre">delete_with_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_with_jf_sql" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">delete_with_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.delete_with_jf_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력자료중 jf_sql에 맞는 형식을 삭제하는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -377,7 +379,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.is_handphone_only">
-<span class="sig-name descname"><span class="pre">is_handphone_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_handphone_only" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">is_handphone_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_handphone_only" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><blockquote>
 <div><p>특수문자가들어가있는지</p>
 </div></blockquote>
@@ -393,7 +395,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.is_korean_only">
-<span class="sig-name descname"><span class="pre">is_korean_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_korean_only" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">is_korean_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_korean_only" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><blockquote>
 <div><p>모두 한글인지</p>
 </div></blockquote>
@@ -409,7 +411,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.is_number_only">
-<span class="sig-name descname"><span class="pre">is_number_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_number_only" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">is_number_only</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_number_only" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>소슷점까지는 포함한것이다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -423,7 +425,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.is_special_char_in">
-<span class="sig-name descname"><span class="pre">is_special_char_in</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_special_char_in" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">is_special_char_in</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.is_special_char_in" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><blockquote>
 <div><p>특수문자가들어가있는지</p>
 </div></blockquote>
@@ -439,7 +441,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.jfinder">
-<span class="sig-name descname"><span class="pre">jfinder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.jfinder" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">jfinder</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">''</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.jfinder" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>기본저긴 jf_sql -&gt; re_sql형식으로 만들어 주는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -453,7 +455,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.make_list_on_re_compile">
-<span class="sig-name descname"><span class="pre">make_list_on_re_compile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.make_list_on_re_compile" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_list_on_re_compile</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">file_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.make_list_on_re_compile" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>텍스트화일을 읽어서 re에 맞도록 한것을 리스트로 만드는 것이다
 함수인 def를 기준으로 저장을 하며, [[공백을없앤자료, 원래자료, 시작줄번호]…..]</p>
 <dl class="field-list simple">
@@ -471,7 +473,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.match">
-<span class="sig-name descname"><span class="pre">match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.match" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">match</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.match" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>결과가 여러개 일때는 2차원의 결과가 나타난다
 [[찾은글자, 찾은글자의 처음 위치 번호, 끝위치 번호, [그룹1, 그룹2], ………]</p>
 <dl class="field-list simple">
@@ -489,12 +491,12 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.replace">
-<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.replace" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">replace</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.replace" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.replace_with_jf_sql">
-<span class="sig-name descname"><span class="pre">replace_with_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.replace_with_jf_sql" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">replace_with_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">replace_word</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.replace_with_jf_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력자료를 원하는 문자로 바꾸는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -512,7 +514,23 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.run_with_jf_sql">
-<span class="sig-name descname"><span class="pre">run_with_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.run_with_jf_sql" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">run_with_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.run_with_jf_sql" title="이 정의에 대한 퍼머링크"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jf_sql</strong> – </p></li>
+<li><p><strong>input_text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.run_with_re_sql">
+<span class="sig-name descname"><span class="pre">run_with_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.run_with_re_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>결과값을 얻는것이 여러조건들이 있어서 이것을 하나로 만듦
 [[결과값, 시작순서, 끝순서, [그룹1, 그룹2…], match결과]…..]</p>
 <dl class="field-list simple">
@@ -530,12 +548,28 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search">
-<span class="sig-name descname"><span class="pre">search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd></dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_all_by_jf_sql">
-<span class="sig-name descname"><span class="pre">search_all_by_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_all_by_jf_sql" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_all_by_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_all_by_jf_sql" title="이 정의에 대한 퍼머링크"></a></dt>
+<dd><dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><ul class="simple">
+<li><p><strong>jf_sql</strong> – </p></li>
+<li><p><strong>input_text</strong> – </p></li>
+</ul>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_all_by_re_sql">
+<span class="sig-name descname"><span class="pre">search_all_by_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">re_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_all_by_re_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>결과값을 얻는것이 여러조건들이 있어서 이것을 하나로 만듦
 [[결과값, 시작순서, 끝순서, [그룹1, 그룹2…], match결과]…..]</p>
 <dl class="field-list simple">
@@ -553,7 +587,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_all_cap">
-<span class="sig-name descname"><span class="pre">search_all_cap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_all_cap" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_all_cap</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_all_cap" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>모두 알파벳대문자</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -567,7 +601,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_between_brackets_by_jf_sql">
-<span class="sig-name descname"><span class="pre">search_between_brackets_by_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_brackets_by_jf_sql" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_between_brackets_by_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_brackets_by_jf_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>괄호안의 문자 갖고오기
 괄호 내부 내용만 추출 : ‘(([^)]+)’
 앞 뒤 괄호까지 포함 : ‘([^)]+)’</p>
@@ -583,7 +617,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_between_len1_len2">
-<span class="sig-name descname"><span class="pre">search_between_len1_len2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_len1_len2" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_between_len1_len2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_len1_len2" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>문자수제한 : m다 크고 n보다 작은 문자</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -601,7 +635,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_between_word1_word2_by_jf_sql">
-<span class="sig-name descname"><span class="pre">search_between_word1_word2_by_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">word_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_word1_word2_by_jf_sql" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_between_word1_word2_by_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">word_a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">word_b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_between_word1_word2_by_jf_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>두 단어사이의 글자를 갖고오는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -619,7 +653,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_dash_date">
-<span class="sig-name descname"><span class="pre">search_dash_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_dash_date" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_dash_date</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_dash_date" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>모두 알파벳대문자</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -633,7 +667,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_email_address">
-<span class="sig-name descname"><span class="pre">search_email_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_email_address" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_email_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_email_address" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>이메일주소 입력</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -647,7 +681,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_eng">
-<span class="sig-name descname"><span class="pre">search_eng</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_eng" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_eng</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_eng" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>모두 영문인지</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -661,7 +695,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_handphone">
-<span class="sig-name descname"><span class="pre">search_handphone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_handphone" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_handphone</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_handphone" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>특수문자가들어가있는지</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -675,7 +709,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_in_result">
-<span class="sig-name descname"><span class="pre">search_in_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result_list2d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_in_result" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_in_result</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">result_list2d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_in_result" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p># 결과값으로 넘어온 자료를 다시 검색하해서 결과를 알려주는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -692,7 +726,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_ip_address">
-<span class="sig-name descname"><span class="pre">search_ip_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_ip_address" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_ip_address</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_ip_address" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>이메일주소 입력</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -706,7 +740,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_korean">
-<span class="sig-name descname"><span class="pre">search_korean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_korean" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_korean</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_korean" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>모두 한글인지</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -720,7 +754,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_num">
-<span class="sig-name descname"><span class="pre">search_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_num" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_num</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_num" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><blockquote>
 <div><p>단어중에 나와있는 숫자만 분리하는기능</p>
 </div></blockquote>
@@ -736,7 +770,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_number_between_len1_len2">
-<span class="sig-name descname"><span class="pre">search_number_between_len1_len2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_number_between_len1_len2" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_number_between_len1_len2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_number_between_len1_len2" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>m,n개사이인것만 추출</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -754,7 +788,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_special_char">
-<span class="sig-name descname"><span class="pre">search_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_special_char" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_special_char</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_special_char" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>특수문자가들어가있는지</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -768,7 +802,7 @@
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.jfinder.jfinder.search_text">
-<span class="sig-name descname"><span class="pre">search_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_char</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_char</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_text" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">search_text</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">start_char</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">end_char</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_text" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -784,8 +818,8 @@
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_with_jf_sql">
-<span class="sig-name descname"><span class="pre">search_with_jf_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_with_jf_sql" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.jfinder.jfinder.search_with_re_sql">
+<span class="sig-name descname"><span class="pre">search_with_re_sql</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">jf_sql</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_text</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.jfinder.jfinder.search_with_re_sql" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">

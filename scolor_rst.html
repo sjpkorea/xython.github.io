@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>scolor - 함수들의 문서화 &mdash; xython 1.16 문서</title>
+  <title>scolor - 함수들의 문서화 &mdash; xython 1.19 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -13,9 +13,9 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script src="_static/documentation_options.js?v=06785e48"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=96a20c3c"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
-        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/sphinx_highlight.js?v=4825356b"></script>
         <script src="_static/translations.js?v=b5f768d8"></script>
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
@@ -46,16 +46,16 @@
               <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
 <ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="xython_basic.html">About xython module / 개요</a></li>
-<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython의 전반적 사용법 및 용어</a></li>
+<li class="toctree-l1"><a class="reference internal" href="xython_basic.html#xython">xython패키지의 전반적인 사용법 및 용어 설명</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_md.html">anydb</a></li>
-<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="ganada_md.html">ganada</a></li>
+<li class="toctree-l1"><a class="reference internal" href="jfinder_md.html">Jfinder</a></li>
+<li class="toctree-l1"><a class="reference internal" href="mailmail_md.html">mailmail</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pcell_md.html">pcell</a></li>
+<li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">pyclick</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pynal_md.html">pynal</a></li>
-<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor (Example)</a></li>
-<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil (Example)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="scolor_md.html">scolor</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">youtil</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb_rst.html">anydb - 함수들의 문서화</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada_rst.html">ganada - 함수들 설명문서화</a></li>
 <li class="toctree-l1"><a class="reference internal" href="jfinder_rst.html">jfinder - 함수들의 문서화</a></li>
@@ -66,8 +66,8 @@
 <li class="toctree-l1 current"><a class="current reference internal" href="#">scolor - 함수들의 문서화</a><ul>
 <li class="toctree-l2"><a class="reference internal" href="#xython.scolor.scolor"><code class="docutils literal notranslate"><span class="pre">scolor</span></code></a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_color_to_rgb_with_pccs_style"><code class="docutils literal notranslate"><span class="pre">scolor.change_color_to_rgb_with_pccs_style()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_excel56_color_no_to_rgb"><code class="docutils literal notranslate"><span class="pre">scolor.change_excel56_color_no_to_rgb()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_excel56_to_rgb"><code class="docutils literal notranslate"><span class="pre">scolor.change_excel56_to_rgb()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_excel_56_color_no_to_rgb"><code class="docutils literal notranslate"><span class="pre">scolor.change_excel_56_color_no_to_rgb()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_excel_color_no_to_rgb"><code class="docutils literal notranslate"><span class="pre">scolor.change_excel_color_no_to_rgb()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_hsl_by_high_l"><code class="docutils literal notranslate"><span class="pre">scolor.change_hsl_by_high_l()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_hsl_by_high_s"><code class="docutils literal notranslate"><span class="pre">scolor.change_hsl_by_high_s()</span></code></a></li>
@@ -113,8 +113,8 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_scolor_to_rgb_with_pccs_style"><code class="docutils literal notranslate"><span class="pre">scolor.change_scolor_to_rgb_with_pccs_style()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.change_style"><code class="docutils literal notranslate"><span class="pre">scolor.change_style()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.check_change_mode"><code class="docutils literal notranslate"><span class="pre">scolor.check_change_mode()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.check_close_excel_56_color_no_for_rgb"><code class="docutils literal notranslate"><span class="pre">scolor.check_close_excel_56_color_no_for_rgb()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.check_close_excel_56_color_no_for_scolor"><code class="docutils literal notranslate"><span class="pre">scolor.check_close_excel_56_color_no_for_scolor()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.check_close_excel56_color_no_for_rgb"><code class="docutils literal notranslate"><span class="pre">scolor.check_close_excel56_color_no_for_rgb()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.check_close_excel56_color_no_for_scolor"><code class="docutils literal notranslate"><span class="pre">scolor.check_close_excel56_color_no_for_scolor()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.check_close_excel_color_no"><code class="docutils literal notranslate"><span class="pre">scolor.check_close_excel_color_no()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.check_hsl_list"><code class="docutils literal notranslate"><span class="pre">scolor.check_hsl_list()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.check_input_color"><code class="docutils literal notranslate"><span class="pre">scolor.check_input_color()</span></code></a></li>
@@ -166,12 +166,11 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_color_name_eng_for_13set"><code class="docutils literal notranslate"><span class="pre">scolor.data_color_name_eng_for_13set()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_color_name_kor_all"><code class="docutils literal notranslate"><span class="pre">scolor.data_color_name_kor_all()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_color_name_kor_for_12set"><code class="docutils literal notranslate"><span class="pre">scolor.data_color_name_kor_for_12set()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_color_name_kor_for_13set"><code class="docutils literal notranslate"><span class="pre">scolor.data_color_name_kor_for_13set()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_color_style_list"><code class="docutils literal notranslate"><span class="pre">scolor.data_color_style_list()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_color_tone_kor_list"><code class="docutils literal notranslate"><span class="pre">scolor.data_color_tone_kor_list()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_cool_color_name_list"><code class="docutils literal notranslate"><span class="pre">scolor.data_cool_color_name_list()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_excel_46_rgb_list"><code class="docutils literal notranslate"><span class="pre">scolor.data_excel_46_rgb_list()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_excel_56_rgb_list"><code class="docutils literal notranslate"><span class="pre">scolor.data_excel_56_rgb_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_excel46_rgb_list"><code class="docutils literal notranslate"><span class="pre">scolor.data_excel46_rgb_list()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_excel56_rgb_list"><code class="docutils literal notranslate"><span class="pre">scolor.data_excel56_rgb_list()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_hsl_12set"><code class="docutils literal notranslate"><span class="pre">scolor.data_hsl_12set()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_pccs_style_name_eng_for_12set"><code class="docutils literal notranslate"><span class="pre">scolor.data_pccs_style_name_eng_for_12set()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.data_pccs_style_name_for_12set"><code class="docutils literal notranslate"><span class="pre">scolor.data_pccs_style_name_for_12set()</span></code></a></li>
@@ -182,7 +181,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.distance_two_3d_point"><code class="docutils literal notranslate"><span class="pre">scolor.distance_two_3d_point()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.get_rgb_by_excel_color_no"><code class="docutils literal notranslate"><span class="pre">scolor.get_rgb_by_excel_color_no()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.get_rgb_list_as_per_input_no"><code class="docutils literal notranslate"><span class="pre">scolor.get_rgb_list_as_per_input_no()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.history"><code class="docutils literal notranslate"><span class="pre">scolor.history()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.make_20_l_step_color_by_18_degree"><code class="docutils literal notranslate"><span class="pre">scolor.make_20_l_step_color_by_18_degree()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.make_2_near_bo_by_h_step"><code class="docutils literal notranslate"><span class="pre">scolor.make_2_near_bo_by_h_step()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.make_2_side_color_by_h_step"><code class="docutils literal notranslate"><span class="pre">scolor.make_2_side_color_by_h_step()</span></code></a></li>
@@ -195,7 +193,6 @@
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.make_n_color_set_by_s"><code class="docutils literal notranslate"><span class="pre">scolor.make_n_color_set_by_s()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.make_one_color_to_many_colors_by_step"><code class="docutils literal notranslate"><span class="pre">scolor.make_one_color_to_many_colors_by_step()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.make_strong_color_hsl_by_s"><code class="docutils literal notranslate"><span class="pre">scolor.make_strong_color_hsl_by_s()</span></code></a></li>
-<li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.manual"><code class="docutils literal notranslate"><span class="pre">scolor.manual()</span></code></a></li>
 <li class="toctree-l3"><a class="reference internal" href="#xython.scolor.scolor.mix_two_scolors_with_step"><code class="docutils literal notranslate"><span class="pre">scolor.mix_two_scolors_with_step()</span></code></a></li>
 </ul>
 </li>
@@ -229,16 +226,16 @@
            <div itemprop="articleBody">
              
   <section id="scolor">
-<h1>scolor - 함수들의 문서화<a class="headerlink" href="#scolor" title="Link to this heading"></a></h1>
-<dl class="py class" id="module-xython.scolor">
+<h1>scolor - 함수들의 문서화<a class="headerlink" href="#scolor" title="이 제목에 대한 퍼머링크"></a></h1>
+<span class="target" id="module-xython.scolor"></span><dl class="py class">
 <dt class="sig sig-object py" id="xython.scolor.scolor">
-<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.scolor.</span></span><span class="sig-name descname"><span class="pre">scolor</span></span><a class="headerlink" href="#xython.scolor.scolor" title="Link to this definition"></a></dt>
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">xython.scolor.</span></span><span class="sig-name descname"><span class="pre">scolor</span></span><a class="headerlink" href="#xython.scolor.scolor" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>기반 클래스: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
 <p>색을 쉽게 사용하기위해 만든 모듈
 기본색은 rgb로 한다</p>
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_color_to_rgb_with_pccs_style">
-<span class="sig-name descname"><span class="pre">change_color_to_rgb_with_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red45'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_color_to_rgb_with_pccs_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_color_to_rgb_with_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red45'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_color_to_rgb_with_pccs_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 기본 값을 스타일에 맞도록 바꾸고, 스타일을 강하게 할것인지 아닌것인지를 보는것
 color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형태로도 사용가능
 입력예 : 기본색상, 적용스타일, 변화정도,(“red45, 파스텔, 3)
@@ -258,22 +255,8 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.change_excel56_to_rgb">
-<span class="sig-name descname"><span class="pre">change_excel56_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_excel56_to_rgb" title="Link to this definition"></a></dt>
-<dd><p>엑셀 기본 rgb 색 : 56색</p>
-<dl class="field-list simple">
-<dt class="field-odd">매개변수<span class="colon">:</span></dt>
-<dd class="field-odd"><p><strong>input_no</strong> – </p>
-</dd>
-<dt class="field-even">반환<span class="colon">:</span></dt>
-<dd class="field-even"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.change_excel_56_color_no_to_rgb">
-<span class="sig-name descname"><span class="pre">change_excel_56_color_no_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_excel_56_color_no_to_rgb" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.scolor.scolor.change_excel56_color_no_to_rgb">
+<span class="sig-name descname"><span class="pre">change_excel56_color_no_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_excel56_color_no_to_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>엑셀 기본 rgb 56색의 번호를 rgb로 바꾸는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -286,8 +269,22 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 </dd></dl>
 
 <dl class="py method">
+<dt class="sig sig-object py" id="xython.scolor.scolor.change_excel56_to_rgb">
+<span class="sig-name descname"><span class="pre">change_excel56_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_excel56_to_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
+<dd><p>엑셀 기본 rgb 색 : 56색</p>
+<dl class="field-list simple">
+<dt class="field-odd">매개변수<span class="colon">:</span></dt>
+<dd class="field-odd"><p><strong>input_no</strong> – </p>
+</dd>
+<dt class="field-even">반환<span class="colon">:</span></dt>
+<dd class="field-even"><p></p>
+</dd>
+</dl>
+</dd></dl>
+
+<dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_excel_color_no_to_rgb">
-<span class="sig-name descname"><span class="pre">change_excel_color_no_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_excel_color_no_to_rgb" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_excel_color_no_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_excel_color_no_to_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>엑셀 기본 rgb 56색의 번호를 rgb로 바꾸는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -301,7 +298,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_by_high_l">
-<span class="sig-name descname"><span class="pre">change_hsl_by_high_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_high_l" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_by_high_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_high_l" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 hsl값의 채도를 고명도로 바꾸는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -318,7 +315,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_by_high_s">
-<span class="sig-name descname"><span class="pre">change_hsl_by_high_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_high_s" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_by_high_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_high_s" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 hsl값의 채도를 고채도로 바꾸는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -335,7 +332,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_by_low_l">
-<span class="sig-name descname"><span class="pre">change_hsl_by_low_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_low_l" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_by_low_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_low_l" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 hsl값의 채도를 저명도로 바꾸는 것
 저명도, 20%정도의 명도를 저명도로 말하자자</p>
 <dl class="field-list simple">
@@ -353,7 +350,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_by_low_s">
-<span class="sig-name descname"><span class="pre">change_hsl_by_low_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_low_s" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_by_low_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_low_s" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 hsl값의 채도를 저채도로 바꾸는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -370,7 +367,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_by_middle_l">
-<span class="sig-name descname"><span class="pre">change_hsl_by_middle_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_middle_l" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_by_middle_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_middle_l" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 hsl값의 채도를 중명도로 바꾸는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -387,7 +384,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_by_middle_s">
-<span class="sig-name descname"><span class="pre">change_hsl_by_middle_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_middle_s" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_by_middle_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_by_middle_s" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 hsl값의 채도를 중채도로 바꾸는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -404,7 +401,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_list_by_change_mode">
-<span class="sig-name descname"><span class="pre">change_hsl_list_by_change_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">change_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_list_by_change_mode" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_list_by_change_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">change_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_list_by_change_mode" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>change_mode : ++, –, 70등의 값이 들어오면 변화를 시켜주는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -421,7 +418,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_10_similar_color_set">
-<span class="sig-name descname"><span class="pre">change_hsl_to_10_similar_color_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_10_similar_color_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_10_similar_color_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_10_similar_color_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>위쪽으로 5개, 아래로 5개의 채도가 비슷한 색을 돌려준다
 채도의 특성상 비슷한 부분이 많아서 10단위로 만든다</p>
 <dl class="field-list simple">
@@ -439,7 +436,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_20_hsl_by_l_step">
-<span class="sig-name descname"><span class="pre">change_hsl_to_20_hsl_by_l_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_20_hsl_by_l_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_20_hsl_by_l_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_20_hsl_by_l_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>위쪽으로 5개, 아래로 5개의 명도가 비슷한 색을 돌려준다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -453,7 +450,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_20_hsl_by_s_step">
-<span class="sig-name descname"><span class="pre">change_hsl_to_20_hsl_by_s_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_20_hsl_by_s_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_20_hsl_by_s_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_20_hsl_by_s_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>위쪽으로 5개, 아래로 5개의 명도가 비슷한 색을 돌려준다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -467,7 +464,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_2near_bo_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_2near_bo_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_2near_bo_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_2near_bo_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_2near_bo_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>근접보색조합 : 보색의 양쪽 근처색
 분열보색조합 : Split Complementary
 근접보색조합이라고도 한다. 보색의 강한 인상이 부담스러울때 보색의 근처에 있는 색을 사용
@@ -487,7 +484,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_2near_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_2near_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_2near_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_2near_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_2near_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>근접색조합 : 양쪽 근처색</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -504,7 +501,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_36_hsl_by_h_step">
-<span class="sig-name descname"><span class="pre">change_hsl_to_36_hsl_by_h_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_36_hsl_by_h_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_36_hsl_by_h_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_36_hsl_by_h_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>위쪽으로 5개, 아래로 5개의 명도가 비슷한 색을 돌려준다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -518,7 +515,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_3_hsl_with_big_l_gab">
-<span class="sig-name descname"><span class="pre">change_hsl_to_3_hsl_with_big_l_gab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_3_hsl_with_big_l_gab" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_3_hsl_with_big_l_gab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_3_hsl_with_big_l_gab" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>명도차가 큰 2가지 1가지색</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -535,7 +532,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_3_hsl_with_big_s_gab">
-<span class="sig-name descname"><span class="pre">change_hsl_to_3_hsl_with_big_s_gab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_3_hsl_with_big_s_gab" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_3_hsl_with_big_s_gab</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_3_hsl_with_big_s_gab" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>채도차가 큰 2가지 1가지색</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -552,7 +549,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_3rgb_as_like_0_120_240">
-<span class="sig-name descname"><span class="pre">change_hsl_to_3rgb_as_like_0_120_240</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_3rgb_as_like_0_120_240" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_3rgb_as_like_0_120_240</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_3rgb_as_like_0_120_240" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>mode :
 등간격 3색조합 : triad
 활동적인 인상과 이미지를 보인다</p>
@@ -568,7 +565,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_3rgb_by_2near_bo">
-<span class="sig-name descname"><span class="pre">change_hsl_to_3rgb_by_2near_bo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_3rgb_by_2near_bo" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_3rgb_by_2near_bo</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_3rgb_by_2near_bo" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>mode : 14
 근접보색조합 : 보색의 근처색
 분열보색조합 : Split Complementary
@@ -588,7 +585,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_4_tetra_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_4_tetra_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_4_tetra_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_4_tetra_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_4_tetra_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>4가지 꼭지의</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -602,7 +599,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_bo_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_bo_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_bo_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_bo_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_bo_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 hsl의 보색을 알려주는것
 보색 : Complementary
 2차원 list의 형태로 돌려줌</p>
@@ -618,7 +615,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_bo_style_rgb">
-<span class="sig-name descname"><span class="pre">change_hsl_to_bo_style_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_bo_style_rgb" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_bo_style_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_bo_style_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>mode : 1
 보색 : Complementary</p>
 <dl class="field-list simple">
@@ -633,7 +630,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>hsl을 rgb로 바꾸는 것이다
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -648,7 +645,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_by_change_mode">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_by_change_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">change_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_by_change_mode" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_by_change_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">change_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_by_change_mode" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>change_mode : ++, –, 70등의 값이 들어오면 변화를 시켜주는 것
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -666,7 +663,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_by_triangle_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_by_triangle_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_by_triangle_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_by_triangle_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_by_triangle_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>등간격 3색조합 : triad
 활동적인 인상과 이미지를 보인다
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
@@ -682,7 +679,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_for_4_tetra_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_for_4_tetra_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_for_4_tetra_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_for_4_tetra_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_for_4_tetra_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>4가지 꼭지의
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -697,7 +694,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_for_bo_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_for_bo_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_for_bo_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_for_bo_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_for_bo_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 hsl의 보색을 알려주는것
 보색 : Complementary
 2차원 list의 형태로 돌려줌
@@ -714,7 +711,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_for_bo_style_1">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_for_bo_style_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_for_bo_style_1" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_for_bo_style_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_for_bo_style_1" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>mode : 1
 보색 : Complementary
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
@@ -730,7 +727,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_with_20_hsl_by_s_step">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_with_20_hsl_by_s_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_with_20_hsl_by_s_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_with_20_hsl_by_s_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_with_20_hsl_by_s_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>위쪽으로 5개, 아래로 5개의 명도가 비슷한 색을 돌려준다
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -745,7 +742,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_with_near_10_color_set">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_with_near_10_color_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_with_near_10_color_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_with_near_10_color_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_with_near_10_color_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>위쪽으로 5개, 아래로 5개의 채도가 비슷한 색을 돌려준다
 채도의 특성상 비슷한 부분이 많아서 10단위로 만든다
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
@@ -764,7 +761,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_with_pccs_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_with_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_with_pccs_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_with_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_with_pccs_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 기본 값을 스타일에 맞도록 바꾸고, 스타일을 강하게 할것인지 아닌것인지를 보는것
 color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형태로도 사용가능
 입력예 : 기본색상, 적용스타일, 변화정도,(“red45, 파스텔, 3)
@@ -786,7 +783,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_rgb_with_style_1">
-<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_with_style_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_with_style_1" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_rgb_with_style_1</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_rgb_with_style_1" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 기본 값을 스타일에 맞도록 바꾸고, 스타일을 강하게 할것인지 아닌것인지를 보는것
 color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형태로도 사용가능
 입력예 : 기본색상, 적용스타일, 변화정도,(“red45, 파스텔, 3)
@@ -807,7 +804,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_hsl_to_triangle_style">
-<span class="sig-name descname"><span class="pre">change_hsl_to_triangle_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_triangle_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_hsl_to_triangle_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_hsl_to_triangle_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>등간격 3색조합 : triad
 활동적인 인상과 이미지를 보인다</p>
 <dl class="field-list simple">
@@ -822,7 +819,7 @@ color_style : pccs의 12가지 사용가능, 숫자로 사용가능, +-의 형�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_input_value_to_hsl">
-<span class="sig-name descname"><span class="pre">change_input_value_to_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_input_value_to_hsl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_input_value_to_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_input_value_to_hsl" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력되는 형태에 따라서 hsl을 돌려주는것
 입력값 : rgb형식, hsl형식, scolor형식
 결과값 : hsl값
@@ -839,7 +836,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_rgb_to_12_pccs_rgb_list">
-<span class="sig-name descname"><span class="pre">change_rgb_to_12_pccs_rgb_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_12_pccs_rgb_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_rgb_to_12_pccs_rgb_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_12_pccs_rgb_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>pccs : 일본색체연구서가 빌표한 12가지 색으로 구분한것
 어떤 입력된 색의 기본적인 PCSS 12색을 돌려준다
 pccs톤, rgb로 넘어온 색을 pcss톤 12개로 만들어서 돌려준다
@@ -856,7 +853,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_rgb_to_12_pccs_rgb_set">
-<span class="sig-name descname"><span class="pre">change_rgb_to_12_pccs_rgb_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_12_pccs_rgb_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_rgb_to_12_pccs_rgb_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_12_pccs_rgb_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>pccs : 일본색체연구서가 빌표한 12가지 색으로 구분한것
 어떤 입력된 색의 기본적인 PCSS 12색을 돌려준다
 pccs톤, rgb로 넘어온 색을 pcss톤 12개로 만들어서 돌려준다</p>
@@ -872,7 +869,7 @@ pccs톤, rgb로 넘어온 색을 pcss톤 12개로 만들어서 돌려준다</p>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_rgb_to_hex">
-<span class="sig-name descname"><span class="pre">change_rgb_to_hex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_hex" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_rgb_to_hex</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_hex" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>엑셀의 Cells(1, i).Interior.Color는 hex값을 사용한다
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -887,7 +884,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_rgb_to_hsl">
-<span class="sig-name descname"><span class="pre">change_rgb_to_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_hsl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_rgb_to_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_hsl" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>rgb를 hsl로 바꾸는 것이다
 입력은 0~255사이의 값
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
@@ -903,7 +900,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_rgb_to_rgbint">
-<span class="sig-name descname"><span class="pre">change_rgb_to_rgbint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_rgbint" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_rgb_to_rgbint</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">rgb_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgb_to_rgbint" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>rgb인 값을 color에서 인식이 가능한 정수값으로 변경하는 것
 엑셀에서는 rgb형태의 리스트나 정수를 사용하여 색을 지정한다
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
@@ -919,7 +916,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_rgbint_to_hsl">
-<span class="sig-name descname"><span class="pre">change_rgbint_to_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgbint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgbint_to_hsl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_rgbint_to_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgbint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgbint_to_hsl" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>정수형태의 int값을 [h,s,l]의 리스트형태로 바꾸는 것
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -934,7 +931,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_rgbint_to_rgb">
-<span class="sig-name descname"><span class="pre">change_rgbint_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgbint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgbint_to_rgb" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_rgbint_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgbint</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_rgbint_to_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>정수형태의 int값을 [r,g,b]의 리스트형태로 바꾸는 것
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -949,7 +946,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_scolor_to_hsl">
-<span class="sig-name descname"><span class="pre">change_scolor_to_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_scolor_to_hsl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_scolor_to_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_scolor_to_hsl" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 자료를 기준으로 hsl값을 돌려주는것
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -964,7 +961,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_scolor_to_rgb">
-<span class="sig-name descname"><span class="pre">change_scolor_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_scolor_to_rgb" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_scolor_to_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_scolor_to_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>scolor값을 rgb값으로 변경</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -978,7 +975,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_scolor_to_rgb_with_pccs_style">
-<span class="sig-name descname"><span class="pre">change_scolor_to_rgb_with_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red45'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_scolor_to_rgb_with_pccs_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_scolor_to_rgb_with_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red45'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_scolor_to_rgb_with_pccs_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 기본 값을 스타일에 맞도록 바꾸고, 스타일을 강하게 할것인지 아닌것인지를 보는것</p>
 <p>입력예 : 기본색상, 적용스타일, 변화정도,(“red45, 파스텔, 3)</p>
 <dl class="field-list simple">
@@ -997,7 +994,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.change_style">
-<span class="sig-name descname"><span class="pre">change_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">change_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_name</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.change_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1013,7 +1010,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_change_mode">
-<span class="sig-name descname"><span class="pre">check_change_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">change_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_change_mode" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_change_mode</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">change_mode</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_change_mode" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>change_mode</strong> – </p>
@@ -1025,8 +1022,8 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.check_close_excel_56_color_no_for_rgb">
-<span class="sig-name descname"><span class="pre">check_close_excel_56_color_no_for_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_close_excel_56_color_no_for_rgb" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.scolor.scolor.check_close_excel56_color_no_for_rgb">
+<span class="sig-name descname"><span class="pre">check_close_excel56_color_no_for_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_close_excel56_color_no_for_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력으로 들어오는 RGB값중에서 엑셀의 56가지 기본색상의 RGB값과 가장 가까운값을 찾아내는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1039,8 +1036,8 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.check_close_excel_56_color_no_for_scolor">
-<span class="sig-name descname"><span class="pre">check_close_excel_56_color_no_for_scolor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_close_excel_56_color_no_for_scolor" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.scolor.scolor.check_close_excel56_color_no_for_scolor">
+<span class="sig-name descname"><span class="pre">check_close_excel56_color_no_for_scolor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_close_excel56_color_no_for_scolor" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>input_scolor</strong> – solor형태의 색깔입력, (12, “red”, “red45”, “red++”)</p>
@@ -1053,7 +1050,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_close_excel_color_no">
-<span class="sig-name descname"><span class="pre">check_close_excel_color_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_close_excel_color_no" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_close_excel_color_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_close_excel_color_no" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력 RGB 값중에서 엑셀의 56 가지 기본색상의 RGB 값과 가장 가까운값을 찾아내는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1067,7 +1064,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_hsl_list">
-<span class="sig-name descname"><span class="pre">check_hsl_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_hsl_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_hsl_list</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_hsl_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p># 입력으로 들어온 색에 대한 hsl값을 돌려준다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1081,7 +1078,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_input_color">
-<span class="sig-name descname"><span class="pre">check_input_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_color" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_input_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_color" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>input_value</strong> – </p>
@@ -1094,7 +1091,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_input_hsl">
-<span class="sig-name descname"><span class="pre">check_input_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_hsl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_input_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_hsl" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력으로 들어온 색에 대한 hsl값을 돌려준다
 hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파랑의 농도], rgbint = rgb[0] + rgb[1] * 256 + rgb[2] * (256 ** 2)</p>
 <dl class="field-list simple">
@@ -1109,7 +1106,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_input_rgb">
-<span class="sig-name descname"><span class="pre">check_input_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_rgb" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_input_rgb</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_rgb" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력값이 rgbint인지 rgb리스트인지를 확인후 돌려주는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1123,7 +1120,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_input_scolor">
-<span class="sig-name descname"><span class="pre">check_input_scolor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_scolor" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_input_scolor</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_scolor" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>scolor형식의 입력값을 확인하는 것이다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1137,7 +1134,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_input_type">
-<span class="sig-name descname"><span class="pre">check_input_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_type" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_input_type</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_value</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_input_type" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><p><strong>input_value</strong> – </p>
@@ -1150,7 +1147,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.check_rgb_to_excel_color_no">
-<span class="sig-name descname"><span class="pre">check_rgb_to_excel_color_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_rgb_to_excel_color_no" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">check_rgb_to_excel_color_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgb</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.check_rgb_to_excel_color_no" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>RGB값을 엑셀의 56 가지 색상과 가장 가까운값을 찾아내는것</p>
 <p>:param input_rgb:[r,g,b]
 :return:</p>
@@ -1158,7 +1155,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_as_high_bright">
-<span class="sig-name descname"><span class="pre">control_hsl_as_high_bright</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_high_bright" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_as_high_bright</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_high_bright" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>고명도의 hsl로 변경</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1175,7 +1172,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_as_low_bright">
-<span class="sig-name descname"><span class="pre">control_hsl_as_low_bright</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_low_bright" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_as_low_bright</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_low_bright" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p># 저명도, 20%정도의 명도를 저명도로 말하자자</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1192,7 +1189,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_as_low_color">
-<span class="sig-name descname"><span class="pre">control_hsl_as_low_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_low_color" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_as_low_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">20</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_low_color" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>#저채도</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1209,7 +1206,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_as_middle_bright">
-<span class="sig-name descname"><span class="pre">control_hsl_as_middle_bright</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_middle_bright" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_as_middle_bright</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_l</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_middle_bright" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>중명도의 hsl로 변경</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1226,7 +1223,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_as_middle_color">
-<span class="sig-name descname"><span class="pre">control_hsl_as_middle_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_middle_color" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_as_middle_color</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">high_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">50</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_as_middle_color" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>#중채도</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1243,7 +1240,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_by_bright_level">
-<span class="sig-name descname"><span class="pre">control_hsl_by_bright_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_bright_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_by_bright_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_bright_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>(명도조정)통상 level은 0~1사이의값으로 나타낸다
 입력받은 hsl값을 명도가 높은 쪽으로 이동시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
@@ -1262,7 +1259,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_by_color_style">
-<span class="sig-name descname"><span class="pre">control_hsl_by_color_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basic_hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_color_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_by_color_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">basic_hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_color_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>hsl값을 색의 스타일과 강도로써 조정하는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1280,7 +1277,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_by_dark_level">
-<span class="sig-name descname"><span class="pre">control_hsl_by_dark_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_dark_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_by_dark_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_dark_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>(명도조정)통상 level은 0~1사이의값으로 나타낸다
 입력받은 hsl값을 어두운 쪽으로 이동시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
@@ -1299,7 +1296,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_by_gray_level">
-<span class="sig-name descname"><span class="pre">control_hsl_by_gray_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_gray_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_by_gray_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_gray_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>(명도조정)입력받은 hsl값을 어두운 쪽으로 이동시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
 <dl class="field-list simple">
@@ -1317,7 +1314,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_by_pastel_level">
-<span class="sig-name descname"><span class="pre">control_hsl_by_pastel_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_pastel_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_by_pastel_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_pastel_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>(파스텔톤 조정)입력받은 hsl값을 파스텔톤으로 적용시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
 <dl class="field-list simple">
@@ -1335,7 +1332,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_by_scolor_style">
-<span class="sig-name descname"><span class="pre">control_hsl_by_scolor_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'++'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'++'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_scolor_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_by_scolor_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'++'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'++'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_scolor_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>hsl값을 올리거나 내리는 것, sl의값을 조정하여 채도와 명도를 조절하는것
 입력 : [[36, 50, 50], “++”, “–“]
 약 5씩이동하도록 만든다
@@ -1356,7 +1353,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_by_value">
-<span class="sig-name descname"><span class="pre">control_hsl_by_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_value" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_by_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_value" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>hsl값을 명도를 조정하는 방법
 +，-로 조정을 하는것이다</p>
 <dl class="field-list simple">
@@ -1374,7 +1371,7 @@ hsl : [색상, 채도, 밝기], rgb : [빨강의 농도, 초록의 농도, 파�
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_by_vivid_level">
-<span class="sig-name descname"><span class="pre">control_hsl_by_vivid_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_vivid_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_by_vivid_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_by_vivid_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력받은 hsl값을 어두운 쪽으로 이동시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
 <dl class="field-list simple">
@@ -1392,7 +1389,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_to_bright_level">
-<span class="sig-name descname"><span class="pre">control_hsl_to_bright_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_bright_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_to_bright_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_bright_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력받은 hsl값을 명도가 높은 쪽으로 이동시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
 <dl class="field-list simple">
@@ -1410,7 +1407,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_to_dark_level">
-<span class="sig-name descname"><span class="pre">control_hsl_to_dark_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_dark_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_to_dark_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_dark_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력받은 hsl값을 어두운 쪽으로 이동시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
 <dl class="field-list simple">
@@ -1428,7 +1425,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_to_gray_level">
-<span class="sig-name descname"><span class="pre">control_hsl_to_gray_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_gray_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_to_gray_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_gray_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력받은 hsl값을 어두운 쪽으로 이동시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
 <dl class="field-list simple">
@@ -1446,7 +1443,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_to_pastel_level">
-<span class="sig-name descname"><span class="pre">control_hsl_to_pastel_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_pastel_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_to_pastel_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_pastel_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력받은 hsl값을 파스텔톤으로 적용시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
 <dl class="field-list simple">
@@ -1464,7 +1461,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_hsl_to_vivid_level">
-<span class="sig-name descname"><span class="pre">control_hsl_to_vivid_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_vivid_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_hsl_to_vivid_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">strong_level</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_hsl_to_vivid_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력받은 hsl값을 어두운 쪽으로 이동시키는것
 bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [50, 0]</p>
 <dl class="field-list simple">
@@ -1482,7 +1479,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_rgb_by_scolor_style">
-<span class="sig-name descname"><span class="pre">control_rgb_by_scolor_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'++'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'++'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_rgb_by_scolor_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_rgb_by_scolor_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_rgb</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'++'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'++'</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_rgb_by_scolor_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1499,7 +1496,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_scolor_by_bright_value">
-<span class="sig-name descname"><span class="pre">control_scolor_by_bright_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_by_bright_value" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_scolor_by_bright_value</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_by_bright_value" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>(명도조정)입력된 scolor형식의 색을 명도를 조정하는 것이다
 값이 0이면 기본값으로, -100 ~ +100까지</p>
 <dl class="field-list simple">
@@ -1517,7 +1514,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_scolor_by_pccs_style">
-<span class="sig-name descname"><span class="pre">control_scolor_by_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red45'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_by_pccs_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_scolor_by_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red45'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">color_style</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'파스텔'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">style_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_by_pccs_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>넘어온 자료중 color값을 hsl로 변경한다
 입력된 기본 값을 스타일에 맞도록 바꾸고, 스타일을 강하게 할것인지 아닌것인지를 보는것</p>
 <p>입력예 : 기본색상, 적용스타일, 변화정도,(“red45, 파스텔, 3)
@@ -1538,7 +1535,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_scolor_for_light_level">
-<span class="sig-name descname"><span class="pre">control_scolor_for_light_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">my_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_for_light_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_scolor_for_light_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">my_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_for_light_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>scolor값의 명도를 조정하는 것이다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1555,7 +1552,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_scolor_for_pastel_level">
-<span class="sig-name descname"><span class="pre">control_scolor_for_pastel_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">my_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_for_pastel_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_scolor_for_pastel_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">my_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_for_pastel_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>scolor값을 파스텔톤으로 변경한후, 명도를 조절하는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1572,7 +1569,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.control_scolor_for_vivid_level">
-<span class="sig-name descname"><span class="pre">control_scolor_for_vivid_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">my_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_for_vivid_level" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">control_scolor_for_vivid_level</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_scolor</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">my_value</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">0.3</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.control_scolor_for_vivid_level" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -1588,7 +1585,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_12_rgb_list">
-<span class="sig-name descname"><span class="pre">data_12_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_12_rgb_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_12_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_12_rgb_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
@@ -1598,7 +1595,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_12rgb_for_pccs_style">
-<span class="sig-name descname"><span class="pre">data_12rgb_for_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_12rgb_for_pccs_style" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_12rgb_for_pccs_style</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_hsl_list</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_12rgb_for_pccs_style" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>12가지 스타일의 hsl을 돌려주는 것이다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1612,14 +1609,14 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_46_excel_rgb_list">
-<span class="sig-name descname"><span class="pre">data_46_excel_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_46_excel_rgb_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_46_excel_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_46_excel_rgb_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>엑셀의 기본 46개, rgb리스트
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_56_excel_rgb_list">
-<span class="sig-name descname"><span class="pre">data_56_excel_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_56_excel_rgb_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_56_excel_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_56_excel_rgb_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>엑셀 기본 rgb 색 : 56색</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1630,7 +1627,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_36_hsl_set">
-<span class="sig-name descname"><span class="pre">data_basic_36_hsl_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_36_hsl_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_36_hsl_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_36_hsl_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>기본적인 hsl로된 36색을 갖고온다
 빨간색을 0으로하여 시작한다
 결과값 : hsl</p>
@@ -1643,7 +1640,7 @@ bright = [100,100], sharp = [50,100], graish = [100,0], dark = [0,0], black = [5
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_4356_hsl_set">
-<span class="sig-name descname"><span class="pre">data_basic_4356_hsl_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_4356_hsl_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_4356_hsl_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_4356_hsl_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>h : 36가지
 s : 11단계
 l : 11단계
@@ -1657,7 +1654,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_56_excel_rgb_set">
-<span class="sig-name descname"><span class="pre">data_basic_56_excel_rgb_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_56_excel_rgb_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_56_excel_rgb_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_56_excel_rgb_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>엑셀 기본 rgb 색 : 56색</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1668,7 +1665,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_8_pastel_rgb_set">
-<span class="sig-name descname"><span class="pre">data_basic_8_pastel_rgb_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_8_pastel_rgb_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_8_pastel_rgb_set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_8_pastel_rgb_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>기본적인
 자료가 있는 색들의 배경색으로 사용하면 좋은 색들</p>
 <dl class="field-list simple">
@@ -1680,14 +1677,14 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_color_name_list">
-<span class="sig-name descname"><span class="pre">data_basic_color_name_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_color_name_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_color_name_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_color_name_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>12가지 기본색이름(한글)
 :return:</p>
 </dd></dl>
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_color_step">
-<span class="sig-name descname"><span class="pre">data_basic_color_step</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_color_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_color_step</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_color_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
@@ -1697,7 +1694,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_color_tone_list">
-<span class="sig-name descname"><span class="pre">data_basic_color_tone_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_color_tone_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_color_tone_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_color_tone_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
@@ -1707,7 +1704,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_faber_rgb_set">
-<span class="sig-name descname"><span class="pre">data_basic_faber_rgb_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_faber_rgb_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_faber_rgb_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">code</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_faber_rgb_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>파버 비덴의의 색체 조화론을 코드로 만든것이다
 한가지 색에대한 조화를 다룬것
 # White(100-0) - Tone(10-50) - Color(0-0) : 색이 밝고 화사
@@ -1731,7 +1728,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_basic_johannes_rgb_set">
-<span class="sig-name descname"><span class="pre">data_basic_johannes_rgb_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stongness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_johannes_rgb_set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_basic_johannes_rgb_set</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">start_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">11</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">num_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">4</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">stongness</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">5</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_basic_johannes_rgb_set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>요하네스 이텐의 색체 조화론을 코드로 만든것이다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1749,7 +1746,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_color_name_all">
-<span class="sig-name descname"><span class="pre">data_color_name_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_all" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_color_name_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_all" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>모든 색깔의 이름들</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1760,7 +1757,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_color_name_eng_all">
-<span class="sig-name descname"><span class="pre">data_color_name_eng_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_eng_all" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_color_name_eng_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_eng_all" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>scolor에서 사용할수있는 모든 영어 색깔의 이름들</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1771,7 +1768,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_color_name_eng_for_12set">
-<span class="sig-name descname"><span class="pre">data_color_name_eng_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_eng_for_12set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_color_name_eng_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_eng_for_12set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>12가지 영어 색깔이름을 돌려준다
 [‘rm’, ‘bm’, ‘cya’, ‘blu’, ‘gra’, ‘유황’, ‘red’, ‘pale_pink’, ‘mag’, ‘bc’, ‘sca’, ‘yel’, ‘bla’, ‘ora’, ‘bro’, ‘gy’, ‘gre’, ‘scarlet’, ‘whi’, ‘gc’, ‘pin’, ‘sulphur_yellow’]</p>
 <dl class="field-list simple">
@@ -1783,7 +1780,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_color_name_eng_for_13set">
-<span class="sig-name descname"><span class="pre">data_color_name_eng_for_13set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_eng_for_13set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_color_name_eng_for_13set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_eng_for_13set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>기본 13가지 색의 리스트 : 영어</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1794,7 +1791,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_color_name_kor_all">
-<span class="sig-name descname"><span class="pre">data_color_name_kor_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_kor_all" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_color_name_kor_all</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_kor_all" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>scolor에서 사용할수있는 모든 한글 색깔의 이름들</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1805,7 +1802,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_color_name_kor_for_12set">
-<span class="sig-name descname"><span class="pre">data_color_name_kor_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_kor_for_12set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_color_name_kor_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_kor_for_12set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>12가지 한글 색깔이름을 돌려준다</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1815,19 +1812,8 @@ l : 11단계
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.data_color_name_kor_for_13set">
-<span class="sig-name descname"><span class="pre">data_color_name_kor_for_13set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_name_kor_for_13set" title="Link to this definition"></a></dt>
-<dd><p>기본 13가지 색의 리스트 : 한글</p>
-<dl class="field-list simple">
-<dt class="field-odd">반환<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_color_style_list">
-<span class="sig-name descname"><span class="pre">data_color_style_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_style_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_color_style_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_style_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
@@ -1837,7 +1823,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_color_tone_kor_list">
-<span class="sig-name descname"><span class="pre">data_color_tone_kor_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_tone_kor_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_color_tone_kor_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_color_tone_kor_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>칼라톤에 대한 한글이름</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1848,7 +1834,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_cool_color_name_list">
-<span class="sig-name descname"><span class="pre">data_cool_color_name_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_cool_color_name_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_cool_color_name_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_cool_color_name_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>차가운 색깔의 이름들</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1858,8 +1844,8 @@ l : 11단계
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.data_excel_46_rgb_list">
-<span class="sig-name descname"><span class="pre">data_excel_46_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_excel_46_rgb_list" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.scolor.scolor.data_excel46_rgb_list">
+<span class="sig-name descname"><span class="pre">data_excel46_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_excel46_rgb_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
@@ -1868,8 +1854,8 @@ l : 11단계
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.data_excel_56_rgb_list">
-<span class="sig-name descname"><span class="pre">data_excel_56_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_excel_56_rgb_list" title="Link to this definition"></a></dt>
+<dt class="sig sig-object py" id="xython.scolor.scolor.data_excel56_rgb_list">
+<span class="sig-name descname"><span class="pre">data_excel56_rgb_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_excel56_rgb_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>엑셀 기본 rgb 색 : 56색</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1880,7 +1866,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_hsl_12set">
-<span class="sig-name descname"><span class="pre">data_hsl_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_hsl_12set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_hsl_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_hsl_12set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>360도의 색을 30도씩 12개로 구분한 hsl분류표</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1891,7 +1877,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_pccs_style_name_eng_for_12set">
-<span class="sig-name descname"><span class="pre">data_pccs_style_name_eng_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_pccs_style_name_eng_for_12set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_pccs_style_name_eng_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_pccs_style_name_eng_for_12set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
@@ -1901,7 +1887,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_pccs_style_name_for_12set">
-<span class="sig-name descname"><span class="pre">data_pccs_style_name_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_pccs_style_name_for_12set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_pccs_style_name_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_pccs_style_name_for_12set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>pccs(퍼스널컬러)의 한글 12가지 이름
 스타일에 대한 이름을 갖고오는 것이다</p>
 <dl class="field-list simple">
@@ -1913,7 +1899,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_pccs_style_name_kor_for_12set">
-<span class="sig-name descname"><span class="pre">data_pccs_style_name_kor_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_pccs_style_name_kor_for_12set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_pccs_style_name_kor_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_pccs_style_name_kor_for_12set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>pccs(퍼스널컬러)의 한글 12가지 이름</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1924,7 +1910,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_rgb_12set">
-<span class="sig-name descname"><span class="pre">data_rgb_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_rgb_12set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_rgb_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_rgb_12set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
 <dd class="field-odd"><p></p>
@@ -1934,7 +1920,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_rgb_for_12set">
-<span class="sig-name descname"><span class="pre">data_rgb_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_rgb_for_12set" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_rgb_for_12set</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_rgb_for_12set" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>기본적으로 자장된 자료에서 갖고오는 것이다
 많이 사용하는 다른 색들을 사용하기 위해
 테두리, 폰트색이나 단색으로 나타낼때 사용하면 좋다</p>
@@ -1947,7 +1933,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.data_worm_color_name_list">
-<span class="sig-name descname"><span class="pre">data_worm_color_name_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_worm_color_name_list" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">data_worm_color_name_list</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.data_worm_color_name_list" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>따뜻한 색깔의 이름들</p>
 <dl class="field-list simple">
 <dt class="field-odd">반환<span class="colon">:</span></dt>
@@ -1958,7 +1944,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.distance_two_3d_point">
-<span class="sig-name descname"><span class="pre">distance_two_3d_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.distance_two_3d_point" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">distance_two_3d_point</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">input_2</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.distance_two_3d_point" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>3 차원의 거리를 기준으로 RGB 값의 차이를 계산하는 것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -1975,7 +1961,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.get_rgb_by_excel_color_no">
-<span class="sig-name descname"><span class="pre">get_rgb_by_excel_color_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.get_rgb_by_excel_color_no" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_rgb_by_excel_color_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.get_rgb_by_excel_color_no" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>엑셀의 기본 번호를 넣으면 rgb값을 돌려주는것
 엑셀 기본 rgb 색 : 56색</p>
 <dl class="field-list simple">
@@ -1990,7 +1976,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.get_rgb_list_as_per_input_no">
-<span class="sig-name descname"><span class="pre">get_rgb_list_as_per_input_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.get_rgb_list_as_per_input_no" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">get_rgb_list_as_per_input_no</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_no</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.get_rgb_list_as_per_input_no" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>입력된 숫자만큼, rgt리스트를 갖고오는것
 기본적인 hsl로된 36색을 갖고온다
 빨간색을 0으로하여 시작한다
@@ -2006,19 +1992,8 @@ l : 11단계
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.history">
-<span class="sig-name descname"><span class="pre">history</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.history" title="Link to this definition"></a></dt>
-<dd><p>이 모듈의 변화된 날짜별 기록</p>
-<dl class="field-list simple">
-<dt class="field-odd">반환<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_20_l_step_color_by_18_degree">
-<span class="sig-name descname"><span class="pre">make_20_l_step_color_by_18_degree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_20_l_step_color_by_18_degree" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_20_l_step_color_by_18_degree</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_20_l_step_color_by_18_degree" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>위쪽으로 5개, 아래로 5개의 명도가 비슷한 색을 돌려준다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -2032,7 +2007,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_2_near_bo_by_h_step">
-<span class="sig-name descname"><span class="pre">make_2_near_bo_by_h_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_2_near_bo_by_h_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_2_near_bo_by_h_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_2_near_bo_by_h_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>mode : 14
 근접보색조합 : 보색의 근처색
 분열보색조합 : Split Complementary
@@ -2052,7 +2027,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_2_side_color_by_h_step">
-<span class="sig-name descname"><span class="pre">make_2_side_color_by_h_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_2_side_color_by_h_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_2_side_color_by_h_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">36</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_2_side_color_by_h_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>근접색조합 : 양쪽 근처색</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -2069,7 +2044,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_2_side_color_by_l_step_for_hsl">
-<span class="sig-name descname"><span class="pre">make_2_side_color_by_l_step_for_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_2_side_color_by_l_step_for_hsl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_2_side_color_by_l_step_for_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_2_side_color_by_l_step_for_hsl" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>명도차가 큰 2가지 1가지색</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -2086,7 +2061,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_2_side_color_by_s_step_for_hsl">
-<span class="sig-name descname"><span class="pre">make_2_side_color_by_s_step_for_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_2_side_color_by_s_step_for_hsl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_2_side_color_by_s_step_for_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">s_step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">30</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_2_side_color_by_s_step_for_hsl" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>채도차가 큰 2가지 1가지색</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -2103,7 +2078,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_3_step_color_by_120_degree_for_hsl">
-<span class="sig-name descname"><span class="pre">make_3_step_color_by_120_degree_for_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_3_step_color_by_120_degree_for_hsl" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_3_step_color_by_120_degree_for_hsl</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_3_step_color_by_120_degree_for_hsl" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>mode :
 등간격 3색조합 : triad
 활동적인 인상과 이미지를 보인다</p>
@@ -2119,7 +2094,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_hsl_set_by_36_h_step">
-<span class="sig-name descname"><span class="pre">make_hsl_set_by_36_h_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_hsl_set_by_36_h_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_hsl_set_by_36_h_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_hsl_set_by_36_h_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p># hsl중에서 10도간격으로 h값을 36개 만드는것</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -2133,7 +2108,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_n_color_set_by_h">
-<span class="sig-name descname"><span class="pre">make_n_color_set_by_h</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_step</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_n_color_set_by_h" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_n_color_set_by_h</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_step</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_n_color_set_by_h" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -2149,7 +2124,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_n_color_set_by_l">
-<span class="sig-name descname"><span class="pre">make_n_color_set_by_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_step</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_n_color_set_by_l" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_n_color_set_by_l</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_step</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_n_color_set_by_l" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -2165,7 +2140,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_n_color_set_by_s">
-<span class="sig-name descname"><span class="pre">make_n_color_set_by_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_step</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_n_color_set_by_s" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_n_color_set_by_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n_step</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_n_color_set_by_s" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
 <dd class="field-odd"><ul class="simple">
@@ -2181,7 +2156,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_one_color_to_many_colors_by_step">
-<span class="sig-name descname"><span class="pre">make_one_color_to_many_colors_by_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_one_color_to_many_colors_by_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_one_color_to_many_colors_by_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">input_color</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">'red'</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_one_color_to_many_colors_by_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>하나의 색을 지정하면 10가지의 단계로 색을 돌려주는 것이다</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -2198,7 +2173,7 @@ l : 11단계
 
 <dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.make_strong_color_hsl_by_s">
-<span class="sig-name descname"><span class="pre">make_strong_color_hsl_by_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_strong_color_hsl_by_s" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">make_strong_color_hsl_by_s</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">hsl</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">changed_s</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">80</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.make_strong_color_hsl_by_s" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p>#고채도</p>
 <dl class="field-list simple">
 <dt class="field-odd">매개변수<span class="colon">:</span></dt>
@@ -2214,18 +2189,8 @@ l : 11단계
 </dd></dl>
 
 <dl class="py method">
-<dt class="sig sig-object py" id="xython.scolor.scolor.manual">
-<span class="sig-name descname"><span class="pre">manual</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.manual" title="Link to this definition"></a></dt>
-<dd><dl class="field-list simple">
-<dt class="field-odd">반환<span class="colon">:</span></dt>
-<dd class="field-odd"><p></p>
-</dd>
-</dl>
-</dd></dl>
-
-<dl class="py method">
 <dt class="sig sig-object py" id="xython.scolor.scolor.mix_two_scolors_with_step">
-<span class="sig-name descname"><span class="pre">mix_two_scolors_with_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scolor_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scolor_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.mix_two_scolors_with_step" title="Link to this definition"></a></dt>
+<span class="sig-name descname"><span class="pre">mix_two_scolors_with_step</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">scolor_1</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">scolor_2</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">step</span></span><span class="o"><span class="pre">=</span></span><span class="default_value"><span class="pre">10</span></span></em><span class="sig-paren">)</span><a class="headerlink" href="#xython.scolor.scolor.mix_two_scolors_with_step" title="이 정의에 대한 퍼머링크"></a></dt>
 <dd><p># 두가지색을 기준으로 몇단계로 색을 만들어주는 기능
 # 예를들어, 발강 ~파랑사이의 색을 10단계로 만들어 주는 기능</p>
 <dl class="field-list simple">
