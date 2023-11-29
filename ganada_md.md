@@ -58,14 +58,14 @@ text ="""님의 침묵
 제 곡조를 못 이기는 사랑의 노래는 님의 침묵을 휩싸고 돕니다.
 """
 #위의 글을 쓰는것
-word.write_text_at_end_of_word_document(text)
+word.write_text_at_end_of_doc(text)
 
 #바꾸기
 word.replace_all("님", "니이이임")
 r_sawcarp = word.search_all_with_color_and_return_position("니이이임")
 
 #맨마지막으로 커서를 이동
-word.move_cursor_to_end_of_document()
+word.move_cursor_to_end_of_doc()
 
 #검정색 선의 테이블을 만든다
 word.make_table_obj_with_black_line(5,7)
@@ -74,26 +74,26 @@ word.make_table_obj_with_black_line(5,7)
 word.write_text_at_xy_cell_in_table(1, [2,2], "2,2번째 셀입니다")
 
 #문서의 맨마지막에 글을  쓰기
-word.move_cursor_to_end_of_document()
-word.write_text_at_end_of_word_document("테스트용으로 넣은것")
+word.move_cursor_to_end_of_doc()
+word.write_text_at_end_of_doc("테스트용으로 넣은것")
 
 #검정색 선의 테이블을 만든다
-word.move_cursor_to_end_of_document()
+word.move_cursor_to_end_of_doc()
 word.make_table_obj_with_black_line(5,7)
 
 #커서를 처음으로 이동
-word.move_cursor_to_start_of_document()
+word.move_cursor_to_begin_of_doc()
 
 #3번째 라인을 선택
-word.select_line_by_line_no_from_cursor(4)
+word.select_next_nth_line_from_cursor(4)
 word.paint_border_in_selection("red")
 
 #한재 라인의 2번째 뒤의 라인을 선택
-word.select_line_by_line_no_from_cursor(2)
+word.select_next_nth_line_from_cursor(2)
 word.paint_border_in_selection("blu")
 word.select_all()
 #정규표현식으로 글자를 찾아서 변경하기
-aaa = word.replace_in_document_by_jfsql("[숫자:1~ 2],[숫자:1~2]", "777777777777")
+aaa = word.replace_in_doc_by_jfsql("[숫자:1~ 2],[숫자:1~2]", "777777777777")
 
 #2번째 테이블의 3번째 셀부터, 리스트의 값을 순차적으로 집어 넣기
 input_list1d = ["1번","2번","3번","4번","5번","6번","7번","8번"]
@@ -110,7 +110,7 @@ word.insert_picture_at_cursor("D:\\test_폴더\\다운로드.jpg",100,100)
 #pdf로 출력하기
 word.print_as_pdf("D:\\aaa.pdf")
 
-word.move_cursor_to_end_of_document()
+word.move_cursor_to_end_of_doc()
 
 #글자를 넣으면서 색과 크기를 지정
 word.write_text_in_selection_with_color_size_bold("dasdasdadasda", "blu", 20, False)

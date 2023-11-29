@@ -26,8 +26,11 @@
 #### 예제
 ``` python
 # -*- coding: utf-8 -*-
-import pcell
+import pcell, ganada,scolor, pynal
 excel = pcell.pcell()
+word = ganada.ganada()
+color = scolor.scolor()
+sigan = pynal.pynal()
 
 # read range value in activesheet
 # 현재시트에 영역안의 값을 갖고오는 것
@@ -35,7 +38,7 @@ list_2d = excel.read_value_in_range("", [1,1,5,5])
 
 # write text in current cursor
 # 현재 커서위치에 글씨를 쓰는것
-word.write_text_at_start_of_cursor("write text ")
+word.write_text_at_begin_of_cursor("write text ")
 
 # change the rgb color from easy
 # 색을 쉽게 rgb로 바꿔주는것
@@ -85,7 +88,7 @@ myre = jfinder.jfinder()
 r_rvir = excel.read_value_in_range("", [1,5,10,5])
 re_sql= ":([숫자:1~1])(,)"
 for index, list_1d in enumerate(r_rvir):
-	r_sabj = myre.search_all_by_jfsql(re_sql, list_1d[0])
+	r_sabj = myre.search_all_by_jf_sql(re_sql, list_1d[0])
 	print(r_sabj)
 	excel.write_value_in_cell("", [index+20, 1], list_1d[0])
 	excel.write_value_in_cell("", [index+20, 2], r_sabj)
