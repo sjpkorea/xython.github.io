@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>pcell &mdash; xython 1.19 문서</title>
+  <title>pcell &mdash; xython 2.10 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -13,7 +13,7 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=96a20c3c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2603ff04"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=4825356b"></script>
         <script src="_static/translations.js?v=b5f768d8"></script>
@@ -126,8 +126,11 @@ new : 어떤 객체를 하나 만들때 사용
 <section id="id2">
 <h2>예제<a class="headerlink" href="#id2" title="이 제목에 대한 퍼머링크"></a></h2>
 <div class="highlight-python notranslate"><div class="highlight"><pre><span></span><span class="c1"># -*- coding: utf-8 -*-</span>
-<span class="kn">import</span> <span class="nn">pcell</span>
+<span class="kn">import</span> <span class="nn">pcell</span><span class="o">,</span> <span class="nn">ganada</span><span class="o">,</span><span class="nn">scolor</span><span class="o">,</span> <span class="nn">pynal</span>
 <span class="n">excel</span> <span class="o">=</span> <span class="n">pcell</span><span class="o">.</span><span class="n">pcell</span><span class="p">()</span>
+<span class="n">word</span> <span class="o">=</span> <span class="n">ganada</span><span class="o">.</span><span class="n">ganada</span><span class="p">()</span>
+<span class="n">color</span> <span class="o">=</span> <span class="n">scolor</span><span class="o">.</span><span class="n">scolor</span><span class="p">()</span>
+<span class="n">sigan</span> <span class="o">=</span> <span class="n">pynal</span><span class="o">.</span><span class="n">pynal</span><span class="p">()</span>
 
 <span class="c1"># read range value in activesheet</span>
 <span class="c1"># 현재시트에 영역안의 값을 갖고오는 것</span>
@@ -135,7 +138,7 @@ new : 어떤 객체를 하나 만들때 사용
 
 <span class="c1"># write text in current cursor</span>
 <span class="c1"># 현재 커서위치에 글씨를 쓰는것</span>
-<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_start_of_cursor</span><span class="p">(</span><span class="s2">&quot;write text &quot;</span><span class="p">)</span>
+<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_begin_of_cursor</span><span class="p">(</span><span class="s2">&quot;write text &quot;</span><span class="p">)</span>
 
 <span class="c1"># change the rgb color from easy</span>
 <span class="c1"># 색을 쉽게 rgb로 바꿔주는것</span>
@@ -185,7 +188,7 @@ new : 어떤 객체를 하나 만들때 사용
 <span class="n">r_rvir</span> <span class="o">=</span> <span class="n">excel</span><span class="o">.</span><span class="n">read_value_in_range</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">10</span><span class="p">,</span><span class="mi">5</span><span class="p">])</span>
 <span class="n">re_sql</span><span class="o">=</span> <span class="s2">&quot;:([숫자:1~1])(,)&quot;</span>
 <span class="k">for</span> <span class="n">index</span><span class="p">,</span> <span class="n">list_1d</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">r_rvir</span><span class="p">):</span>
-	<span class="n">r_sabj</span> <span class="o">=</span> <span class="n">myre</span><span class="o">.</span><span class="n">search_all_by_jfsql</span><span class="p">(</span><span class="n">re_sql</span><span class="p">,</span> <span class="n">list_1d</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
+	<span class="n">r_sabj</span> <span class="o">=</span> <span class="n">myre</span><span class="o">.</span><span class="n">search_all_by_jf_sql</span><span class="p">(</span><span class="n">re_sql</span><span class="p">,</span> <span class="n">list_1d</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 	<span class="nb">print</span><span class="p">(</span><span class="n">r_sabj</span><span class="p">)</span>
 	<span class="n">excel</span><span class="o">.</span><span class="n">write_value_in_cell</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">20</span><span class="p">,</span> <span class="mi">1</span><span class="p">],</span> <span class="n">list_1d</span><span class="p">[</span><span class="mi">0</span><span class="p">])</span>
 	<span class="n">excel</span><span class="o">.</span><span class="n">write_value_in_cell</span><span class="p">(</span><span class="s2">&quot;&quot;</span><span class="p">,</span> <span class="p">[</span><span class="n">index</span><span class="o">+</span><span class="mi">20</span><span class="p">,</span> <span class="mi">2</span><span class="p">],</span> <span class="n">r_sabj</span><span class="p">)</span>

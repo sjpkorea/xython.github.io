@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ganada &mdash; xython 1.19 문서</title>
+  <title>ganada &mdash; xython 2.10 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -13,7 +13,7 @@
   
         <script src="_static/jquery.js?v=5d32c60e"></script>
         <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
-        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=96a20c3c"></script>
+        <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js?v=2603ff04"></script>
         <script src="_static/doctools.js?v=888ff710"></script>
         <script src="_static/sphinx_highlight.js?v=4825356b"></script>
         <script src="_static/translations.js?v=b5f768d8"></script>
@@ -187,14 +187,14 @@
 <span class="s2">제 곡조를 못 이기는 사랑의 노래는 님의 침묵을 휩싸고 돕니다.</span>
 <span class="s2">&quot;&quot;&quot;</span>
 <span class="c1">#위의 글을 쓰는것</span>
-<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_end_of_word_document</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
+<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_end_of_doc</span><span class="p">(</span><span class="n">text</span><span class="p">)</span>
 
 <span class="c1">#바꾸기</span>
 <span class="n">word</span><span class="o">.</span><span class="n">replace_all</span><span class="p">(</span><span class="s2">&quot;님&quot;</span><span class="p">,</span> <span class="s2">&quot;니이이임&quot;</span><span class="p">)</span>
 <span class="n">r_sawcarp</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="n">search_all_with_color_and_return_position</span><span class="p">(</span><span class="s2">&quot;니이이임&quot;</span><span class="p">)</span>
 
 <span class="c1">#맨마지막으로 커서를 이동</span>
-<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_document</span><span class="p">()</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_doc</span><span class="p">()</span>
 
 <span class="c1">#검정색 선의 테이블을 만든다</span>
 <span class="n">word</span><span class="o">.</span><span class="n">make_table_obj_with_black_line</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
@@ -203,26 +203,26 @@
 <span class="n">word</span><span class="o">.</span><span class="n">write_text_at_xy_cell_in_table</span><span class="p">(</span><span class="mi">1</span><span class="p">,</span> <span class="p">[</span><span class="mi">2</span><span class="p">,</span><span class="mi">2</span><span class="p">],</span> <span class="s2">&quot;2,2번째 셀입니다&quot;</span><span class="p">)</span>
 
 <span class="c1">#문서의 맨마지막에 글을  쓰기</span>
-<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_document</span><span class="p">()</span>
-<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_end_of_word_document</span><span class="p">(</span><span class="s2">&quot;테스트용으로 넣은것&quot;</span><span class="p">)</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_doc</span><span class="p">()</span>
+<span class="n">word</span><span class="o">.</span><span class="n">write_text_at_end_of_doc</span><span class="p">(</span><span class="s2">&quot;테스트용으로 넣은것&quot;</span><span class="p">)</span>
 
 <span class="c1">#검정색 선의 테이블을 만든다</span>
-<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_document</span><span class="p">()</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_doc</span><span class="p">()</span>
 <span class="n">word</span><span class="o">.</span><span class="n">make_table_obj_with_black_line</span><span class="p">(</span><span class="mi">5</span><span class="p">,</span><span class="mi">7</span><span class="p">)</span>
 
 <span class="c1">#커서를 처음으로 이동</span>
-<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_start_of_document</span><span class="p">()</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_begin_of_doc</span><span class="p">()</span>
 
 <span class="c1">#3번째 라인을 선택</span>
-<span class="n">word</span><span class="o">.</span><span class="n">select_line_by_line_no_from_cursor</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
+<span class="n">word</span><span class="o">.</span><span class="n">select_next_nth_line_from_cursor</span><span class="p">(</span><span class="mi">4</span><span class="p">)</span>
 <span class="n">word</span><span class="o">.</span><span class="n">paint_border_in_selection</span><span class="p">(</span><span class="s2">&quot;red&quot;</span><span class="p">)</span>
 
 <span class="c1">#한재 라인의 2번째 뒤의 라인을 선택</span>
-<span class="n">word</span><span class="o">.</span><span class="n">select_line_by_line_no_from_cursor</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
+<span class="n">word</span><span class="o">.</span><span class="n">select_next_nth_line_from_cursor</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span>
 <span class="n">word</span><span class="o">.</span><span class="n">paint_border_in_selection</span><span class="p">(</span><span class="s2">&quot;blu&quot;</span><span class="p">)</span>
 <span class="n">word</span><span class="o">.</span><span class="n">select_all</span><span class="p">()</span>
 <span class="c1">#정규표현식으로 글자를 찾아서 변경하기</span>
-<span class="n">aaa</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="n">replace_in_document_by_jfsql</span><span class="p">(</span><span class="s2">&quot;[숫자:1~ 2],[숫자:1~2]&quot;</span><span class="p">,</span> <span class="s2">&quot;777777777777&quot;</span><span class="p">)</span>
+<span class="n">aaa</span> <span class="o">=</span> <span class="n">word</span><span class="o">.</span><span class="n">replace_in_doc_by_jfsql</span><span class="p">(</span><span class="s2">&quot;[숫자:1~ 2],[숫자:1~2]&quot;</span><span class="p">,</span> <span class="s2">&quot;777777777777&quot;</span><span class="p">)</span>
 
 <span class="c1">#2번째 테이블의 3번째 셀부터, 리스트의 값을 순차적으로 집어 넣기</span>
 <span class="n">input_list1d</span> <span class="o">=</span> <span class="p">[</span><span class="s2">&quot;1번&quot;</span><span class="p">,</span><span class="s2">&quot;2번&quot;</span><span class="p">,</span><span class="s2">&quot;3번&quot;</span><span class="p">,</span><span class="s2">&quot;4번&quot;</span><span class="p">,</span><span class="s2">&quot;5번&quot;</span><span class="p">,</span><span class="s2">&quot;6번&quot;</span><span class="p">,</span><span class="s2">&quot;7번&quot;</span><span class="p">,</span><span class="s2">&quot;8번&quot;</span><span class="p">]</span>
@@ -239,7 +239,7 @@
 <span class="c1">#pdf로 출력하기</span>
 <span class="n">word</span><span class="o">.</span><span class="n">print_as_pdf</span><span class="p">(</span><span class="s2">&quot;D:</span><span class="se">\\</span><span class="s2">aaa.pdf&quot;</span><span class="p">)</span>
 
-<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_document</span><span class="p">()</span>
+<span class="n">word</span><span class="o">.</span><span class="n">move_cursor_to_end_of_doc</span><span class="p">()</span>
 
 <span class="c1">#글자를 넣으면서 색과 크기를 지정</span>
 <span class="n">word</span><span class="o">.</span><span class="n">write_text_in_selection_with_color_size_bold</span><span class="p">(</span><span class="s2">&quot;dasdasdadasda&quot;</span><span class="p">,</span> <span class="s2">&quot;blu&quot;</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="kc">False</span><span class="p">)</span>
