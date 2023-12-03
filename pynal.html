@@ -4,7 +4,7 @@
   <meta charset="utf-8" /><meta name="generator" content="Docutils 0.18.1: http://docutils.sourceforge.net/" />
 
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>유틸리티용 (youtil모듈):설명 및 예제 &mdash; xython 2.21 문서</title>
+  <title>공식문서화 : pynal모듈 &mdash; xython 2.21 문서</title>
       <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -20,8 +20,8 @@
     <script src="_static/js/theme.js"></script>
     <link rel="index" title="색인" href="genindex.html" />
     <link rel="search" title="검색" href="search.html" />
-    <link rel="next" title="공식문서화 : anydb모듈" href="anydb.html" />
-    <link rel="prev" title="색상용 (scolor모듈):설명 및 예제" href="scolor_md.html" /> 
+    <link rel="next" title="공식문서화 : rgraph모듈" href="rgraph.html" />
+    <link rel="prev" title="공식문서화 : pyclick모듈" href="pyclick.html" /> 
 </head>
 
 <body class="wy-body-for-nav"> 
@@ -55,7 +55,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pyclick_md.html">자동화용 (pyclick모듈):설명 및 예제</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pynal_md.html">시간용 (pynal모듈):설명 및 예제</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scolor_md.html">색상용 (scolor모듈):설명 및 예제</a></li>
-<li class="toctree-l1 current"><a class="current reference internal" href="#">유틸리티용 (youtil모듈):설명 및 예제</a></li>
+<li class="toctree-l1"><a class="reference internal" href="youtil_md.html">유틸리티용 (youtil모듈):설명 및 예제</a></li>
 <li class="toctree-l1"><a class="reference internal" href="anydb.html">공식문서화 : anydb모듈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="basic_data.html">공식문서화 : basic_data모듈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="ganada.html">공식문서화 : ganada모듈</a></li>
@@ -66,7 +66,7 @@
 <li class="toctree-l1"><a class="reference internal" href="pcell.html">공식문서화 : pcell모듈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pcell_event.html">공식문서화 : pcell_event모듈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="pyclick.html">공식문서화 : pyclick모듈</a></li>
-<li class="toctree-l1"><a class="reference internal" href="pynal.html">공식문서화 : pynal모듈</a></li>
+<li class="toctree-l1 current"><a class="current reference internal" href="#">공식문서화 : pynal모듈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="rgraph.html">공식문서화 : rgraph모듈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="scolor.html">공식문서화 : scolor모듈</a></li>
 <li class="toctree-l1"><a class="reference internal" href="youtil.html">공식문서화 : youtil모듈</a></li>
@@ -86,9 +86,9 @@
           <div role="navigation" aria-label="Page navigation">
   <ul class="wy-breadcrumbs">
       <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
-      <li class="breadcrumb-item active">유틸리티용 (youtil모듈):설명 및 예제</li>
+      <li class="breadcrumb-item active">공식문서화 : pynal모듈</li>
       <li class="wy-breadcrumbs-aside">
-            <a href="_sources/youtil_md.md.txt" rel="nofollow"> View page source</a>
+            <a href="_sources/pynal.rst.txt" rel="nofollow"> View page source</a>
       </li>
   </ul>
   <hr/>
@@ -96,34 +96,16 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <section id="youtil">
-<h1>유틸리티용 (youtil모듈):설명 및 예제<a class="headerlink" href="#youtil" title="이 제목에 대한 퍼머링크"></a></h1>
-<p>youtil은 기본적으로 자료를 변경하거나 가공하는 것을 모아놓은 것입니다.<br>
-이 모듈은 기본적으로 1, 2의 두개로 구분을 하였는데, youtil은 기본적으로 자주 사용하는 기능을 넣었으며,<br>
-youtil2는 글자의 픽셀크기를 구하는 등의 조금더 설치하는것들이 무거운 것들을 넣어 놓은 것입니다<br>
-즉, 아래의 그림과도 같이  youtil기능은 어떤 자료를 가공하는 기능이 주로 이루는 것이며, <br>
-동시에 자주 사용하는 간단한 기능들을 메소드로 만들어서 재활용하는 기능이 있습니다<br></p>
-<p>어떤 것들이 주로 들어있는지 몇가지를 보여드립니다</p>
-<ul class="simple">
-<li><p>폴더안의 모든 화일 이름을 갖고온다</p></li>
-<li><p>한글을 자음과 모음으로 변경</p></li>
-<li><p>한글의 중모음은 단모음으로 분리</p></li>
-<li><p>화면에서 입력그림과 같은것의 위치를 찾는다</p></li>
-<li><p>1차원의 자료를 원하는 갯수만큼씩 구분하여 2차원자료로 만든것</p></li>
-<li><p>2차원자료중에서 원하는 세로열들만 솎는 것</p></li>
-<li><p>파이썬화일을 def를 기준으로 분리하는것</p></li>
-<li><p>1차 2차원 자료에서 빈 자료만 삭제하기</p></li>
-<li><p>조편성하는 방법</p></li>
-<li><p>몇초간 나타났다 사라지는 메세지 박스</p></li>
-</ul>
+  <section id="pynal">
+<h1>공식문서화 : pynal모듈<a class="headerlink" href="#pynal" title="이 제목에 대한 퍼머링크"></a></h1>
 </section>
 
 
            </div>
           </div>
           <footer><div class="rst-footer-buttons" role="navigation" aria-label="Footer">
-        <a href="scolor_md.html" class="btn btn-neutral float-left" title="색상용 (scolor모듈):설명 및 예제" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
-        <a href="anydb.html" class="btn btn-neutral float-right" title="공식문서화 : anydb모듈" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+        <a href="pyclick.html" class="btn btn-neutral float-left" title="공식문서화 : pyclick모듈" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Previous</a>
+        <a href="rgraph.html" class="btn btn-neutral float-right" title="공식문서화 : rgraph모듈" accesskey="n" rel="next">Next <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
     </div>
 
   <hr/>
