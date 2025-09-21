@@ -4,98 +4,98 @@ xython package
 Submodules
 ----------
 
-xython.anydb module
--------------------
-
-.. automodule:: xython.anydb
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-xython.basic\_data module
--------------------------
-
-.. automodule:: xython.basic_data
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-xython.ganada module
---------------------
-
-.. automodule:: xython.ganada
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-xython.jfinder module
----------------------
-
-.. automodule:: xython.jfinder
-   :members:
-   :undoc-members:
-   :show-inheritance:
-
-xython.mailmail module
+xython.xy_auto module
 ----------------------
 
-.. automodule:: xython.mailmail
+.. automodule:: xython.xy_auto
    :members:
    :undoc-members:
    :show-inheritance:
 
-xython.pcell module
--------------------
+xython.xy_color module
+-----------------------
 
-.. automodule:: xython.pcell
+.. automodule:: xython.xy_color
    :members:
    :undoc-members:
    :show-inheritance:
 
-xython.pcell\_event module
---------------------------
+xython.xy\_db module
+--------------------
 
-.. automodule:: xython.pcell_event
+.. automodule:: xython.xy_db
    :members:
    :undoc-members:
    :show-inheritance:
 
-xython.pyclick module
+xython.xy\_excel module
+-----------------------
+
+.. automodule:: xython.xy_excel
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.xy\_hwp module
 ---------------------
 
-.. automodule:: xython.pyclick
+.. automodule:: xython.xy_hwp
    :members:
    :undoc-members:
    :show-inheritance:
 
-xython.pynal module
--------------------
+xython.xy\_list module
+----------------------
 
-.. automodule:: xython.pynal
+.. automodule:: xython.xy_list
    :members:
    :undoc-members:
    :show-inheritance:
 
-xython.rgraph module
+xython.xy\_map module
+---------------------
+
+.. automodule:: xython.xy_map
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.xy\_outlook module
+-------------------------
+
+.. automodule:: xython.xy_outlook
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.xy\_re module
 --------------------
 
-.. automodule:: xython.rgraph
+.. automodule:: xython.xy_re
    :members:
    :undoc-members:
    :show-inheritance:
 
-xython.scolor module
---------------------
+xython.xy\_time module
+----------------------
 
-.. automodule:: xython.scolor
+.. automodule:: xython.xy_time
    :members:
    :undoc-members:
    :show-inheritance:
 
-xython.youtil module
---------------------
+xython.xy\_util module
+----------------------
 
-.. automodule:: xython.youtil
+.. automodule:: xython.xy_util
+   :members:
+   :undoc-members:
+   :show-inheritance:
+
+xython.xy\_word module
+----------------------
+
+.. automodule:: xython.xy_word
    :members:
    :undoc-members:
    :show-inheritance:
